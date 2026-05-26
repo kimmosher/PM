@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="icons/pm_icon.png">/home/pearlsrvcs/C++/icons/pm_icon.png</file>
+  </qresource>
+</RCC>
+

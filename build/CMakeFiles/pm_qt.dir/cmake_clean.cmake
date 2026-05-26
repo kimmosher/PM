@@ -1,0 +1,24 @@
+file(REMOVE_RECURSE
+  ".qt/rcc/qrc_resources.cpp"
+  "CMakeFiles/pm_qt.dir/link.d"
+  "CMakeFiles/pm_qt_autogen.dir/AutogenUsed.txt"
+  "CMakeFiles/pm_qt_autogen.dir/ParseCache.txt"
+  "pm_qt_autogen"
+  "CMakeFiles/pm_qt.dir/MainWindow.cpp.o"
+  "CMakeFiles/pm_qt.dir/MainWindow.cpp.o.d"
+  "CMakeFiles/pm_qt.dir/build/.qt/rcc/qrc_resources.cpp.o"
+  "CMakeFiles/pm_qt.dir/build/.qt/rcc/qrc_resources.cpp.o.d"
+  "CMakeFiles/pm_qt.dir/main.cpp.o"
+  "CMakeFiles/pm_qt.dir/main.cpp.o.d"
+  "CMakeFiles/pm_qt.dir/pm_qt_autogen/mocs_compilation.cpp.o"
+  "CMakeFiles/pm_qt.dir/pm_qt_autogen/mocs_compilation.cpp.o.d"
+  "pm_qt"
+  "pm_qt.pdb"
+  "pm_qt_autogen/mocs_compilation.cpp"
+  "pm_qt_autogen/timestamp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/pm_qt.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

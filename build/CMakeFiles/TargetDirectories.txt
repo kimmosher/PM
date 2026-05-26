@@ -1,0 +1,6 @@
+/home/pearlsrvcs/C++/build/CMakeFiles/pm_qt.dir
+/home/pearlsrvcs/C++/build/CMakeFiles/pm_qt_other_files.dir
+/home/pearlsrvcs/C++/build/CMakeFiles/edit_cache.dir
+/home/pearlsrvcs/C++/build/CMakeFiles/rebuild_cache.dir
+/home/pearlsrvcs/C++/build/CMakeFiles/pm_qt_autogen_timestamp_deps.dir
+/home/pearlsrvcs/C++/build/CMakeFiles/pm_qt_autogen.dir

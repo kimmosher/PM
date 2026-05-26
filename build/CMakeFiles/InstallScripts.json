@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/pearlsrvcs/C++/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
