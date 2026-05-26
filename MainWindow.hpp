@@ -20,25 +20,28 @@ private slots:
     void onCalcEvaluate();
     void onTaskAdd();
     void onTaskRemove();
-    void onNoteSave();
-    void onNoteLoad();
+   
 
 private:
     void loadTasks();
     void saveTasks();
+    void saveNotes();
+    void loadNotes();
+    void closeEvent(QCloseEvent *event) override;
     void addHistory(const QString& line);
     void updateCalendarHighlights();
     bool isOverdue(const TaskItem& t) const;
     QTabWidget* tabs = nullptr;
     QCalendarWidget* calendar = nullptr;
-
+    QTabWidget *noteTabs;
     QLineEdit* calcInput = nullptr;
 
     QListWidget* taskList = nullptr;
     QLineEdit* taskInput = nullptr;
     QDateEdit* taskDate = nullptr;
-    QLineEdit* noteFile = nullptr;
-    QPlainTextEdit* noteEdit = nullptr;
+    QLineEdit *searchBox = nullptr;
+    int searchTabIndex = 0;
+    int searchPos = 0;
 
     QPlainTextEdit* history = nullptr;
     

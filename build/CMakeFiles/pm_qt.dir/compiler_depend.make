@@ -1268,6 +1268,9 @@ CMakeFiles/pm_qt.dir/MainWindow.cpp.o: /home/pearlsrvcs/C++/MainWindow.cpp \
   /usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h \
   /usr/lib/gcc/x86_64-linux-gnu/15/include/syslimits.h
 
+CMakeFiles/pm_qt.dir/build/.qt/rcc/qrc_resources.cpp.o: .qt/rcc/qrc_resources.cpp \
+  /usr/include/stdc-predef.h
+
 CMakeFiles/pm_qt.dir/main.cpp.o: /home/pearlsrvcs/C++/main.cpp \
   /home/pearlsrvcs/C++/MainWindow.hpp \
   /usr/include/alloca.h \
@@ -2390,6 +2393,7 @@ pm_qt: /lib64/ld-linux-x86-64.so.2 \
   /usr/lib/x86_64-linux-gnu/libz.so.1 \
   /usr/lib/x86_64-linux-gnu/libzstd.so.1 \
   CMakeFiles/pm_qt.dir/MainWindow.cpp.o \
+  CMakeFiles/pm_qt.dir/build/.qt/rcc/qrc_resources.cpp.o \
   CMakeFiles/pm_qt.dir/main.cpp.o \
   CMakeFiles/pm_qt.dir/pm_qt_autogen/mocs_compilation.cpp.o
 
@@ -2459,6 +2463,8 @@ CMakeFiles/pm_qt.dir/MainWindow.cpp.o:
 pm_qt_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication:
+
+.qt/rcc/qrc_resources.cpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h:
 
@@ -2887,6 +2893,8 @@ pm_qt_autogen/mocs_compilation.cpp:
 /usr/include/time.h:
 
 /usr/include/c++/15/tr1/hypergeometric.tcc:
+
+CMakeFiles/pm_qt.dir/build/.qt/rcc/qrc_resources.cpp.o:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomCycloneDXHelpers.cmake:
 
