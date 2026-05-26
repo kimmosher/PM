@@ -456,7 +456,7 @@ static double evalExpr(const QString& expr) {
     if (values.size() != 1) throw std::runtime_error("bad expr");
     return values[0];
 }
- 
+
 void MainWindow::addHistory(const QString& line) {
     if (!history) return;
     history->appendPlainText(line);
