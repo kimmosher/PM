@@ -1,5 +1,5 @@
 #include "MainWindow.hpp"
-
+#include <QVector>
 #include <QTabWidget>
 #include <QCalendarWidget>
 #include <QVBoxLayout>
@@ -154,13 +154,13 @@ MainWindow::MainWindow(QWidget *parent)
         taskDate = new QDateEdit(QDate::currentDate(), page);
         taskDate->setCalendarPopup(true);
 
-        QPushButton* addBtn = new QPushButton("Add Task", page);
+        QPushButton* addContactBtn = new QPushButton("Add Task", page);
         QPushButton* rmBtn  = new QPushButton("Remove", page);
 
         QHBoxLayout* inputRow = new QHBoxLayout;
         inputRow->addWidget(taskInput);
         inputRow->addWidget(taskDate);
-        inputRow->addWidget(addBtn);
+        inputRow->addWidget(addContactBtn);
         inputRow->addWidget(rmBtn);
 
         taskList = new QListWidget(page);
@@ -168,7 +168,7 @@ MainWindow::MainWindow(QWidget *parent)
         layout->addLayout(inputRow);
         layout->addWidget(taskList);
 
-        connect(addBtn, &QPushButton::clicked, this, &MainWindow::onTaskAdd);
+        connect(addContactBtn, &QPushButton::clicked, this, &MainWindow::onTaskAdd);
         connect(rmBtn,  &QPushButton::clicked, this, &MainWindow::onTaskRemove);
 
         connect(calendar, &QCalendarWidget::clicked, [this](const QDate& d) {
@@ -360,7 +360,134 @@ MainWindow::MainWindow(QWidget *parent)
         layout->addWidget(history);
         tabs->addTab(page, "History");
     }
+
+    // ---- Address Book tab ----
+{
+    QWidget *page = new QWidget;
+    QVBoxLayout *layout = new QVBoxLayout(page);
+
+    // Input fields
+    contactName = new QLineEdit(page);
+    contactName->setPlaceholderText("Name");
+
+    contactPhone = new QLineEdit(page);
+    contactPhone->setPlaceholderText("Phone");
+
+    contactEmail = new QLineEdit(page);
+    contactEmail->setPlaceholderText("Email");
+
+    contactAddress = new QLineEdit(page);
+    contactAddress->setPlaceholderText("Address");
+
+    addContactBtn = new QPushButton("Add Contact", page);
+    QPushButton *rmBtn  = new QPushButton("Remove", page);
+
+    // Input grid
+    QGridLayout *inputGrid = new QGridLayout;
+    inputGrid->addWidget(contactName,    0, 0);
+    inputGrid->addWidget(contactPhone,   0, 1);
+    inputGrid->addWidget(contactEmail,   1, 0);
+    inputGrid->addWidget(contactAddress, 1, 1);
+    inputGrid->addWidget(addContactBtn,  2, 0);
+    inputGrid->addWidget(rmBtn,          2, 1);
+
+    layout->addLayout(inputGrid);
+
+    // Contact list
+    contactList = new QListWidget(page);
+    layout->addWidget(contactList);
+
+    // Add contact
+    connect(addContactBtn, &QPushButton::clicked, this, [=]() {
+    QString name = contactName->text().trimmed();
+    QString phone = contactPhone->text().trimmed();
+    QString email = contactEmail->text().trimmed();
+    QString addr = contactAddress->text().trimmed();
+
+    if (name.isEmpty()) {
+        QMessageBox::warning(this, "Error", "Name is required");
+        return;
+    }
+
+    if (editingContactIndex == -1) {
+        // --- ADD NEW CONTACT ---
+        ContactItem c { name, phone, email, addr };
+        contacts.append(c);
+
+        QString line = QString("%1 — %2 — %3")
+            .arg(c.name)
+            .arg(c.phone)
+            .arg(c.email);
+
+        contactList->addItem(line);
+    } else {
+        // --- EDIT EXISTING CONTACT ---
+        contacts[editingContactIndex].name = name;
+        contacts[editingContactIndex].phone = phone;
+        contacts[editingContactIndex].email = email;
+        contacts[editingContactIndex].address = addr;
+
+        QString line = QString("%1 — %2 — %3")
+            .arg(name)
+            .arg(phone)
+            .arg(email);
+
+        contactList->item(editingContactIndex)->setText(line);
+
+        editingContactIndex = -1;
+        addContactBtn->setText("Add Contact");
+    }
+
+    // Clear fields
+    contactName->clear();
+    contactPhone->clear();
+    contactEmail->clear();
+    contactAddress->clear();
+
+    saveContacts();
+});
+
+    // Remove contact
+    connect(rmBtn, &QPushButton::clicked, this, [=]() {
+    int row = contactList->currentRow();
+    if (row < 0 || row >= contacts.size()) return;
+
+    contacts.removeAt(row);
+    delete contactList->takeItem(row);
+
+    if (editingContactIndex == row) {
+        editingContactIndex = -1;
+        addContactBtn->setText("Add Contact");
+        contactName->clear();
+        contactPhone->clear();
+        contactEmail->clear();
+        contactAddress->clear();
+    }
+
+    saveContacts();
+});;
+
+    tabs->addTab(page, "Address Book");
+
+    loadContacts();
 }
+connect(contactList, &QListWidget::itemDoubleClicked, this, [=](QListWidgetItem *item) {
+    int row = contactList->row(item);
+    if (row < 0 || row >= contacts.size()) return;
+
+    editingContactIndex = row;
+
+    // Load into input fields
+    contactName->setText(contacts[row].name);
+    contactPhone->setText(contacts[row].phone);
+    contactEmail->setText(contacts[row].email);
+    contactAddress->setText(contacts[row].address);
+
+    // Change button text to indicate editing
+    addContactBtn->setText("Save Changes");
+});
+}
+
 
 // =============================================================
 //  Slots
@@ -632,6 +759,55 @@ void MainWindow::loadNotes()
         noteTabs->addTab(tab, obj["title"].toString());
     }
 }
+
+void MainWindow::saveContacts() {
+    QJsonArray arr;
+
+    for (const ContactItem &c : contacts) {
+        QJsonObject obj;
+        obj["name"] = c.name;
+        obj["phone"] = c.phone;
+        obj["email"] = c.email;
+        obj["address"] = c.address;
+        arr.append(obj);
+    }
+
+    QFile f("contacts.json");
+    if (f.open(QIODevice::WriteOnly)) {
+        f.write(QJsonDocument(arr).toJson());
+    }
+}
+
+void MainWindow::loadContacts() {
+    contacts.clear();
+    contactList->clear();
+
+    QFile f("contacts.json");
+    if (!f.open(QIODevice::ReadOnly)) return;
+
+    QJsonDocument doc = QJsonDocument::fromJson(f.readAll());
+    QJsonArray arr = doc.array();
+
+    for (auto v : arr) {
+        QJsonObject obj = v.toObject();
+
+        ContactItem c;
+        c.name = obj["name"].toString();
+        c.phone = obj["phone"].toString();
+        c.email = obj["email"].toString();
+        c.address = obj["address"].toString();
+
+        contacts.append(c);
+
+        QString line = QString("%1 — %2 — %3")
+            .arg(c.name)
+            .arg(c.phone)
+            .arg(c.email);
+
+        contactList->addItem(line);
+    }
+}
+
 
 // =============================================================
 //  Close event

@@ -288,6 +288,7 @@ pm_qt_autogen/timestamp: /home/pearlsrvcs/C++/CMakeLists.txt \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVector \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20iterator.h \
@@ -429,6 +430,7 @@ pm_qt_autogen/timestamp: /home/pearlsrvcs/C++/CMakeLists.txt \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qutf8stringview.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvector.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h \
@@ -486,7 +488,9 @@ pm_qt_autogen/timestamp: /home/pearlsrvcs/C++/CMakeLists.txt \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QListWidget \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPlainTextEdit \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTabWidget \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemdelegate.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemview.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
@@ -500,6 +504,7 @@ pm_qt_autogen/timestamp: /home/pearlsrvcs/C++/CMakeLists.txt \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistwidget.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qplaintextedit.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h \
@@ -1008,6 +1013,7 @@ CMakeFiles/pm_qt.dir/MainWindow.cpp.o: /home/pearlsrvcs/C++/MainWindow.cpp \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QTextStream \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVector \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20iterator.h \
@@ -1159,6 +1165,7 @@ CMakeFiles/pm_qt.dir/MainWindow.cpp.o: /home/pearlsrvcs/C++/MainWindow.cpp \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/quuid.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvector.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h \
@@ -1267,9 +1274,6 @@ CMakeFiles/pm_qt.dir/MainWindow.cpp.o: /home/pearlsrvcs/C++/MainWindow.cpp \
   /usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h \
   /usr/lib/gcc/x86_64-linux-gnu/15/include/syslimits.h
-
-CMakeFiles/pm_qt.dir/build/.qt/rcc/qrc_resources.cpp.o: .qt/rcc/qrc_resources.cpp \
-  /usr/include/stdc-predef.h
 
 CMakeFiles/pm_qt.dir/main.cpp.o: /home/pearlsrvcs/C++/main.cpp \
   /home/pearlsrvcs/C++/MainWindow.hpp \
@@ -1567,6 +1571,7 @@ CMakeFiles/pm_qt.dir/main.cpp.o: /home/pearlsrvcs/C++/main.cpp \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVector \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20iterator.h \
@@ -1708,6 +1713,7 @@ CMakeFiles/pm_qt.dir/main.cpp.o: /home/pearlsrvcs/C++/main.cpp \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qutf8stringview.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvector.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h \
@@ -1766,7 +1772,9 @@ CMakeFiles/pm_qt.dir/main.cpp.o: /home/pearlsrvcs/C++/main.cpp \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QListWidget \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPlainTextEdit \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTabWidget \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemdelegate.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemview.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
@@ -1781,6 +1789,7 @@ CMakeFiles/pm_qt.dir/main.cpp.o: /home/pearlsrvcs/C++/main.cpp \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistwidget.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qplaintextedit.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h \
@@ -2101,6 +2110,7 @@ CMakeFiles/pm_qt.dir/pm_qt_autogen/mocs_compilation.cpp.o: pm_qt_autogen/mocs_co
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVector \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20algorithm.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h \
@@ -2245,6 +2255,7 @@ CMakeFiles/pm_qt.dir/pm_qt_autogen/mocs_compilation.cpp.o: pm_qt_autogen/mocs_co
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qutf8stringview.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvector.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h \
@@ -2302,7 +2313,9 @@ CMakeFiles/pm_qt.dir/pm_qt_autogen/mocs_compilation.cpp.o: pm_qt_autogen/mocs_co
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QListWidget \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPlainTextEdit \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTabWidget \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemdelegate.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemview.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
@@ -2316,6 +2329,7 @@ CMakeFiles/pm_qt.dir/pm_qt_autogen/mocs_compilation.cpp.o: pm_qt_autogen/mocs_co
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistwidget.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qplaintextedit.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h \
@@ -2339,132 +2353,12 @@ CMakeFiles/pm_qt.dir/pm_qt_autogen/mocs_compilation.cpp.o: pm_qt_autogen/mocs_co
   /usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h \
   /usr/lib/gcc/x86_64-linux-gnu/15/include/syslimits.h
 
-pm_qt: /lib64/ld-linux-x86-64.so.2 \
-  /usr/lib/x86_64-linux-gnu/Scrt1.o \
-  /usr/lib/x86_64-linux-gnu/crti.o \
-  /usr/lib/x86_64-linux-gnu/crtn.o \
-  /usr/lib/x86_64-linux-gnu/libc.so \
-  /usr/lib/x86_64-linux-gnu/libgcc_s.so.1 \
-  /usr/lib/x86_64-linux-gnu/libm.so \
-  /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o \
-  /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o \
-  /usr/lib/gcc/x86_64-linux-gnu/15/libgcc.a \
-  /usr/lib/gcc/x86_64-linux-gnu/15/libgcc_s.so \
-  /usr/lib/gcc/x86_64-linux-gnu/15/libstdc++.so \
-  /usr/lib/x86_64-linux-gnu/libEGL.so.1 \
-  /usr/lib/x86_64-linux-gnu/libGLX.so \
-  /usr/lib/x86_64-linux-gnu/libGLdispatch.so.0 \
-  /usr/lib/x86_64-linux-gnu/libOpenGL.so \
-  /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.10.2 \
-  /usr/lib/x86_64-linux-gnu/libQt6DBus.so.6 \
-  /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.10.2 \
-  /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.10.2 \
-  /usr/lib/x86_64-linux-gnu/libX11.so.6 \
-  /usr/lib/x86_64-linux-gnu/libXau.so.6 \
-  /usr/lib/x86_64-linux-gnu/libXdmcp.so.6 \
-  /usr/lib/x86_64-linux-gnu/libatomic.so.1 \
-  /usr/lib/x86_64-linux-gnu/libb2.so.1 \
-  /usr/lib/x86_64-linux-gnu/libbrotlicommon.so.1 \
-  /usr/lib/x86_64-linux-gnu/libbrotlidec.so.1 \
-  /usr/lib/x86_64-linux-gnu/libbz2.so.1.0 \
-  /usr/lib/x86_64-linux-gnu/libc.so.6 \
-  /usr/lib/x86_64-linux-gnu/libc_nonshared.a \
-  /usr/lib/x86_64-linux-gnu/libdbus-1.so.3 \
-  /usr/lib/x86_64-linux-gnu/libdouble-conversion.so.3 \
-  /usr/lib/x86_64-linux-gnu/libexpat.so.1 \
-  /usr/lib/x86_64-linux-gnu/libfontconfig.so.1 \
-  /usr/lib/x86_64-linux-gnu/libfreetype.so.6 \
-  /usr/lib/x86_64-linux-gnu/libglib-2.0.so.0 \
-  /usr/lib/x86_64-linux-gnu/libgomp.so.1 \
-  /usr/lib/x86_64-linux-gnu/libgraphite2.so.3 \
-  /usr/lib/x86_64-linux-gnu/libharfbuzz.so.0 \
-  /usr/lib/x86_64-linux-gnu/libicudata.so.78 \
-  /usr/lib/x86_64-linux-gnu/libicui18n.so.78 \
-  /usr/lib/x86_64-linux-gnu/libicuuc.so.78 \
-  /usr/lib/x86_64-linux-gnu/libm.so.6 \
-  /usr/lib/x86_64-linux-gnu/libmd4c.so.0 \
-  /usr/lib/x86_64-linux-gnu/libmvec.so.1 \
-  /usr/lib/x86_64-linux-gnu/libpcre2-16.so.0 \
-  /usr/lib/x86_64-linux-gnu/libpcre2-8.so.0 \
-  /usr/lib/x86_64-linux-gnu/libpng16.so.16 \
-  /usr/lib/x86_64-linux-gnu/libsystemd.so.0 \
-  /usr/lib/x86_64-linux-gnu/libxcb.so.1 \
-  /usr/lib/x86_64-linux-gnu/libxkbcommon.so.0 \
-  /usr/lib/x86_64-linux-gnu/libz.so.1 \
-  /usr/lib/x86_64-linux-gnu/libzstd.so.1 \
-  CMakeFiles/pm_qt.dir/MainWindow.cpp.o \
-  CMakeFiles/pm_qt.dir/build/.qt/rcc/qrc_resources.cpp.o \
-  CMakeFiles/pm_qt.dir/main.cpp.o \
-  CMakeFiles/pm_qt.dir/pm_qt_autogen/mocs_compilation.cpp.o
-
-
-CMakeFiles/pm_qt.dir/pm_qt_autogen/mocs_compilation.cpp.o:
-
-CMakeFiles/pm_qt.dir/main.cpp.o:
-
-CMakeFiles/pm_qt.dir/MainWindow.cpp.o:
-
-/usr/lib/x86_64-linux-gnu/libxkbcommon.so.0:
-
-/usr/lib/x86_64-linux-gnu/libsystemd.so.0:
-
-/usr/lib/x86_64-linux-gnu/libpcre2-8.so.0:
-
-/usr/lib/x86_64-linux-gnu/libicuuc.so.78:
-
-/usr/lib/x86_64-linux-gnu/libicui18n.so.78:
-
-/usr/lib/x86_64-linux-gnu/libgraphite2.so.3:
-
-/usr/lib/x86_64-linux-gnu/libfreetype.so.6:
-
-/usr/lib/x86_64-linux-gnu/libexpat.so.1:
-
-/usr/lib/x86_64-linux-gnu/libdbus-1.so.3:
-
-/usr/lib/x86_64-linux-gnu/libc_nonshared.a:
-
-/usr/lib/x86_64-linux-gnu/libbrotlidec.so.1:
-
-/usr/lib/x86_64-linux-gnu/libbrotlicommon.so.1:
-
-/usr/lib/x86_64-linux-gnu/libb2.so.1:
-
-/usr/lib/x86_64-linux-gnu/libXdmcp.so.6:
-
-/usr/lib/x86_64-linux-gnu/libXau.so.6:
-
-/usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.10.2:
-
-/usr/lib/x86_64-linux-gnu/libQt6DBus.so.6:
-
-/usr/lib/x86_64-linux-gnu/libOpenGL.so:
-
-/usr/lib/x86_64-linux-gnu/libGLX.so:
-
-/usr/lib/x86_64-linux-gnu/libEGL.so.1:
-
-/usr/lib/gcc/x86_64-linux-gnu/15/libstdc++.so:
-
-/usr/lib/gcc/x86_64-linux-gnu/15/libgcc.a:
-
-/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o:
-
-/usr/lib/x86_64-linux-gnu/libm.so:
-
-/usr/lib/x86_64-linux-gnu/crtn.o:
-
-/usr/lib/x86_64-linux-gnu/libc.so:
-
-/usr/lib/x86_64-linux-gnu/Scrt1.o:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmochelpers.h:
 
 pm_qt_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication:
-
-.qt/rcc/qrc_resources.cpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h:
 
@@ -2477,8 +2371,6 @@ pm_qt_autogen/mocs_compilation.cpp:
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget:
 
@@ -2493,8 +2385,6 @@ pm_qt_autogen/mocs_compilation.cpp:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonparseerror.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonarray.h:
-
-/usr/lib/x86_64-linux-gnu/libdouble-conversion.so.3:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qfiledevice.h:
 
@@ -2514,8 +2404,6 @@ pm_qt_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/c++/15/bits/ctype_inline.h:
 
-/usr/include/x86_64-linux-gnu/c++/15/bits/ctype_base.h:
-
 /usr/include/x86_64-linux-gnu/bits/mathcalls-macros.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
@@ -2526,8 +2414,6 @@ pm_qt_autogen/mocs_compilation.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
-/usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.10.2:
-
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
 /usr/include/wctype.h:
@@ -2537,8 +2423,6 @@ pm_qt_autogen/mocs_compilation.cpp:
 /usr/include/c++/15/sstream:
 
 /usr/include/c++/15/pstl/glue_memory_defs.h:
-
-/usr/lib/x86_64-linux-gnu/libGLdispatch.so.0:
 
 /usr/include/c++/15/locale:
 
@@ -2559,8 +2443,6 @@ pm_qt_autogen/mocs_compilation.cpp:
 /usr/include/c++/15/bits/locale_facets.h:
 
 /usr/include/c++/15/bits/locale_conv.h:
-
-/lib64/ld-linux-x86-64.so.2:
 
 /usr/include/c++/15/bits/istream.tcc:
 
@@ -2609,8 +2491,6 @@ pm_qt_autogen/mocs_compilation.cpp:
 /usr/share/cmake-4.2/Modules/CMakeSystemSpecificInformation.cmake:
 
 /usr/share/cmake-4.2/Modules/CMakeLanguageInformation.cmake:
-
-/usr/lib/x86_64-linux-gnu/libmd4c.so.0:
 
 /usr/share/cmake-4.2/Modules/CMakeInitializeConfigs.cmake:
 
@@ -2688,8 +2568,6 @@ pm_qt_autogen/mocs_compilation.cpp:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake:
 
-/usr/lib/x86_64-linux-gnu/libpcre2-16.so.0:
-
 /usr/lib/x86_64-linux-gnu/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreVersionlessAliasTargets.cmake:
@@ -2725,6 +2603,12 @@ pm_qt_autogen/mocs_compilation.cpp:
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomCommonGenerationHelpers.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicPluginHelpers_v2.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicFinalizerHelpers.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicExternalProjectHelpers.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicDependencyHelpers.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
@@ -2797,8 +2681,6 @@ pm_qt_autogen/mocs_compilation.cpp:
 /usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
-/usr/lib/x86_64-linux-gnu/libicudata.so.78:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomPythonHelpers.cmake:
 
@@ -2894,8 +2776,6 @@ pm_qt_autogen/mocs_compilation.cpp:
 
 /usr/include/c++/15/tr1/hypergeometric.tcc:
 
-CMakeFiles/pm_qt.dir/build/.qt/rcc/qrc_resources.cpp.o:
-
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomCycloneDXHelpers.cmake:
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
@@ -2903,8 +2783,6 @@ CMakeFiles/pm_qt.dir/build/.qt/rcc/qrc_resources.cpp.o:
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfig.cmake:
 
 /usr/include/c++/15/tr1/bessel_function.tcc:
-
-/usr/lib/gcc/x86_64-linux-gnu/15/libgcc_s.so:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
@@ -2960,8 +2838,6 @@ CMakeFiles/pm_qt.dir/build/.qt/rcc/qrc_resources.cpp.o:
 
 CMakeFiles/4.2.3/CMakeSystem.cmake:
 
-/usr/lib/x86_64-linux-gnu/libz.so.1:
-
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qbrush.h:
 
 /usr/include/c++/15/functional:
@@ -2979,8 +2855,6 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomHelpers.cmake:
 
 /usr/include/c++/15/bits/exception_ptr.h:
-
-/usr/lib/x86_64-linux-gnu/libc.so.6:
 
 /usr/include/linux/types.h:
 
@@ -3034,12 +2908,6 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /usr/include/c++/15/bits/locale_classes.tcc:
 
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h:
-
-/usr/lib/x86_64-linux-gnu/libm.so.6:
-
 /usr/include/c++/15/bits/hash_bytes.h:
 
 /usr/include/c++/15/algorithm:
@@ -3073,8 +2941,6 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 /usr/include/c++/15/bits/stl_heap.h:
 
 /usr/include/c++/15/backward/auto_ptr.h:
-
-/usr/lib/x86_64-linux-gnu/libfontconfig.so.1:
 
 /usr/include/c++/15/bits/cxxabi_forced.h:
 
@@ -3154,8 +3020,6 @@ pm_qt_autogen/moc_predefs.h:
 
 /usr/include/c++/15/bits/unordered_set.h:
 
-/usr/lib/x86_64-linux-gnu/libgomp.so.1:
-
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputmethod.h:
 
 /usr/include/alloca.h:
@@ -3165,8 +3029,6 @@ pm_qt_autogen/moc_predefs.h:
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/c++/15/bits/align.h:
-
-/usr/lib/x86_64-linux-gnu/libpng16.so.16:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qregularexpression.h:
 
@@ -3260,6 +3122,12 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/c++/15/ctime:
 
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicGitHelpers.cmake:
+
+/usr/include/c++/15/bits/uses_allocator_args.h:
+
+/usr/include/c++/15/bits/chrono.h:
+
 /usr/include/c++/15/iomanip:
 
 /usr/include/c++/15/bits/shared_ptr.h:
@@ -3320,13 +3188,9 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qkeysequence.h:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicDependencyHelpers.cmake:
-
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgba64.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h:
 
@@ -3528,8 +3392,6 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicExternalProjectHelpers.cmake:
-
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
@@ -3538,11 +3400,9 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
-/usr/lib/x86_64-linux-gnu/libbz2.so.1.0:
-
 /usr/include/x86_64-linux-gnu/c++/15/bits/atomic_word.h:
 
-/usr/lib/x86_64-linux-gnu/libxcb.so.1:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QVector:
 
 /home/pearlsrvcs/C++/MainWindow.cpp:
 
@@ -3563,8 +3423,6 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /usr/include/x86_64-linux-gnu/c++/15/bits/c++locale.h:
 
 /usr/include/x86_64-linux-gnu/c++/15/bits/error_constants.h:
-
-/usr/lib/x86_64-linux-gnu/libzstd.so.1:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtdeprecationmarkers.h:
 
@@ -3591,8 +3449,6 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /usr/include/c++/15/vector:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/q20iterator.h:
-
-/usr/lib/x86_64-linux-gnu/libX11.so.6:
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
@@ -3633,8 +3489,6 @@ CMakeFiles/4.2.3/CMakeCXXCompiler.cmake:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevicebase.h:
-
-/usr/lib/x86_64-linux-gnu/crti.o:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayalgorithms.h:
 
@@ -3716,6 +3570,8 @@ pm_qt_autogen/EWIEGA46WW/moc_MainWindow.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h:
 
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qmalloc.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h:
@@ -3725,8 +3581,6 @@ pm_qt_autogen/EWIEGA46WW/moc_MainWindow.cpp:
 /usr/include/c++/15/memory:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qmargins.h:
-
-/usr/lib/x86_64-linux-gnu/libgcc_s.so.1:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
@@ -3747,8 +3601,6 @@ pm_qt_autogen/EWIEGA46WW/moc_MainWindow.cpp:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qoverload.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qprocessordetection.h:
-
-/usr/lib/x86_64-linux-gnu/libglib-2.0.so.0:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qrefcount.h:
 
@@ -3866,6 +3718,10 @@ pm_qt_autogen/EWIEGA46WW/moc_MainWindow.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h:
 
+/usr/include/x86_64-linux-gnu/c++/15/bits/ctype_base.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qvector.h:
+
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qfont.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h:
@@ -3890,8 +3746,6 @@ pm_qt_autogen/EWIEGA46WW/moc_MainWindow.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputdevice.h:
 
-/usr/lib/x86_64-linux-gnu/libatomic.so.1:
-
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h:
@@ -3913,8 +3767,6 @@ pm_qt_autogen/EWIEGA46WW/moc_MainWindow.cpp:
 /usr/share/cmake-4.2/Modules/FindPackageMessage.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qtgui-config.h:
-
-/usr/lib/x86_64-linux-gnu/libharfbuzz.so.0:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimezone.h:
 
@@ -3958,7 +3810,9 @@ pm_qt_autogen/EWIEGA46WW/moc_MainWindow.cpp:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistwidget.h:
 
-/usr/lib/x86_64-linux-gnu/libQt6Core.so.6.10.2:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontmetrics.h:
 
@@ -3981,8 +3835,6 @@ pm_qt_autogen/EWIEGA46WW/moc_MainWindow.cpp:
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h:
-
-/usr/lib/x86_64-linux-gnu/libmvec.so.1:
 
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
@@ -4025,11 +3877,3 @@ pm_qt_autogen/EWIEGA46WW/moc_MainWindow.cpp:
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/FindWrapAtomic.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicCMakeHelpers.cmake:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicFinalizerHelpers.cmake:
-
-/usr/include/c++/15/bits/uses_allocator_args.h:
-
-/usr/include/c++/15/bits/chrono.h:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicGitHelpers.cmake:
