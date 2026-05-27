@@ -168,6 +168,30 @@ pm_qt_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt_autogen.dir/build.make CMakeFiles/pm_qt_autogen.dir/build
 .PHONY : pm_qt_autogen/fast
 
+DoodlePadWidget.o: DoodlePadWidget.cpp.o
+.PHONY : DoodlePadWidget.o
+
+# target to build an object file
+DoodlePadWidget.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/DoodlePadWidget.cpp.o
+.PHONY : DoodlePadWidget.cpp.o
+
+DoodlePadWidget.i: DoodlePadWidget.cpp.i
+.PHONY : DoodlePadWidget.i
+
+# target to preprocess a source file
+DoodlePadWidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/DoodlePadWidget.cpp.i
+.PHONY : DoodlePadWidget.cpp.i
+
+DoodlePadWidget.s: DoodlePadWidget.cpp.s
+.PHONY : DoodlePadWidget.s
+
+# target to generate assembly for a file
+DoodlePadWidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/DoodlePadWidget.cpp.s
+.PHONY : DoodlePadWidget.cpp.s
+
 MainWindow.o: MainWindow.cpp.o
 .PHONY : MainWindow.o
 
@@ -191,6 +215,102 @@ MainWindow.s: MainWindow.cpp.s
 MainWindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/MainWindow.cpp.s
 .PHONY : MainWindow.cpp.s
+
+MinimapWidget.o: MinimapWidget.cpp.o
+.PHONY : MinimapWidget.o
+
+# target to build an object file
+MinimapWidget.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/MinimapWidget.cpp.o
+.PHONY : MinimapWidget.cpp.o
+
+MinimapWidget.i: MinimapWidget.cpp.i
+.PHONY : MinimapWidget.i
+
+# target to preprocess a source file
+MinimapWidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/MinimapWidget.cpp.i
+.PHONY : MinimapWidget.cpp.i
+
+MinimapWidget.s: MinimapWidget.cpp.s
+.PHONY : MinimapWidget.s
+
+# target to generate assembly for a file
+MinimapWidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/MinimapWidget.cpp.s
+.PHONY : MinimapWidget.cpp.s
+
+TextAdventureWidget.o: TextAdventureWidget.cpp.o
+.PHONY : TextAdventureWidget.o
+
+# target to build an object file
+TextAdventureWidget.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/TextAdventureWidget.cpp.o
+.PHONY : TextAdventureWidget.cpp.o
+
+TextAdventureWidget.i: TextAdventureWidget.cpp.i
+.PHONY : TextAdventureWidget.i
+
+# target to preprocess a source file
+TextAdventureWidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/TextAdventureWidget.cpp.i
+.PHONY : TextAdventureWidget.cpp.i
+
+TextAdventureWidget.s: TextAdventureWidget.cpp.s
+.PHONY : TextAdventureWidget.s
+
+# target to generate assembly for a file
+TextAdventureWidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/TextAdventureWidget.cpp.s
+.PHONY : TextAdventureWidget.cpp.s
+
+TriviaWidget.o: TriviaWidget.cpp.o
+.PHONY : TriviaWidget.o
+
+# target to build an object file
+TriviaWidget.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/TriviaWidget.cpp.o
+.PHONY : TriviaWidget.cpp.o
+
+TriviaWidget.i: TriviaWidget.cpp.i
+.PHONY : TriviaWidget.i
+
+# target to preprocess a source file
+TriviaWidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/TriviaWidget.cpp.i
+.PHONY : TriviaWidget.cpp.i
+
+TriviaWidget.s: TriviaWidget.cpp.s
+.PHONY : TriviaWidget.s
+
+# target to generate assembly for a file
+TriviaWidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/TriviaWidget.cpp.s
+.PHONY : TriviaWidget.cpp.s
+
+TutorialDialog.o: TutorialDialog.cpp.o
+.PHONY : TutorialDialog.o
+
+# target to build an object file
+TutorialDialog.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/TutorialDialog.cpp.o
+.PHONY : TutorialDialog.cpp.o
+
+TutorialDialog.i: TutorialDialog.cpp.i
+.PHONY : TutorialDialog.i
+
+# target to preprocess a source file
+TutorialDialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/TutorialDialog.cpp.i
+.PHONY : TutorialDialog.cpp.i
+
+TutorialDialog.s: TutorialDialog.cpp.s
+.PHONY : TutorialDialog.s
+
+# target to generate assembly for a file
+TutorialDialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/TutorialDialog.cpp.s
+.PHONY : TutorialDialog.cpp.s
 
 build/.qt/rcc/qrc_resources.o: build/.qt/rcc/qrc_resources.cpp.o
 .PHONY : build/.qt/rcc/qrc_resources.o
@@ -276,9 +396,24 @@ help:
 	@echo "... pm_qt_autogen_timestamp_deps"
 	@echo "... pm_qt_other_files"
 	@echo "... pm_qt"
+	@echo "... DoodlePadWidget.o"
+	@echo "... DoodlePadWidget.i"
+	@echo "... DoodlePadWidget.s"
 	@echo "... MainWindow.o"
 	@echo "... MainWindow.i"
 	@echo "... MainWindow.s"
+	@echo "... MinimapWidget.o"
+	@echo "... MinimapWidget.i"
+	@echo "... MinimapWidget.s"
+	@echo "... TextAdventureWidget.o"
+	@echo "... TextAdventureWidget.i"
+	@echo "... TextAdventureWidget.s"
+	@echo "... TriviaWidget.o"
+	@echo "... TriviaWidget.i"
+	@echo "... TriviaWidget.s"
+	@echo "... TutorialDialog.o"
+	@echo "... TutorialDialog.i"
+	@echo "... TutorialDialog.s"
 	@echo "... build/.qt/rcc/qrc_resources.o"
 	@echo "... build/.qt/rcc/qrc_resources.i"
 	@echo "... build/.qt/rcc/qrc_resources.s"

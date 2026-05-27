@@ -9,7 +9,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "pm_qt_autogen/timestamp" "custom" "pm_qt_autogen/deps"
+  "/home/pearlsrvcs/C++/DoodlePadWidget.cpp" "CMakeFiles/pm_qt.dir/DoodlePadWidget.cpp.o" "gcc" "CMakeFiles/pm_qt.dir/DoodlePadWidget.cpp.o.d"
   "/home/pearlsrvcs/C++/MainWindow.cpp" "CMakeFiles/pm_qt.dir/MainWindow.cpp.o" "gcc" "CMakeFiles/pm_qt.dir/MainWindow.cpp.o.d"
+  "/home/pearlsrvcs/C++/MinimapWidget.cpp" "CMakeFiles/pm_qt.dir/MinimapWidget.cpp.o" "gcc" "CMakeFiles/pm_qt.dir/MinimapWidget.cpp.o.d"
+  "/home/pearlsrvcs/C++/TextAdventureWidget.cpp" "CMakeFiles/pm_qt.dir/TextAdventureWidget.cpp.o" "gcc" "CMakeFiles/pm_qt.dir/TextAdventureWidget.cpp.o.d"
+  "/home/pearlsrvcs/C++/TriviaWidget.cpp" "CMakeFiles/pm_qt.dir/TriviaWidget.cpp.o" "gcc" "CMakeFiles/pm_qt.dir/TriviaWidget.cpp.o.d"
+  "/home/pearlsrvcs/C++/TutorialDialog.cpp" "CMakeFiles/pm_qt.dir/TutorialDialog.cpp.o" "gcc" "CMakeFiles/pm_qt.dir/TutorialDialog.cpp.o.d"
   "/home/pearlsrvcs/C++/build/.qt/rcc/qrc_resources.cpp" "CMakeFiles/pm_qt.dir/build/.qt/rcc/qrc_resources.cpp.o" "gcc" "CMakeFiles/pm_qt.dir/build/.qt/rcc/qrc_resources.cpp.o.d"
   "/home/pearlsrvcs/C++/main.cpp" "CMakeFiles/pm_qt.dir/main.cpp.o" "gcc" "CMakeFiles/pm_qt.dir/main.cpp.o.d"
   "/home/pearlsrvcs/C++/build/pm_qt_autogen/mocs_compilation.cpp" "CMakeFiles/pm_qt.dir/pm_qt_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/pm_qt.dir/pm_qt_autogen/mocs_compilation.cpp.o.d"

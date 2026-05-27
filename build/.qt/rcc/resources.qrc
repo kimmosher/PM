@@ -1,6 +1,20 @@
 <RCC>
   <qresource prefix="/">
     <file alias="icons/pm_icon.png">/home/pearlsrvcs/C++/icons/pm_icon.png</file>
+    <file alias="icons/cabin.png">/home/pearlsrvcs/C++/icons/cabin.png</file>
+    <file alias="icons/forest.png">/home/pearlsrvcs/C++/icons/forest.png</file>
+    <file alias="icons/mountain.png">/home/pearlsrvcs/C++/icons/mountain.png</file>
+    <file alias="icons/cave.png">/home/pearlsrvcs/C++/icons/cave.png</file>
+    <file alias="icons/ruins.png">/home/pearlsrvcs/C++/icons/ruins.png</file>
+    <file alias="icons/village.png">/home/pearlsrvcs/C++/icons/village.png</file>
+    <file alias="icons/bridge.png">/home/pearlsrvcs/C++/icons/bridge.png</file>
+    <file alias="icons/lake.png">/home/pearlsrvcs/C++/icons/lake.png</file>
+    <file alias="icons/path1.png">/home/pearlsrvcs/C++/icons/path1.png</file>
+    <file alias="icons/gate.png">/home/pearlsrvcs/C++/icons/gate.png</file>
+    <file alias="icons/trail.png">/home/pearlsrvcs/C++/icons/trail.png</file>
+    <file alias="icons/river.png">/home/pearlsrvcs/C++/icons/river.png</file>
+    <file alias="icons/clearing.png">/home/pearlsrvcs/C++/icons/clearing.png</file>
+    <file alias="icons/deepruins.png">/home/pearlsrvcs/C++/icons/deepruins.png</file>
   </qresource>
 </RCC>
 

@@ -225,6 +225,15 @@
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkConfigVersionImpl.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkConfig.cmake",
+		"/usr/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkDependencies.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkTargets.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkTargets-none.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkAdditionalTargetInfo.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkVersionlessAliasTargets.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in"
 	],
 	"CMAKE_SOURCE_DIR" : "/home/pearlsrvcs/C++",
@@ -234,16 +243,53 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/pearlsrvcs/C++/DoodlePadWidget.hpp",
+			"MU",
+			"EWIEGA46WW/moc_DoodlePadWidget.cpp",
+			null
+		],
+		[
 			"/home/pearlsrvcs/C++/MainWindow.hpp",
 			"MU",
 			"EWIEGA46WW/moc_MainWindow.cpp",
+			null
+		],
+		[
+			"/home/pearlsrvcs/C++/MinimapWidget.hpp",
+			"MU",
+			"EWIEGA46WW/moc_MinimapWidget.cpp",
+			null
+		],
+		[
+			"/home/pearlsrvcs/C++/TextAdventureWidget.hpp",
+			"MU",
+			"EWIEGA46WW/moc_TextAdventureWidget.cpp",
+			null
+		],
+		[
+			"/home/pearlsrvcs/C++/TriviaWidget.hpp",
+			"MU",
+			"EWIEGA46WW/moc_TriviaWidget.cpp",
+			null
+		],
+		[
+			"/home/pearlsrvcs/C++/TutorialDialog.hpp",
+			"MU",
+			"EWIEGA46WW/moc_TutorialDialog.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "/home/pearlsrvcs/C++/build/pm_qt_autogen/include",
 	"MOC_COMPILATION_FILE" : "/home/pearlsrvcs/C++/build/pm_qt_autogen/mocs_compilation.cpp",
-	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_NO_DEBUG", "QT_WIDGETS_LIB" ],
+	"MOC_DEFINITIONS" : 
+	[
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_NETWORK_LIB",
+		"QT_NO_DEBUG",
+		"QT_WIDGETS_LIB"
+	],
 	"MOC_DEPEND_FILTERS" : 
 	[
 		[
@@ -258,6 +304,7 @@
 		"/usr/include/x86_64-linux-gnu/qt6/QtCore",
 		"/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++",
 		"/usr/include/x86_64-linux-gnu/qt6/QtGui",
+		"/usr/include/x86_64-linux-gnu/qt6/QtNetwork",
 		"/usr/include",
 		"/usr/include/c++/15",
 		"/usr/include/x86_64-linux-gnu/c++/15",
@@ -299,7 +346,12 @@
 	"SETTINGS_FILE" : "/home/pearlsrvcs/C++/build/CMakeFiles/pm_qt_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "/home/pearlsrvcs/C++/DoodlePadWidget.cpp", "MU", null ],
 		[ "/home/pearlsrvcs/C++/MainWindow.cpp", "MU", null ],
+		[ "/home/pearlsrvcs/C++/MinimapWidget.cpp", "MU", null ],
+		[ "/home/pearlsrvcs/C++/TextAdventureWidget.cpp", "MU", null ],
+		[ "/home/pearlsrvcs/C++/TriviaWidget.cpp", "MU", null ],
+		[ "/home/pearlsrvcs/C++/TutorialDialog.cpp", "MU", null ],
 		[ "/home/pearlsrvcs/C++/main.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],

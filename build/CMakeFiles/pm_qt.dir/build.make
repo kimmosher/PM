@@ -70,6 +70,20 @@ include CMakeFiles/pm_qt.dir/progress.make
 include CMakeFiles/pm_qt.dir/flags.make
 
 .qt/rcc/qrc_resources.cpp: /home/pearlsrvcs/C++/icons/pm_icon.png
+.qt/rcc/qrc_resources.cpp: /home/pearlsrvcs/C++/icons/cabin.png
+.qt/rcc/qrc_resources.cpp: /home/pearlsrvcs/C++/icons/forest.png
+.qt/rcc/qrc_resources.cpp: /home/pearlsrvcs/C++/icons/mountain.png
+.qt/rcc/qrc_resources.cpp: /home/pearlsrvcs/C++/icons/cave.png
+.qt/rcc/qrc_resources.cpp: /home/pearlsrvcs/C++/icons/ruins.png
+.qt/rcc/qrc_resources.cpp: /home/pearlsrvcs/C++/icons/village.png
+.qt/rcc/qrc_resources.cpp: /home/pearlsrvcs/C++/icons/bridge.png
+.qt/rcc/qrc_resources.cpp: /home/pearlsrvcs/C++/icons/lake.png
+.qt/rcc/qrc_resources.cpp: /home/pearlsrvcs/C++/icons/path1.png
+.qt/rcc/qrc_resources.cpp: /home/pearlsrvcs/C++/icons/gate.png
+.qt/rcc/qrc_resources.cpp: /home/pearlsrvcs/C++/icons/trail.png
+.qt/rcc/qrc_resources.cpp: /home/pearlsrvcs/C++/icons/river.png
+.qt/rcc/qrc_resources.cpp: /home/pearlsrvcs/C++/icons/clearing.png
+.qt/rcc/qrc_resources.cpp: /home/pearlsrvcs/C++/icons/deepruins.png
 .qt/rcc/qrc_resources.cpp: .qt/rcc/resources.qrc
 .qt/rcc/qrc_resources.cpp: /usr/lib/qt6/libexec/rcc
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pearlsrvcs/C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Running rcc for resource resources"
@@ -127,10 +141,80 @@ CMakeFiles/pm_qt.dir/MainWindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pm_qt.dir/MainWindow.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pearlsrvcs/C++/MainWindow.cpp -o CMakeFiles/pm_qt.dir/MainWindow.cpp.s
 
+CMakeFiles/pm_qt.dir/TextAdventureWidget.cpp.o: CMakeFiles/pm_qt.dir/flags.make
+CMakeFiles/pm_qt.dir/TextAdventureWidget.cpp.o: /home/pearlsrvcs/C++/TextAdventureWidget.cpp
+CMakeFiles/pm_qt.dir/TextAdventureWidget.cpp.o: CMakeFiles/pm_qt.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pearlsrvcs/C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/pm_qt.dir/TextAdventureWidget.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pm_qt.dir/TextAdventureWidget.cpp.o -MF CMakeFiles/pm_qt.dir/TextAdventureWidget.cpp.o.d -o CMakeFiles/pm_qt.dir/TextAdventureWidget.cpp.o -c /home/pearlsrvcs/C++/TextAdventureWidget.cpp
+
+CMakeFiles/pm_qt.dir/TextAdventureWidget.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pm_qt.dir/TextAdventureWidget.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pearlsrvcs/C++/TextAdventureWidget.cpp > CMakeFiles/pm_qt.dir/TextAdventureWidget.cpp.i
+
+CMakeFiles/pm_qt.dir/TextAdventureWidget.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pm_qt.dir/TextAdventureWidget.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pearlsrvcs/C++/TextAdventureWidget.cpp -o CMakeFiles/pm_qt.dir/TextAdventureWidget.cpp.s
+
+CMakeFiles/pm_qt.dir/TutorialDialog.cpp.o: CMakeFiles/pm_qt.dir/flags.make
+CMakeFiles/pm_qt.dir/TutorialDialog.cpp.o: /home/pearlsrvcs/C++/TutorialDialog.cpp
+CMakeFiles/pm_qt.dir/TutorialDialog.cpp.o: CMakeFiles/pm_qt.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pearlsrvcs/C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/pm_qt.dir/TutorialDialog.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pm_qt.dir/TutorialDialog.cpp.o -MF CMakeFiles/pm_qt.dir/TutorialDialog.cpp.o.d -o CMakeFiles/pm_qt.dir/TutorialDialog.cpp.o -c /home/pearlsrvcs/C++/TutorialDialog.cpp
+
+CMakeFiles/pm_qt.dir/TutorialDialog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pm_qt.dir/TutorialDialog.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pearlsrvcs/C++/TutorialDialog.cpp > CMakeFiles/pm_qt.dir/TutorialDialog.cpp.i
+
+CMakeFiles/pm_qt.dir/TutorialDialog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pm_qt.dir/TutorialDialog.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pearlsrvcs/C++/TutorialDialog.cpp -o CMakeFiles/pm_qt.dir/TutorialDialog.cpp.s
+
+CMakeFiles/pm_qt.dir/TriviaWidget.cpp.o: CMakeFiles/pm_qt.dir/flags.make
+CMakeFiles/pm_qt.dir/TriviaWidget.cpp.o: /home/pearlsrvcs/C++/TriviaWidget.cpp
+CMakeFiles/pm_qt.dir/TriviaWidget.cpp.o: CMakeFiles/pm_qt.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pearlsrvcs/C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/pm_qt.dir/TriviaWidget.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pm_qt.dir/TriviaWidget.cpp.o -MF CMakeFiles/pm_qt.dir/TriviaWidget.cpp.o.d -o CMakeFiles/pm_qt.dir/TriviaWidget.cpp.o -c /home/pearlsrvcs/C++/TriviaWidget.cpp
+
+CMakeFiles/pm_qt.dir/TriviaWidget.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pm_qt.dir/TriviaWidget.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pearlsrvcs/C++/TriviaWidget.cpp > CMakeFiles/pm_qt.dir/TriviaWidget.cpp.i
+
+CMakeFiles/pm_qt.dir/TriviaWidget.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pm_qt.dir/TriviaWidget.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pearlsrvcs/C++/TriviaWidget.cpp -o CMakeFiles/pm_qt.dir/TriviaWidget.cpp.s
+
+CMakeFiles/pm_qt.dir/MinimapWidget.cpp.o: CMakeFiles/pm_qt.dir/flags.make
+CMakeFiles/pm_qt.dir/MinimapWidget.cpp.o: /home/pearlsrvcs/C++/MinimapWidget.cpp
+CMakeFiles/pm_qt.dir/MinimapWidget.cpp.o: CMakeFiles/pm_qt.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pearlsrvcs/C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/pm_qt.dir/MinimapWidget.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pm_qt.dir/MinimapWidget.cpp.o -MF CMakeFiles/pm_qt.dir/MinimapWidget.cpp.o.d -o CMakeFiles/pm_qt.dir/MinimapWidget.cpp.o -c /home/pearlsrvcs/C++/MinimapWidget.cpp
+
+CMakeFiles/pm_qt.dir/MinimapWidget.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pm_qt.dir/MinimapWidget.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pearlsrvcs/C++/MinimapWidget.cpp > CMakeFiles/pm_qt.dir/MinimapWidget.cpp.i
+
+CMakeFiles/pm_qt.dir/MinimapWidget.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pm_qt.dir/MinimapWidget.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pearlsrvcs/C++/MinimapWidget.cpp -o CMakeFiles/pm_qt.dir/MinimapWidget.cpp.s
+
+CMakeFiles/pm_qt.dir/DoodlePadWidget.cpp.o: CMakeFiles/pm_qt.dir/flags.make
+CMakeFiles/pm_qt.dir/DoodlePadWidget.cpp.o: /home/pearlsrvcs/C++/DoodlePadWidget.cpp
+CMakeFiles/pm_qt.dir/DoodlePadWidget.cpp.o: CMakeFiles/pm_qt.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pearlsrvcs/C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/pm_qt.dir/DoodlePadWidget.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pm_qt.dir/DoodlePadWidget.cpp.o -MF CMakeFiles/pm_qt.dir/DoodlePadWidget.cpp.o.d -o CMakeFiles/pm_qt.dir/DoodlePadWidget.cpp.o -c /home/pearlsrvcs/C++/DoodlePadWidget.cpp
+
+CMakeFiles/pm_qt.dir/DoodlePadWidget.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pm_qt.dir/DoodlePadWidget.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pearlsrvcs/C++/DoodlePadWidget.cpp > CMakeFiles/pm_qt.dir/DoodlePadWidget.cpp.i
+
+CMakeFiles/pm_qt.dir/DoodlePadWidget.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pm_qt.dir/DoodlePadWidget.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pearlsrvcs/C++/DoodlePadWidget.cpp -o CMakeFiles/pm_qt.dir/DoodlePadWidget.cpp.s
+
 CMakeFiles/pm_qt.dir/build/.qt/rcc/qrc_resources.cpp.o: CMakeFiles/pm_qt.dir/flags.make
 CMakeFiles/pm_qt.dir/build/.qt/rcc/qrc_resources.cpp.o: .qt/rcc/qrc_resources.cpp
 CMakeFiles/pm_qt.dir/build/.qt/rcc/qrc_resources.cpp.o: CMakeFiles/pm_qt.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pearlsrvcs/C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/pm_qt.dir/build/.qt/rcc/qrc_resources.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/pearlsrvcs/C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/pm_qt.dir/build/.qt/rcc/qrc_resources.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pm_qt.dir/build/.qt/rcc/qrc_resources.cpp.o -MF CMakeFiles/pm_qt.dir/build/.qt/rcc/qrc_resources.cpp.o.d -o CMakeFiles/pm_qt.dir/build/.qt/rcc/qrc_resources.cpp.o -c /home/pearlsrvcs/C++/build/.qt/rcc/qrc_resources.cpp
 
 CMakeFiles/pm_qt.dir/build/.qt/rcc/qrc_resources.cpp.i: cmake_force
@@ -146,6 +230,11 @@ pm_qt_OBJECTS = \
 "CMakeFiles/pm_qt.dir/pm_qt_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/pm_qt.dir/main.cpp.o" \
 "CMakeFiles/pm_qt.dir/MainWindow.cpp.o" \
+"CMakeFiles/pm_qt.dir/TextAdventureWidget.cpp.o" \
+"CMakeFiles/pm_qt.dir/TutorialDialog.cpp.o" \
+"CMakeFiles/pm_qt.dir/TriviaWidget.cpp.o" \
+"CMakeFiles/pm_qt.dir/MinimapWidget.cpp.o" \
+"CMakeFiles/pm_qt.dir/DoodlePadWidget.cpp.o" \
 "CMakeFiles/pm_qt.dir/build/.qt/rcc/qrc_resources.cpp.o"
 
 # External object files for target pm_qt
@@ -154,16 +243,22 @@ pm_qt_EXTERNAL_OBJECTS =
 pm_qt: CMakeFiles/pm_qt.dir/pm_qt_autogen/mocs_compilation.cpp.o
 pm_qt: CMakeFiles/pm_qt.dir/main.cpp.o
 pm_qt: CMakeFiles/pm_qt.dir/MainWindow.cpp.o
+pm_qt: CMakeFiles/pm_qt.dir/TextAdventureWidget.cpp.o
+pm_qt: CMakeFiles/pm_qt.dir/TutorialDialog.cpp.o
+pm_qt: CMakeFiles/pm_qt.dir/TriviaWidget.cpp.o
+pm_qt: CMakeFiles/pm_qt.dir/MinimapWidget.cpp.o
+pm_qt: CMakeFiles/pm_qt.dir/DoodlePadWidget.cpp.o
 pm_qt: CMakeFiles/pm_qt.dir/build/.qt/rcc/qrc_resources.cpp.o
 pm_qt: CMakeFiles/pm_qt.dir/build.make
 pm_qt: CMakeFiles/pm_qt.dir/compiler_depend.ts
 pm_qt: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.10.2
+pm_qt: /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.10.2
 pm_qt: /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.10.2
 pm_qt: /usr/lib/x86_64-linux-gnu/libGLX.so
 pm_qt: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 pm_qt: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.10.2
 pm_qt: CMakeFiles/pm_qt.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pearlsrvcs/C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable pm_qt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/pearlsrvcs/C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable pm_qt"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pm_qt.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

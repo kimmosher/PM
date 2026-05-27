@@ -3,8 +3,18 @@
 
 /home/pearlsrvcs/C++/build/pm_qt_autogen/timestamp
  /home/pearlsrvcs/C++/CMakeLists.txt
+ /home/pearlsrvcs/C++/DoodlePadWidget.cpp
+ /home/pearlsrvcs/C++/DoodlePadWidget.hpp
  /home/pearlsrvcs/C++/MainWindow.cpp
  /home/pearlsrvcs/C++/MainWindow.hpp
+ /home/pearlsrvcs/C++/MinimapWidget.cpp
+ /home/pearlsrvcs/C++/MinimapWidget.hpp
+ /home/pearlsrvcs/C++/TextAdventureWidget.cpp
+ /home/pearlsrvcs/C++/TextAdventureWidget.hpp
+ /home/pearlsrvcs/C++/TriviaWidget.cpp
+ /home/pearlsrvcs/C++/TriviaWidget.hpp
+ /home/pearlsrvcs/C++/TutorialDialog.cpp
+ /home/pearlsrvcs/C++/TutorialDialog.hpp
  /home/pearlsrvcs/C++/build/CMakeFiles/4.2.3/CMakeCXXCompiler.cmake
  /home/pearlsrvcs/C++/build/CMakeFiles/4.2.3/CMakeSystem.cmake
  /home/pearlsrvcs/C++/build/pm_qt_autogen/moc_predefs.h
@@ -67,6 +77,8 @@
  /usr/include/c++/15/bits/postypes.h
  /usr/include/c++/15/bits/predefined_ops.h
  /usr/include/c++/15/bits/ptr_traits.h
+ /usr/include/c++/15/bits/random.h
+ /usr/include/c++/15/bits/random.tcc
  /usr/include/c++/15/bits/range_access.h
  /usr/include/c++/15/bits/refwrap.h
  /usr/include/c++/15/bits/requires_hosted.h
@@ -152,6 +164,7 @@
  /usr/include/c++/15/pstl/execution_defs.h
  /usr/include/c++/15/pstl/glue_numeric_defs.h
  /usr/include/c++/15/pstl/pstl_config.h
+ /usr/include/c++/15/random
  /usr/include/c++/15/ratio
  /usr/include/c++/15/set
  /usr/include/c++/15/stdexcept
@@ -281,14 +294,28 @@
  /usr/include/x86_64-linux-gnu/c++/15/bits/error_constants.h
  /usr/include/x86_64-linux-gnu/c++/15/bits/gthr-default.h
  /usr/include/x86_64-linux-gnu/c++/15/bits/gthr.h
+ /usr/include/x86_64-linux-gnu/c++/15/bits/opt_random.h
  /usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h
  /usr/include/x86_64-linux-gnu/gnu/stubs.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QFlags
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QJsonArray
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QList
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QMap
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QMetaType
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QPoint
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QRandomGenerator
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QSet
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QSharedDataPointer
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QStack
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QString
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QUrl
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVector
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h
@@ -298,6 +325,7 @@
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q20utility.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q23type_traits.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q23utility.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q26numeric.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstracteventdispatcher.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qalgorithms.h
@@ -317,6 +345,8 @@
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearraylist.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayview.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcborcommon.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcborvalue.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qchar.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcheckedint_impl.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcompare.h
@@ -332,6 +362,7 @@
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcryptographichash.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdarwinhelpers.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatastream.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h
@@ -355,6 +386,10 @@
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qitemselectionmodel.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterable.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterator.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonarray.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsondocument.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonparseerror.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonvalue.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlatin1stringview.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qline.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h
@@ -365,6 +400,7 @@
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmargins.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmath.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetacontainer.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetaobject.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetatype.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qminmax.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qnamespace.h
@@ -378,6 +414,7 @@
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qpair.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qprocessordetection.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qrandom.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qrefcount.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qregularexpression.h
@@ -390,6 +427,7 @@
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer_impl.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsize.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qspan.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstack.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstdlibdetection.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringalgorithms.h
@@ -429,12 +467,14 @@
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtypes.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qutf8stringview.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/quuid.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvector.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QPixmap
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qabstracttextdocumentlayout.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h
@@ -483,23 +523,52 @@
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qvector2d.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qvectornd.h
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h
+ /usr/include/x86_64-linux-gnu/qt6/QtNetwork/QNetworkAccessManager
+ /usr/include/x86_64-linux-gnu/qt6/QtNetwork/QSslConfiguration
+ /usr/include/x86_64-linux-gnu/qt6/QtNetwork/QSslPreSharedKeyAuthenticator
+ /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qabstractsocket.h
+ /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qhostaddress.h
+ /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qhttpheaders.h
+ /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qnetworkaccessmanager.h
+ /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qnetworkrequest.h
+ /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qssl.h
+ /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qsslcertificate.h
+ /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qsslconfiguration.h
+ /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qsslerror.h
+ /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qsslpresharedkeyauthenticator.h
+ /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qsslsocket.h
+ /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qtcpsocket.h
+ /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qtnetwork-config.h
+ /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qtnetworkexports.h
+ /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qtnetworkglobal.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCalendarWidget
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QComboBox
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDateEdit
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDialog
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLineEdit
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QListWidget
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPlainTextEdit
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTabWidget
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTextEdit
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemdelegate.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemview.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcalendarwidget.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcombobox.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdatetimeedit.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlineedit.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistview.h
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistwidget.h
@@ -623,6 +692,14 @@
  /usr/lib/x86_64-linux-gnu/cmake/Qt6GuiTools/Qt6GuiToolsTargets-none.cmake
  /usr/lib/x86_64-linux-gnu/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake
  /usr/lib/x86_64-linux-gnu/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake
+ /usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkAdditionalTargetInfo.cmake
+ /usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkConfig.cmake
+ /usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkConfigVersion.cmake
+ /usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkConfigVersionImpl.cmake
+ /usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkDependencies.cmake
+ /usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkTargets-none.cmake
+ /usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkTargets.cmake
+ /usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkVersionlessAliasTargets.cmake
  /usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake
  /usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake
  /usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake
