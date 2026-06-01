@@ -1,5 +1,10 @@
 /home/pearlsrvcs/C++/build/pm_qt_autogen/EWIEGA46WW/moc_MainWindow.cpp: /home/pearlsrvcs/C++/MainWindow.hpp \
   /home/pearlsrvcs/C++/build/pm_qt_autogen/moc_predefs.h \
+  /home/pearlsrvcs/C++/Card.h \
+  /home/pearlsrvcs/C++/DoodlePadWidget.hpp \
+  /home/pearlsrvcs/C++/Pile.h \
+  /home/pearlsrvcs/C++/SolitaireGame.h \
+  /home/pearlsrvcs/C++/SolitaireWidget.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
@@ -30,6 +35,7 @@
   /usr/include/c++/15/bits/cpp_type_traits.h \
   /usr/include/c++/15/bits/cxxabi_forced.h \
   /usr/include/c++/15/bits/cxxabi_init_exception.h \
+  /usr/include/c++/15/bits/deque.tcc \
   /usr/include/c++/15/bits/enable_special_members.h \
   /usr/include/c++/15/bits/erase_if.h \
   /usr/include/c++/15/bits/exception.h \
@@ -57,6 +63,8 @@
   /usr/include/c++/15/bits/postypes.h \
   /usr/include/c++/15/bits/predefined_ops.h \
   /usr/include/c++/15/bits/ptr_traits.h \
+  /usr/include/c++/15/bits/random.h \
+  /usr/include/c++/15/bits/random.tcc \
   /usr/include/c++/15/bits/range_access.h \
   /usr/include/c++/15/bits/refwrap.h \
   /usr/include/c++/15/bits/requires_hosted.h \
@@ -70,6 +78,7 @@
   /usr/include/c++/15/bits/stl_algobase.h \
   /usr/include/c++/15/bits/stl_bvector.h \
   /usr/include/c++/15/bits/stl_construct.h \
+  /usr/include/c++/15/bits/stl_deque.h \
   /usr/include/c++/15/bits/stl_function.h \
   /usr/include/c++/15/bits/stl_heap.h \
   /usr/include/c++/15/bits/stl_iterator.h \
@@ -84,6 +93,7 @@
   /usr/include/c++/15/bits/stl_raw_storage_iter.h \
   /usr/include/c++/15/bits/stl_relops.h \
   /usr/include/c++/15/bits/stl_set.h \
+  /usr/include/c++/15/bits/stl_stack.h \
   /usr/include/c++/15/bits/stl_tempbuf.h \
   /usr/include/c++/15/bits/stl_tree.h \
   /usr/include/c++/15/bits/stl_uninitialized.h \
@@ -120,6 +130,7 @@
   /usr/include/c++/15/cwchar \
   /usr/include/c++/15/debug/assertions.h \
   /usr/include/c++/15/debug/debug.h \
+  /usr/include/c++/15/deque \
   /usr/include/c++/15/exception \
   /usr/include/c++/15/ext/aligned_buffer.h \
   /usr/include/c++/15/ext/alloc_traits.h \
@@ -142,8 +153,10 @@
   /usr/include/c++/15/pstl/execution_defs.h \
   /usr/include/c++/15/pstl/glue_numeric_defs.h \
   /usr/include/c++/15/pstl/pstl_config.h \
+  /usr/include/c++/15/random \
   /usr/include/c++/15/ratio \
   /usr/include/c++/15/set \
+  /usr/include/c++/15/stack \
   /usr/include/c++/15/stdexcept \
   /usr/include/c++/15/streambuf \
   /usr/include/c++/15/string \
@@ -271,14 +284,19 @@
   /usr/include/x86_64-linux-gnu/c++/15/bits/error_constants.h \
   /usr/include/x86_64-linux-gnu/c++/15/bits/gthr-default.h \
   /usr/include/x86_64-linux-gnu/c++/15/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/15/bits/opt_random.h \
   /usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QPoint \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QStack \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QVector \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h \
@@ -380,6 +398,7 @@
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer_impl.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qsize.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qspan.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstack.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qstdlibdetection.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringalgorithms.h \
@@ -406,6 +425,7 @@
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtenvironmentvariables.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtformat_impl.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimezone.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qtnoop.h \
@@ -425,6 +445,8 @@
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QColor \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPixmap \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qabstracttextdocumentlayout.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h \
@@ -474,6 +496,7 @@
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qvectornd.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCalendarWidget \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QComboBox \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDateEdit \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLineEdit \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QListWidget \
@@ -481,6 +504,7 @@
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPlainTextEdit \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTabWidget \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemdelegate.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemview.h \
@@ -488,6 +512,7 @@
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcalendarwidget.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcombobox.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdatetimeedit.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlineedit.h \
@@ -512,6 +537,15 @@
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/lib/gcc/x86_64-linux-gnu/15/include/stdarg.h \
-  /usr/lib/gcc/x86_64-linux-gnu/15/include/stdbool.h \
-  /usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h
+  /usr/lib/llvm-21/lib/clang/21/include/__stdarg___gnuc_va_list.h \
+  /usr/lib/llvm-21/lib/clang/21/include/__stddef_header_macro.h \
+  /usr/lib/llvm-21/lib/clang/21/include/__stddef_max_align_t.h \
+  /usr/lib/llvm-21/lib/clang/21/include/__stddef_null.h \
+  /usr/lib/llvm-21/lib/clang/21/include/__stddef_nullptr_t.h \
+  /usr/lib/llvm-21/lib/clang/21/include/__stddef_offsetof.h \
+  /usr/lib/llvm-21/lib/clang/21/include/__stddef_ptrdiff_t.h \
+  /usr/lib/llvm-21/lib/clang/21/include/__stddef_size_t.h \
+  /usr/lib/llvm-21/lib/clang/21/include/__stddef_wchar_t.h \
+  /usr/lib/llvm-21/lib/clang/21/include/stdarg.h \
+  /usr/lib/llvm-21/lib/clang/21/include/stdbool.h \
+  /usr/lib/llvm-21/lib/clang/21/include/stddef.h

@@ -18,9 +18,12 @@
 		"/usr/share/cmake-4.2/Modules/Platform/UnixPaths.cmake",
 		"/usr/share/cmake-4.2/Modules/CMakeCXXInformation.cmake",
 		"/usr/share/cmake-4.2/Modules/CMakeLanguageInformation.cmake",
-		"/usr/share/cmake-4.2/Modules/Compiler/GNU-CXX.cmake",
+		"/usr/share/cmake-4.2/Modules/Compiler/Clang-CXX.cmake",
+		"/usr/share/cmake-4.2/Modules/Compiler/Clang.cmake",
+		"/usr/share/cmake-4.2/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
 		"/usr/share/cmake-4.2/Modules/Compiler/GNU.cmake",
 		"/usr/share/cmake-4.2/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
+		"/usr/share/cmake-4.2/Modules/Platform/Linux-Clang-CXX.cmake",
 		"/usr/share/cmake-4.2/Modules/Platform/Linux-GNU-CXX.cmake",
 		"/usr/share/cmake-4.2/Modules/Platform/Linux-GNU.cmake",
 		"/usr/share/cmake-4.2/Modules/CMakeCommonLanguageInclude.cmake",
@@ -234,7 +237,7 @@
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkTargets-none.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkAdditionalTargetInfo.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkVersionlessAliasTargets.cmake",
-		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in"
+		"/home/pearlsrvcs/C++/resources.qrc"
 	],
 	"CMAKE_SOURCE_DIR" : "/home/pearlsrvcs/C++",
 	"CROSS_CONFIG" : false,
@@ -242,6 +245,7 @@
 	"DEP_FILE_RULE_NAME" : "pm_qt_autogen/timestamp",
 	"HEADERS" : 
 	[
+		[ "/home/pearlsrvcs/C++/Card.h", "MU", "EWIEGA46WW/moc_Card.cpp", null ],
 		[
 			"/home/pearlsrvcs/C++/DoodlePadWidget.hpp",
 			"MU",
@@ -258,6 +262,19 @@
 			"/home/pearlsrvcs/C++/MinimapWidget.hpp",
 			"MU",
 			"EWIEGA46WW/moc_MinimapWidget.cpp",
+			null
+		],
+		[ "/home/pearlsrvcs/C++/Pile.h", "MU", "EWIEGA46WW/moc_Pile.cpp", null ],
+		[
+			"/home/pearlsrvcs/C++/SolitaireGame.h",
+			"MU",
+			"EWIEGA46WW/moc_SolitaireGame.cpp",
+			null
+		],
+		[
+			"/home/pearlsrvcs/C++/SolitaireWidget.h",
+			"MU",
+			"EWIEGA46WW/moc_SolitaireWidget.cpp",
 			null
 		],
 		[
@@ -282,14 +299,7 @@
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "/home/pearlsrvcs/C++/build/pm_qt_autogen/include",
 	"MOC_COMPILATION_FILE" : "/home/pearlsrvcs/C++/build/pm_qt_autogen/mocs_compilation.cpp",
-	"MOC_DEFINITIONS" : 
-	[
-		"QT_CORE_LIB",
-		"QT_GUI_LIB",
-		"QT_NETWORK_LIB",
-		"QT_NO_DEBUG",
-		"QT_WIDGETS_LIB"
-	],
+	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_NETWORK_LIB", "QT_WIDGETS_LIB" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
 		[
@@ -309,7 +319,7 @@
 		"/usr/include/c++/15",
 		"/usr/include/x86_64-linux-gnu/c++/15",
 		"/usr/include/c++/15/backward",
-		"/usr/lib/gcc/x86_64-linux-gnu/15/include",
+		"/usr/lib/llvm-21/lib/clang/21/include",
 		"/usr/local/include",
 		"/usr/include/x86_64-linux-gnu"
 	],
@@ -326,7 +336,7 @@
 	"MOC_PATH_PREFIX" : false,
 	"MOC_PREDEFS_CMD" : 
 	[
-		"/usr/bin/c++",
+		"/usr/bin/clang++",
 		"-std=gnu++17",
 		"-w",
 		"-dM",
@@ -335,7 +345,7 @@
 	],
 	"MOC_PREDEFS_FILE" : "/home/pearlsrvcs/C++/build/pm_qt_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
-	"MOC_SKIP" : [ "/home/pearlsrvcs/C++/build/.qt/rcc/qrc_resources.cpp" ],
+	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 12,
 	"PARSE_CACHE_FILE" : "/home/pearlsrvcs/C++/build/CMakeFiles/pm_qt_autogen.dir/ParseCache.txt",
@@ -349,6 +359,8 @@
 		[ "/home/pearlsrvcs/C++/DoodlePadWidget.cpp", "MU", null ],
 		[ "/home/pearlsrvcs/C++/MainWindow.cpp", "MU", null ],
 		[ "/home/pearlsrvcs/C++/MinimapWidget.cpp", "MU", null ],
+		[ "/home/pearlsrvcs/C++/SolitaireGame.cpp", "MU", null ],
+		[ "/home/pearlsrvcs/C++/SolitaireWidget.cpp", "MU", null ],
 		[ "/home/pearlsrvcs/C++/TextAdventureWidget.cpp", "MU", null ],
 		[ "/home/pearlsrvcs/C++/TriviaWidget.cpp", "MU", null ],
 		[ "/home/pearlsrvcs/C++/TutorialDialog.cpp", "MU", null ],
@@ -356,7 +368,7 @@
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
-	"UIC_SKIP" : [ "/home/pearlsrvcs/C++/build/.qt/rcc/qrc_resources.cpp" ],
+	"UIC_SKIP" : [],
 	"UIC_UI_FILES" : [],
 	"USE_BETTER_GRAPH" : true,
 	"VERBOSITY" : 0

@@ -6,17 +6,29 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Widgets)
+find_package(Qt6 REQUIRED COMPONENTS Widgets Network)
 
 add_executable(pm_qt
     main.cpp
     MainWindow.hpp
     MainWindow.cpp
+    TextAdventureWidget.cpp
+    TextAdventureWidget.hpp
+    TutorialDialog.hpp
+    TutorialDialog.cpp
+    MinimapWidget.hpp
+    TriviaWidget.hpp
+    TriviaWidget.cpp
+    MinimapWidget.cpp
+    DoodlePadWidget.hpp
+    DoodlePadWidget.cpp
+    SolitaireWidget.h
+    SolitaireWidget.cpp
+    SolitaireGame.h
+    SolitaireGame.cpp
+    Card.h
+    Pile.h
+    resources.qrc
 )
 
-qt_add_resources(pm_qt "resources"
-    PREFIX "/"
-    FILES icons/pm_icon.png
-)
-
-target_link_libraries(pm_qt PRIVATE Qt6::Widgets)
+target_link_libraries(pm_qt PRIVATE Qt6::Widgets Qt6::Network)

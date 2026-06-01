@@ -1,5 +1,7 @@
 #ifndef MAINWINDOW_HPP
 #define MAINWINDOW_HPP
+#include "DoodlePadWidget.hpp"
+#include "SolitaireWidget.h"
 #include <QDateEdit>
 #include <QMainWindow>
 #include <QTabWidget>
@@ -44,6 +46,7 @@ private:
     QTabWidget* tabs = nullptr;
     QCalendarWidget* calendar = nullptr;
     QTabWidget *noteTabs;
+    QTabWidget *gamesTabs;
     QLineEdit* calcInput = nullptr;
     QLineEdit *contactName = nullptr;
     QLineEdit *contactPhone = nullptr;
@@ -51,7 +54,7 @@ private:
     QLineEdit *contactAddress = nullptr;
     QListWidget *contactList = nullptr;
     QPushButton *addContactBtn = nullptr;
-
+    DoodlePadWidget *doodlePad = nullptr;
     QVector<ContactItem> contacts;
 
     QListWidget* taskList = nullptr;
@@ -65,6 +68,10 @@ private:
     
     double memoryValue = 0.0;
     QVector<TaskItem> tasks;
+
+    private:
+        SolitaireWidget* solitaireWidget;  
+        void createMenus(); 
 };
 
 #endif // MAINWINDOW_HPP

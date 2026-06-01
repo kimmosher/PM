@@ -274,6 +274,7 @@
   /usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QPoint \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QStack \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h \
@@ -407,6 +408,7 @@
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QColor \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QPixmap \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
@@ -461,6 +463,15 @@
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/lib/gcc/x86_64-linux-gnu/15/include/stdarg.h \
-  /usr/lib/gcc/x86_64-linux-gnu/15/include/stdbool.h \
-  /usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h
+  /usr/lib/llvm-21/lib/clang/21/include/__stdarg___gnuc_va_list.h \
+  /usr/lib/llvm-21/lib/clang/21/include/__stddef_header_macro.h \
+  /usr/lib/llvm-21/lib/clang/21/include/__stddef_max_align_t.h \
+  /usr/lib/llvm-21/lib/clang/21/include/__stddef_null.h \
+  /usr/lib/llvm-21/lib/clang/21/include/__stddef_nullptr_t.h \
+  /usr/lib/llvm-21/lib/clang/21/include/__stddef_offsetof.h \
+  /usr/lib/llvm-21/lib/clang/21/include/__stddef_ptrdiff_t.h \
+  /usr/lib/llvm-21/lib/clang/21/include/__stddef_size_t.h \
+  /usr/lib/llvm-21/lib/clang/21/include/__stddef_wchar_t.h \
+  /usr/lib/llvm-21/lib/clang/21/include/stdarg.h \
+  /usr/lib/llvm-21/lib/clang/21/include/stdbool.h \
+  /usr/lib/llvm-21/lib/clang/21/include/stddef.h

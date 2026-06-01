@@ -20,9 +20,9 @@ events:
     names:
       - "uname"
     candidate_directories:
+      - "/home/pearlsrvcs/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
       - "/home/pearlsrvcs/GNUstep/Tools/"
       - "/usr/NextSpace/bin/"
@@ -45,9 +45,9 @@ events:
       - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/"
       - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/bin/"
     searched_directories:
+      - "/home/pearlsrvcs/.local/bin/uname"
       - "/home/linuxbrew/.linuxbrew/bin/uname"
       - "/home/linuxbrew/.linuxbrew/sbin/uname"
-      - "/home/pearlsrvcs/.local/bin/uname"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/uname"
       - "/home/pearlsrvcs/GNUstep/Tools/uname"
       - "/usr/NextSpace/bin/uname"
@@ -60,9 +60,6 @@ events:
     found: "/usr/bin/uname"
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -101,11 +98,6 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
   -
     kind: "message-v1"
     backtrace:
@@ -134,9 +126,9 @@ events:
       - "make"
       - "smake"
     candidate_directories:
+      - "/home/pearlsrvcs/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
       - "/home/pearlsrvcs/GNUstep/Tools/"
       - "/usr/NextSpace/bin/"
@@ -159,9 +151,9 @@ events:
       - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/"
       - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/bin/"
     searched_directories:
+      - "/home/pearlsrvcs/.local/bin/gmake"
       - "/home/linuxbrew/.linuxbrew/bin/gmake"
       - "/home/linuxbrew/.linuxbrew/sbin/gmake"
-      - "/home/pearlsrvcs/.local/bin/gmake"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/gmake"
       - "/home/pearlsrvcs/GNUstep/Tools/gmake"
       - "/usr/NextSpace/bin/gmake"
@@ -174,9 +166,6 @@ events:
     found: "/usr/bin/gmake"
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -215,126 +204,6 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
-      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "program"
-    variable: "CMAKE_CXX_COMPILER"
-    description: "CXX compiler"
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "c++"
-      - "CC"
-      - "g++"
-      - "aCC"
-      - "cl"
-      - "bcc"
-      - "xlC"
-      - "icpx"
-      - "icx"
-      - "clang++"
-    candidate_directories:
-      - "/home/linuxbrew/.linuxbrew/bin/"
-      - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
-      - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
-      - "/home/pearlsrvcs/GNUstep/Tools/"
-      - "/usr/NextSpace/bin/"
-      - "/Library/bin/"
-      - "/usr/NextSpace/sbin/"
-      - "/Library/sbin/"
-      - "/usr/local/sbin/"
-      - "/usr/local/bin/"
-      - "/usr/sbin/"
-      - "/usr/bin/"
-      - "/sbin/"
-      - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
-      - "/snap/bin/"
-      - "/home/pearlsrvcs/.dotnet/tools/"
-      - "/home/pearlsrvcs/.lmstudio/bin/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/platform-tools/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/build_tools/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/bin/"
-    searched_directories:
-      - "/home/linuxbrew/.linuxbrew/bin/c++"
-      - "/home/linuxbrew/.linuxbrew/sbin/c++"
-      - "/home/pearlsrvcs/.local/bin/c++"
-      - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/c++"
-      - "/home/pearlsrvcs/GNUstep/Tools/c++"
-      - "/usr/NextSpace/bin/c++"
-      - "/Library/bin/c++"
-      - "/usr/NextSpace/sbin/c++"
-      - "/Library/sbin/c++"
-      - "/usr/local/sbin/c++"
-      - "/usr/local/bin/c++"
-      - "/usr/sbin/c++"
-    found: "/usr/bin/c++"
-    search_context:
-      ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/home/pearlsrvcs/GNUstep/Tools"
-        - "/usr/NextSpace/bin"
-        - "/Library/bin"
-        - "/usr/NextSpace/sbin"
-        - "/Library/sbin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/usr/NextSpace/bin"
-        - "/Library/bin"
-        - "/usr/NextSpace/sbin"
-        - "/Library/sbin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/usr/NextSpace/bin"
-        - "/Library/bin"
-        - "/usr/NextSpace/sbin"
-        - "/Library/sbin"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
-        - "/home/pearlsrvcs/.dotnet/tools"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -362,9 +231,6 @@ events:
     found: "/usr/share/cmake-4.2/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -403,11 +269,6 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
   -
     kind: "message-v1"
     backtrace:
@@ -417,7 +278,7 @@ events:
       - "CMakeLists.txt:2 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: /usr/bin/c++ 
+      Compiler: /usr/bin/clang++ 
       Build flags: 
       Id flags:  
       
@@ -427,7 +288,7 @@ events:
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
-      The CXX compiler identification is GNU, found in:
+      The CXX compiler identification is Clang, found in:
         /home/pearlsrvcs/C++/build/CMakeFiles/4.2.3/CompilerIdCXX/a.out
       
   -
@@ -448,756 +309,13 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
+      - "llvm-ar"
       - "ar"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/pearlsrvcs/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
-      - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
-      - "/home/pearlsrvcs/GNUstep/Tools/"
-      - "/usr/NextSpace/bin/"
-      - "/Library/bin/"
-      - "/usr/NextSpace/sbin/"
-      - "/Library/sbin/"
-      - "/usr/local/sbin/"
-      - "/usr/local/bin/"
-      - "/usr/sbin/"
-      - "/sbin/"
-      - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
-      - "/snap/bin/"
-      - "/home/pearlsrvcs/.dotnet/tools/"
-      - "/home/pearlsrvcs/.lmstudio/bin/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/platform-tools/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/build_tools/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/bin/"
-    found: "/usr/bin/ar"
-    search_context:
-      ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/home/pearlsrvcs/GNUstep/Tools"
-        - "/usr/NextSpace/bin"
-        - "/Library/bin"
-        - "/usr/NextSpace/sbin"
-        - "/Library/sbin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/usr/NextSpace/bin"
-        - "/Library/bin"
-        - "/usr/NextSpace/sbin"
-        - "/Library/sbin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/usr/NextSpace/bin"
-        - "/Library/bin"
-        - "/usr/NextSpace/sbin"
-        - "/Library/sbin"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
-        - "/home/pearlsrvcs/.dotnet/tools"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "program"
-    variable: "CMAKE_RANLIB"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "ranlib"
-    candidate_directories:
-      - "/usr/bin/"
-      - "/home/linuxbrew/.linuxbrew/bin/"
-      - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
-      - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
-      - "/home/pearlsrvcs/GNUstep/Tools/"
-      - "/usr/NextSpace/bin/"
-      - "/Library/bin/"
-      - "/usr/NextSpace/sbin/"
-      - "/Library/sbin/"
-      - "/usr/local/sbin/"
-      - "/usr/local/bin/"
-      - "/usr/sbin/"
-      - "/sbin/"
-      - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
-      - "/snap/bin/"
-      - "/home/pearlsrvcs/.dotnet/tools/"
-      - "/home/pearlsrvcs/.lmstudio/bin/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/platform-tools/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/build_tools/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/bin/"
-    found: "/usr/bin/ranlib"
-    search_context:
-      ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/home/pearlsrvcs/GNUstep/Tools"
-        - "/usr/NextSpace/bin"
-        - "/Library/bin"
-        - "/usr/NextSpace/sbin"
-        - "/Library/sbin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/usr/NextSpace/bin"
-        - "/Library/bin"
-        - "/usr/NextSpace/sbin"
-        - "/Library/sbin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/usr/NextSpace/bin"
-        - "/Library/bin"
-        - "/usr/NextSpace/sbin"
-        - "/Library/sbin"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
-        - "/home/pearlsrvcs/.dotnet/tools"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "program"
-    variable: "CMAKE_STRIP"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "strip"
-    candidate_directories:
-      - "/usr/bin/"
-      - "/home/linuxbrew/.linuxbrew/bin/"
-      - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
-      - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
-      - "/home/pearlsrvcs/GNUstep/Tools/"
-      - "/usr/NextSpace/bin/"
-      - "/Library/bin/"
-      - "/usr/NextSpace/sbin/"
-      - "/Library/sbin/"
-      - "/usr/local/sbin/"
-      - "/usr/local/bin/"
-      - "/usr/sbin/"
-      - "/sbin/"
-      - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
-      - "/snap/bin/"
-      - "/home/pearlsrvcs/.dotnet/tools/"
-      - "/home/pearlsrvcs/.lmstudio/bin/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/platform-tools/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/build_tools/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/bin/"
-    found: "/usr/bin/strip"
-    search_context:
-      ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/home/pearlsrvcs/GNUstep/Tools"
-        - "/usr/NextSpace/bin"
-        - "/Library/bin"
-        - "/usr/NextSpace/sbin"
-        - "/Library/sbin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/usr/NextSpace/bin"
-        - "/Library/bin"
-        - "/usr/NextSpace/sbin"
-        - "/Library/sbin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/usr/NextSpace/bin"
-        - "/Library/bin"
-        - "/usr/NextSpace/sbin"
-        - "/Library/sbin"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
-        - "/home/pearlsrvcs/.dotnet/tools"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "program"
-    variable: "CMAKE_LINKER"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "ld"
-    candidate_directories:
-      - "/usr/bin/"
-      - "/home/linuxbrew/.linuxbrew/bin/"
-      - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
-      - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
-      - "/home/pearlsrvcs/GNUstep/Tools/"
-      - "/usr/NextSpace/bin/"
-      - "/Library/bin/"
-      - "/usr/NextSpace/sbin/"
-      - "/Library/sbin/"
-      - "/usr/local/sbin/"
-      - "/usr/local/bin/"
-      - "/usr/sbin/"
-      - "/sbin/"
-      - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
-      - "/snap/bin/"
-      - "/home/pearlsrvcs/.dotnet/tools/"
-      - "/home/pearlsrvcs/.lmstudio/bin/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/platform-tools/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/build_tools/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/bin/"
-    found: "/usr/bin/ld"
-    search_context:
-      ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/home/pearlsrvcs/GNUstep/Tools"
-        - "/usr/NextSpace/bin"
-        - "/Library/bin"
-        - "/usr/NextSpace/sbin"
-        - "/Library/sbin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/usr/NextSpace/bin"
-        - "/Library/bin"
-        - "/usr/NextSpace/sbin"
-        - "/Library/sbin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/usr/NextSpace/bin"
-        - "/Library/bin"
-        - "/usr/NextSpace/sbin"
-        - "/Library/sbin"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
-        - "/home/pearlsrvcs/.dotnet/tools"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "program"
-    variable: "CMAKE_NM"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "nm"
-    candidate_directories:
-      - "/usr/bin/"
-      - "/home/linuxbrew/.linuxbrew/bin/"
-      - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
-      - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
-      - "/home/pearlsrvcs/GNUstep/Tools/"
-      - "/usr/NextSpace/bin/"
-      - "/Library/bin/"
-      - "/usr/NextSpace/sbin/"
-      - "/Library/sbin/"
-      - "/usr/local/sbin/"
-      - "/usr/local/bin/"
-      - "/usr/sbin/"
-      - "/sbin/"
-      - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
-      - "/snap/bin/"
-      - "/home/pearlsrvcs/.dotnet/tools/"
-      - "/home/pearlsrvcs/.lmstudio/bin/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/platform-tools/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/build_tools/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/bin/"
-    found: "/usr/bin/nm"
-    search_context:
-      ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/home/pearlsrvcs/GNUstep/Tools"
-        - "/usr/NextSpace/bin"
-        - "/Library/bin"
-        - "/usr/NextSpace/sbin"
-        - "/Library/sbin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/usr/NextSpace/bin"
-        - "/Library/bin"
-        - "/usr/NextSpace/sbin"
-        - "/Library/sbin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/usr/NextSpace/bin"
-        - "/Library/bin"
-        - "/usr/NextSpace/sbin"
-        - "/Library/sbin"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
-        - "/home/pearlsrvcs/.dotnet/tools"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "program"
-    variable: "CMAKE_OBJDUMP"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "objdump"
-    candidate_directories:
-      - "/usr/bin/"
-      - "/home/linuxbrew/.linuxbrew/bin/"
-      - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
-      - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
-      - "/home/pearlsrvcs/GNUstep/Tools/"
-      - "/usr/NextSpace/bin/"
-      - "/Library/bin/"
-      - "/usr/NextSpace/sbin/"
-      - "/Library/sbin/"
-      - "/usr/local/sbin/"
-      - "/usr/local/bin/"
-      - "/usr/sbin/"
-      - "/sbin/"
-      - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
-      - "/snap/bin/"
-      - "/home/pearlsrvcs/.dotnet/tools/"
-      - "/home/pearlsrvcs/.lmstudio/bin/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/platform-tools/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/build_tools/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/bin/"
-    found: "/usr/bin/objdump"
-    search_context:
-      ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/home/pearlsrvcs/GNUstep/Tools"
-        - "/usr/NextSpace/bin"
-        - "/Library/bin"
-        - "/usr/NextSpace/sbin"
-        - "/Library/sbin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/usr/NextSpace/bin"
-        - "/Library/bin"
-        - "/usr/NextSpace/sbin"
-        - "/Library/sbin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/usr/NextSpace/bin"
-        - "/Library/bin"
-        - "/usr/NextSpace/sbin"
-        - "/Library/sbin"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
-        - "/home/pearlsrvcs/.dotnet/tools"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "program"
-    variable: "CMAKE_OBJCOPY"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "objcopy"
-    candidate_directories:
-      - "/usr/bin/"
-      - "/home/linuxbrew/.linuxbrew/bin/"
-      - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
-      - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
-      - "/home/pearlsrvcs/GNUstep/Tools/"
-      - "/usr/NextSpace/bin/"
-      - "/Library/bin/"
-      - "/usr/NextSpace/sbin/"
-      - "/Library/sbin/"
-      - "/usr/local/sbin/"
-      - "/usr/local/bin/"
-      - "/usr/sbin/"
-      - "/sbin/"
-      - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
-      - "/snap/bin/"
-      - "/home/pearlsrvcs/.dotnet/tools/"
-      - "/home/pearlsrvcs/.lmstudio/bin/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/platform-tools/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/build_tools/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/bin/"
-    found: "/usr/bin/objcopy"
-    search_context:
-      ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/home/pearlsrvcs/GNUstep/Tools"
-        - "/usr/NextSpace/bin"
-        - "/Library/bin"
-        - "/usr/NextSpace/sbin"
-        - "/Library/sbin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/usr/NextSpace/bin"
-        - "/Library/bin"
-        - "/usr/NextSpace/sbin"
-        - "/Library/sbin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/usr/NextSpace/bin"
-        - "/Library/bin"
-        - "/usr/NextSpace/sbin"
-        - "/Library/sbin"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
-        - "/home/pearlsrvcs/.dotnet/tools"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "program"
-    variable: "CMAKE_READELF"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "readelf"
-    candidate_directories:
-      - "/usr/bin/"
-      - "/home/linuxbrew/.linuxbrew/bin/"
-      - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
-      - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
-      - "/home/pearlsrvcs/GNUstep/Tools/"
-      - "/usr/NextSpace/bin/"
-      - "/Library/bin/"
-      - "/usr/NextSpace/sbin/"
-      - "/Library/sbin/"
-      - "/usr/local/sbin/"
-      - "/usr/local/bin/"
-      - "/usr/sbin/"
-      - "/sbin/"
-      - "/bin/"
-      - "/usr/games/"
-      - "/usr/local/games/"
-      - "/snap/bin/"
-      - "/home/pearlsrvcs/.dotnet/tools/"
-      - "/home/pearlsrvcs/.lmstudio/bin/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/platform-tools/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/build_tools/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/bin/"
-    found: "/usr/bin/readelf"
-    search_context:
-      ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/home/pearlsrvcs/GNUstep/Tools"
-        - "/usr/NextSpace/bin"
-        - "/Library/bin"
-        - "/usr/NextSpace/sbin"
-        - "/Library/sbin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/usr/NextSpace/bin"
-        - "/Library/bin"
-        - "/usr/NextSpace/sbin"
-        - "/Library/sbin"
-        - "/home/pearlsrvcs/.local/bin"
-        - "/usr/NextSpace/bin"
-        - "/Library/bin"
-        - "/usr/NextSpace/sbin"
-        - "/Library/sbin"
-        - "/usr/local/sbin"
-        - "/usr/local/bin"
-        - "/usr/sbin"
-        - "/usr/bin"
-        - "/sbin"
-        - "/bin"
-        - "/usr/games"
-        - "/usr/local/games"
-        - "/snap/bin"
-        - "/home/pearlsrvcs/.dotnet/tools"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
-      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
-      - "CMakeLists.txt:2 (project)"
-    mode: "program"
-    variable: "CMAKE_DLLTOOL"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: false
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "dlltool"
-    candidate_directories:
-      - "/usr/bin/"
-      - "/home/linuxbrew/.linuxbrew/bin/"
-      - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
       - "/home/pearlsrvcs/GNUstep/Tools/"
       - "/usr/NextSpace/bin/"
@@ -1219,36 +337,11 @@ events:
       - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/"
       - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/bin/"
     searched_directories:
-      - "/usr/bin/dlltool"
-      - "/home/linuxbrew/.linuxbrew/bin/dlltool"
-      - "/home/linuxbrew/.linuxbrew/sbin/dlltool"
-      - "/home/pearlsrvcs/.local/bin/dlltool"
-      - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/dlltool"
-      - "/home/pearlsrvcs/GNUstep/Tools/dlltool"
-      - "/usr/NextSpace/bin/dlltool"
-      - "/Library/bin/dlltool"
-      - "/usr/NextSpace/sbin/dlltool"
-      - "/Library/sbin/dlltool"
-      - "/usr/local/sbin/dlltool"
-      - "/usr/local/bin/dlltool"
-      - "/usr/sbin/dlltool"
-      - "/sbin/dlltool"
-      - "/bin/dlltool"
-      - "/usr/games/dlltool"
-      - "/usr/local/games/dlltool"
-      - "/snap/bin/dlltool"
-      - "/home/pearlsrvcs/.dotnet/tools/dlltool"
-      - "/home/pearlsrvcs/.lmstudio/bin/dlltool"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/platform-tools/dlltool"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/build_tools/dlltool"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/dlltool"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/bin/dlltool"
-    found: false
+      - "/usr/bin/llvm-ar"
+      - "/home/pearlsrvcs/.local/bin/llvm-ar"
+    found: "/home/linuxbrew/.linuxbrew/bin/llvm-ar"
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -1287,11 +380,6 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1299,7 +387,7 @@ events:
       - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
-    variable: "CMAKE_ADDR2LINE"
+    variable: "CMAKE_RANLIB"
     description: "Path to a program."
     settings:
       SearchFramework: "NEVER"
@@ -1310,12 +398,13 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "addr2line"
+      - "llvm-ranlib"
+      - "ranlib"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/pearlsrvcs/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
       - "/home/pearlsrvcs/GNUstep/Tools/"
       - "/usr/NextSpace/bin/"
@@ -1336,12 +425,12 @@ events:
       - "/home/pearlsrvcs/C++/build/ANDROID_HOME/build_tools/"
       - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/"
       - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/bin/"
-    found: "/usr/bin/addr2line"
+    searched_directories:
+      - "/usr/bin/llvm-ranlib"
+      - "/home/pearlsrvcs/.local/bin/llvm-ranlib"
+    found: "/home/linuxbrew/.linuxbrew/bin/llvm-ranlib"
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -1380,11 +469,715 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-strip"
+      - "strip"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/pearlsrvcs/.local/bin/"
+      - "/home/linuxbrew/.linuxbrew/bin/"
+      - "/home/linuxbrew/.linuxbrew/sbin/"
+      - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
+      - "/home/pearlsrvcs/GNUstep/Tools/"
+      - "/usr/NextSpace/bin/"
+      - "/Library/bin/"
+      - "/usr/NextSpace/sbin/"
+      - "/Library/sbin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/home/pearlsrvcs/.dotnet/tools/"
+      - "/home/pearlsrvcs/.lmstudio/bin/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/platform-tools/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/build_tools/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/bin/"
+    searched_directories:
+      - "/usr/bin/llvm-strip"
+      - "/home/pearlsrvcs/.local/bin/llvm-strip"
+    found: "/home/linuxbrew/.linuxbrew/bin/llvm-strip"
+    search_context:
+      ENV{PATH}:
+        - "/home/pearlsrvcs/.local/bin"
+        - "/home/linuxbrew/.linuxbrew/bin"
+        - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin"
+        - "/home/pearlsrvcs/.local/bin"
+        - "/home/pearlsrvcs/GNUstep/Tools"
+        - "/usr/NextSpace/bin"
+        - "/Library/bin"
+        - "/usr/NextSpace/sbin"
+        - "/Library/sbin"
+        - "/home/pearlsrvcs/.local/bin"
+        - "/usr/NextSpace/bin"
+        - "/Library/bin"
+        - "/usr/NextSpace/sbin"
+        - "/Library/sbin"
+        - "/home/pearlsrvcs/.local/bin"
+        - "/usr/NextSpace/bin"
+        - "/Library/bin"
+        - "/usr/NextSpace/sbin"
+        - "/Library/sbin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/home/pearlsrvcs/.dotnet/tools"
+        - "/home/pearlsrvcs/.lmstudio/bin"
+        - "/home/pearlsrvcs/.lmstudio/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
         - "ANDROID_HOME/platform-tools"
         - "ANDROID_HOME/build_tools"
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
+        - "/home/pearlsrvcs/.lmstudio/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ld.lld"
+      - "ld"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/pearlsrvcs/.local/bin/"
+      - "/home/linuxbrew/.linuxbrew/bin/"
+      - "/home/linuxbrew/.linuxbrew/sbin/"
+      - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
+      - "/home/pearlsrvcs/GNUstep/Tools/"
+      - "/usr/NextSpace/bin/"
+      - "/Library/bin/"
+      - "/usr/NextSpace/sbin/"
+      - "/Library/sbin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/home/pearlsrvcs/.dotnet/tools/"
+      - "/home/pearlsrvcs/.lmstudio/bin/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/platform-tools/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/build_tools/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/bin/"
+    found: "/usr/bin/ld.lld"
+    search_context:
+      ENV{PATH}:
+        - "/home/pearlsrvcs/.local/bin"
+        - "/home/linuxbrew/.linuxbrew/bin"
+        - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin"
+        - "/home/pearlsrvcs/.local/bin"
+        - "/home/pearlsrvcs/GNUstep/Tools"
+        - "/usr/NextSpace/bin"
+        - "/Library/bin"
+        - "/usr/NextSpace/sbin"
+        - "/Library/sbin"
+        - "/home/pearlsrvcs/.local/bin"
+        - "/usr/NextSpace/bin"
+        - "/Library/bin"
+        - "/usr/NextSpace/sbin"
+        - "/Library/sbin"
+        - "/home/pearlsrvcs/.local/bin"
+        - "/usr/NextSpace/bin"
+        - "/Library/bin"
+        - "/usr/NextSpace/sbin"
+        - "/Library/sbin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/home/pearlsrvcs/.dotnet/tools"
+        - "/home/pearlsrvcs/.lmstudio/bin"
+        - "/home/pearlsrvcs/.lmstudio/bin"
+        - "/home/pearlsrvcs/.lmstudio/bin"
+        - "ANDROID_HOME/platform-tools"
+        - "ANDROID_HOME/build_tools"
+        - "ANDROID_HOME/tools"
+        - "ANDROID_HOME/tools/bin"
+        - "/home/pearlsrvcs/.lmstudio/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-nm"
+      - "nm"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/pearlsrvcs/.local/bin/"
+      - "/home/linuxbrew/.linuxbrew/bin/"
+      - "/home/linuxbrew/.linuxbrew/sbin/"
+      - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
+      - "/home/pearlsrvcs/GNUstep/Tools/"
+      - "/usr/NextSpace/bin/"
+      - "/Library/bin/"
+      - "/usr/NextSpace/sbin/"
+      - "/Library/sbin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/home/pearlsrvcs/.dotnet/tools/"
+      - "/home/pearlsrvcs/.lmstudio/bin/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/platform-tools/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/build_tools/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/bin/"
+    searched_directories:
+      - "/usr/bin/llvm-nm"
+      - "/home/pearlsrvcs/.local/bin/llvm-nm"
+    found: "/home/linuxbrew/.linuxbrew/bin/llvm-nm"
+    search_context:
+      ENV{PATH}:
+        - "/home/pearlsrvcs/.local/bin"
+        - "/home/linuxbrew/.linuxbrew/bin"
+        - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin"
+        - "/home/pearlsrvcs/.local/bin"
+        - "/home/pearlsrvcs/GNUstep/Tools"
+        - "/usr/NextSpace/bin"
+        - "/Library/bin"
+        - "/usr/NextSpace/sbin"
+        - "/Library/sbin"
+        - "/home/pearlsrvcs/.local/bin"
+        - "/usr/NextSpace/bin"
+        - "/Library/bin"
+        - "/usr/NextSpace/sbin"
+        - "/Library/sbin"
+        - "/home/pearlsrvcs/.local/bin"
+        - "/usr/NextSpace/bin"
+        - "/Library/bin"
+        - "/usr/NextSpace/sbin"
+        - "/Library/sbin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/home/pearlsrvcs/.dotnet/tools"
+        - "/home/pearlsrvcs/.lmstudio/bin"
+        - "/home/pearlsrvcs/.lmstudio/bin"
+        - "/home/pearlsrvcs/.lmstudio/bin"
+        - "ANDROID_HOME/platform-tools"
+        - "ANDROID_HOME/build_tools"
+        - "ANDROID_HOME/tools"
+        - "ANDROID_HOME/tools/bin"
+        - "/home/pearlsrvcs/.lmstudio/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-objdump"
+      - "objdump"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/pearlsrvcs/.local/bin/"
+      - "/home/linuxbrew/.linuxbrew/bin/"
+      - "/home/linuxbrew/.linuxbrew/sbin/"
+      - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
+      - "/home/pearlsrvcs/GNUstep/Tools/"
+      - "/usr/NextSpace/bin/"
+      - "/Library/bin/"
+      - "/usr/NextSpace/sbin/"
+      - "/Library/sbin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/home/pearlsrvcs/.dotnet/tools/"
+      - "/home/pearlsrvcs/.lmstudio/bin/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/platform-tools/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/build_tools/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/bin/"
+    searched_directories:
+      - "/usr/bin/llvm-objdump"
+      - "/home/pearlsrvcs/.local/bin/llvm-objdump"
+    found: "/home/linuxbrew/.linuxbrew/bin/llvm-objdump"
+    search_context:
+      ENV{PATH}:
+        - "/home/pearlsrvcs/.local/bin"
+        - "/home/linuxbrew/.linuxbrew/bin"
+        - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin"
+        - "/home/pearlsrvcs/.local/bin"
+        - "/home/pearlsrvcs/GNUstep/Tools"
+        - "/usr/NextSpace/bin"
+        - "/Library/bin"
+        - "/usr/NextSpace/sbin"
+        - "/Library/sbin"
+        - "/home/pearlsrvcs/.local/bin"
+        - "/usr/NextSpace/bin"
+        - "/Library/bin"
+        - "/usr/NextSpace/sbin"
+        - "/Library/sbin"
+        - "/home/pearlsrvcs/.local/bin"
+        - "/usr/NextSpace/bin"
+        - "/Library/bin"
+        - "/usr/NextSpace/sbin"
+        - "/Library/sbin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/home/pearlsrvcs/.dotnet/tools"
+        - "/home/pearlsrvcs/.lmstudio/bin"
+        - "/home/pearlsrvcs/.lmstudio/bin"
+        - "/home/pearlsrvcs/.lmstudio/bin"
+        - "ANDROID_HOME/platform-tools"
+        - "ANDROID_HOME/build_tools"
+        - "ANDROID_HOME/tools"
+        - "ANDROID_HOME/tools/bin"
+        - "/home/pearlsrvcs/.lmstudio/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-objcopy"
+      - "objcopy"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/pearlsrvcs/.local/bin/"
+      - "/home/linuxbrew/.linuxbrew/bin/"
+      - "/home/linuxbrew/.linuxbrew/sbin/"
+      - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
+      - "/home/pearlsrvcs/GNUstep/Tools/"
+      - "/usr/NextSpace/bin/"
+      - "/Library/bin/"
+      - "/usr/NextSpace/sbin/"
+      - "/Library/sbin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/home/pearlsrvcs/.dotnet/tools/"
+      - "/home/pearlsrvcs/.lmstudio/bin/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/platform-tools/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/build_tools/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/bin/"
+    searched_directories:
+      - "/usr/bin/llvm-objcopy"
+      - "/home/pearlsrvcs/.local/bin/llvm-objcopy"
+    found: "/home/linuxbrew/.linuxbrew/bin/llvm-objcopy"
+    search_context:
+      ENV{PATH}:
+        - "/home/pearlsrvcs/.local/bin"
+        - "/home/linuxbrew/.linuxbrew/bin"
+        - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin"
+        - "/home/pearlsrvcs/.local/bin"
+        - "/home/pearlsrvcs/GNUstep/Tools"
+        - "/usr/NextSpace/bin"
+        - "/Library/bin"
+        - "/usr/NextSpace/sbin"
+        - "/Library/sbin"
+        - "/home/pearlsrvcs/.local/bin"
+        - "/usr/NextSpace/bin"
+        - "/Library/bin"
+        - "/usr/NextSpace/sbin"
+        - "/Library/sbin"
+        - "/home/pearlsrvcs/.local/bin"
+        - "/usr/NextSpace/bin"
+        - "/Library/bin"
+        - "/usr/NextSpace/sbin"
+        - "/Library/sbin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/home/pearlsrvcs/.dotnet/tools"
+        - "/home/pearlsrvcs/.lmstudio/bin"
+        - "/home/pearlsrvcs/.lmstudio/bin"
+        - "/home/pearlsrvcs/.lmstudio/bin"
+        - "ANDROID_HOME/platform-tools"
+        - "ANDROID_HOME/build_tools"
+        - "ANDROID_HOME/tools"
+        - "ANDROID_HOME/tools/bin"
+        - "/home/pearlsrvcs/.lmstudio/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-readelf"
+      - "readelf"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/pearlsrvcs/.local/bin/"
+      - "/home/linuxbrew/.linuxbrew/bin/"
+      - "/home/linuxbrew/.linuxbrew/sbin/"
+      - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
+      - "/home/pearlsrvcs/GNUstep/Tools/"
+      - "/usr/NextSpace/bin/"
+      - "/Library/bin/"
+      - "/usr/NextSpace/sbin/"
+      - "/Library/sbin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/home/pearlsrvcs/.dotnet/tools/"
+      - "/home/pearlsrvcs/.lmstudio/bin/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/platform-tools/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/build_tools/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/bin/"
+    searched_directories:
+      - "/usr/bin/llvm-readelf"
+      - "/home/pearlsrvcs/.local/bin/llvm-readelf"
+    found: "/home/linuxbrew/.linuxbrew/bin/llvm-readelf"
+    search_context:
+      ENV{PATH}:
+        - "/home/pearlsrvcs/.local/bin"
+        - "/home/linuxbrew/.linuxbrew/bin"
+        - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin"
+        - "/home/pearlsrvcs/.local/bin"
+        - "/home/pearlsrvcs/GNUstep/Tools"
+        - "/usr/NextSpace/bin"
+        - "/Library/bin"
+        - "/usr/NextSpace/sbin"
+        - "/Library/sbin"
+        - "/home/pearlsrvcs/.local/bin"
+        - "/usr/NextSpace/bin"
+        - "/Library/bin"
+        - "/usr/NextSpace/sbin"
+        - "/Library/sbin"
+        - "/home/pearlsrvcs/.local/bin"
+        - "/usr/NextSpace/bin"
+        - "/Library/bin"
+        - "/usr/NextSpace/sbin"
+        - "/Library/sbin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/home/pearlsrvcs/.dotnet/tools"
+        - "/home/pearlsrvcs/.lmstudio/bin"
+        - "/home/pearlsrvcs/.lmstudio/bin"
+        - "/home/pearlsrvcs/.lmstudio/bin"
+        - "ANDROID_HOME/platform-tools"
+        - "ANDROID_HOME/build_tools"
+        - "ANDROID_HOME/tools"
+        - "ANDROID_HOME/tools/bin"
+        - "/home/pearlsrvcs/.lmstudio/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-dlltool"
+      - "dlltool"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/pearlsrvcs/.local/bin/"
+      - "/home/linuxbrew/.linuxbrew/bin/"
+      - "/home/linuxbrew/.linuxbrew/sbin/"
+      - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
+      - "/home/pearlsrvcs/GNUstep/Tools/"
+      - "/usr/NextSpace/bin/"
+      - "/Library/bin/"
+      - "/usr/NextSpace/sbin/"
+      - "/Library/sbin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/home/pearlsrvcs/.dotnet/tools/"
+      - "/home/pearlsrvcs/.lmstudio/bin/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/platform-tools/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/build_tools/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/bin/"
+    searched_directories:
+      - "/usr/bin/llvm-dlltool"
+      - "/home/pearlsrvcs/.local/bin/llvm-dlltool"
+    found: "/home/linuxbrew/.linuxbrew/bin/llvm-dlltool"
+    search_context:
+      ENV{PATH}:
+        - "/home/pearlsrvcs/.local/bin"
+        - "/home/linuxbrew/.linuxbrew/bin"
+        - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin"
+        - "/home/pearlsrvcs/.local/bin"
+        - "/home/pearlsrvcs/GNUstep/Tools"
+        - "/usr/NextSpace/bin"
+        - "/Library/bin"
+        - "/usr/NextSpace/sbin"
+        - "/Library/sbin"
+        - "/home/pearlsrvcs/.local/bin"
+        - "/usr/NextSpace/bin"
+        - "/Library/bin"
+        - "/usr/NextSpace/sbin"
+        - "/Library/sbin"
+        - "/home/pearlsrvcs/.local/bin"
+        - "/usr/NextSpace/bin"
+        - "/Library/bin"
+        - "/usr/NextSpace/sbin"
+        - "/Library/sbin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/home/pearlsrvcs/.dotnet/tools"
+        - "/home/pearlsrvcs/.lmstudio/bin"
+        - "/home/pearlsrvcs/.lmstudio/bin"
+        - "/home/pearlsrvcs/.lmstudio/bin"
+        - "ANDROID_HOME/platform-tools"
+        - "ANDROID_HOME/build_tools"
+        - "ANDROID_HOME/tools"
+        - "ANDROID_HOME/tools/bin"
+        - "/home/pearlsrvcs/.lmstudio/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-addr2line"
+      - "addr2line"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/home/pearlsrvcs/.local/bin/"
+      - "/home/linuxbrew/.linuxbrew/bin/"
+      - "/home/linuxbrew/.linuxbrew/sbin/"
+      - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
+      - "/home/pearlsrvcs/GNUstep/Tools/"
+      - "/usr/NextSpace/bin/"
+      - "/Library/bin/"
+      - "/usr/NextSpace/sbin/"
+      - "/Library/sbin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/home/pearlsrvcs/.dotnet/tools/"
+      - "/home/pearlsrvcs/.lmstudio/bin/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/platform-tools/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/build_tools/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/bin/"
+    searched_directories:
+      - "/usr/bin/llvm-addr2line"
+      - "/home/pearlsrvcs/.local/bin/llvm-addr2line"
+    found: "/home/linuxbrew/.linuxbrew/bin/llvm-addr2line"
+    search_context:
+      ENV{PATH}:
+        - "/home/pearlsrvcs/.local/bin"
+        - "/home/linuxbrew/.linuxbrew/bin"
+        - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin"
+        - "/home/pearlsrvcs/.local/bin"
+        - "/home/pearlsrvcs/GNUstep/Tools"
+        - "/usr/NextSpace/bin"
+        - "/Library/bin"
+        - "/usr/NextSpace/sbin"
+        - "/Library/sbin"
+        - "/home/pearlsrvcs/.local/bin"
+        - "/usr/NextSpace/bin"
+        - "/Library/bin"
+        - "/usr/NextSpace/sbin"
+        - "/Library/sbin"
+        - "/home/pearlsrvcs/.local/bin"
+        - "/usr/NextSpace/bin"
+        - "/Library/bin"
+        - "/usr/NextSpace/sbin"
+        - "/Library/sbin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/home/pearlsrvcs/.dotnet/tools"
+        - "/home/pearlsrvcs/.lmstudio/bin"
+        - "/home/pearlsrvcs/.lmstudio/bin"
+        - "/home/pearlsrvcs/.lmstudio/bin"
+        - "ANDROID_HOME/platform-tools"
+        - "ANDROID_HOME/build_tools"
+        - "ANDROID_HOME/tools"
+        - "ANDROID_HOME/tools/bin"
+        - "/home/pearlsrvcs/.lmstudio/bin"
   -
     kind: "find-v1"
     backtrace:
@@ -1406,9 +1199,9 @@ events:
       - "tapi"
     candidate_directories:
       - "/usr/bin/"
+      - "/home/pearlsrvcs/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
       - "/home/pearlsrvcs/GNUstep/Tools/"
       - "/usr/NextSpace/bin/"
@@ -1431,9 +1224,9 @@ events:
       - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/bin/"
     searched_directories:
       - "/usr/bin/tapi"
+      - "/home/pearlsrvcs/.local/bin/tapi"
       - "/home/linuxbrew/.linuxbrew/bin/tapi"
       - "/home/linuxbrew/.linuxbrew/sbin/tapi"
-      - "/home/pearlsrvcs/.local/bin/tapi"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/tapi"
       - "/home/pearlsrvcs/GNUstep/Tools/tapi"
       - "/usr/NextSpace/bin/tapi"
@@ -1457,9 +1250,6 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -1498,20 +1288,15 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/share/cmake-4.2/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/usr/share/cmake-4.2/Modules/Compiler/Clang-FindBinUtils.cmake:26 (find_program)"
       - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_CXX_COMPILER_AR"
-    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    description: "LLVM archiver"
     settings:
       SearchFramework: "NEVER"
       SearchAppBundle: "NEVER"
@@ -1521,15 +1306,16 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "gcc-ar-15.2"
-      - "gcc-ar-15"
-      - "gcc-ar15"
-      - "gcc-ar"
+      - "llvm-ar-21.1"
+      - "llvm-ar-21"
+      - "llvm-ar21"
+      - "llvm-ar"
     candidate_directories:
+      - "/usr/lib/llvm-21/bin/"
       - "/usr/bin/"
+      - "/home/pearlsrvcs/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
       - "/home/pearlsrvcs/GNUstep/Tools/"
       - "/usr/NextSpace/bin/"
@@ -1551,36 +1337,35 @@ events:
       - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/"
       - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/bin/"
     searched_directories:
-      - "/usr/bin/gcc-ar-15.2"
-      - "/home/linuxbrew/.linuxbrew/bin/gcc-ar-15.2"
-      - "/home/linuxbrew/.linuxbrew/sbin/gcc-ar-15.2"
-      - "/home/pearlsrvcs/.local/bin/gcc-ar-15.2"
-      - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/gcc-ar-15.2"
-      - "/home/pearlsrvcs/GNUstep/Tools/gcc-ar-15.2"
-      - "/usr/NextSpace/bin/gcc-ar-15.2"
-      - "/Library/bin/gcc-ar-15.2"
-      - "/usr/NextSpace/sbin/gcc-ar-15.2"
-      - "/Library/sbin/gcc-ar-15.2"
-      - "/usr/local/sbin/gcc-ar-15.2"
-      - "/usr/local/bin/gcc-ar-15.2"
-      - "/usr/sbin/gcc-ar-15.2"
-      - "/sbin/gcc-ar-15.2"
-      - "/bin/gcc-ar-15.2"
-      - "/usr/games/gcc-ar-15.2"
-      - "/usr/local/games/gcc-ar-15.2"
-      - "/snap/bin/gcc-ar-15.2"
-      - "/home/pearlsrvcs/.dotnet/tools/gcc-ar-15.2"
-      - "/home/pearlsrvcs/.lmstudio/bin/gcc-ar-15.2"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/platform-tools/gcc-ar-15.2"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/build_tools/gcc-ar-15.2"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/gcc-ar-15.2"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/bin/gcc-ar-15.2"
-    found: "/usr/bin/gcc-ar-15"
+      - "/usr/lib/llvm-21/bin/llvm-ar-21.1"
+      - "/usr/bin/llvm-ar-21.1"
+      - "/home/pearlsrvcs/.local/bin/llvm-ar-21.1"
+      - "/home/linuxbrew/.linuxbrew/bin/llvm-ar-21.1"
+      - "/home/linuxbrew/.linuxbrew/sbin/llvm-ar-21.1"
+      - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/llvm-ar-21.1"
+      - "/home/pearlsrvcs/GNUstep/Tools/llvm-ar-21.1"
+      - "/usr/NextSpace/bin/llvm-ar-21.1"
+      - "/Library/bin/llvm-ar-21.1"
+      - "/usr/NextSpace/sbin/llvm-ar-21.1"
+      - "/Library/sbin/llvm-ar-21.1"
+      - "/usr/local/sbin/llvm-ar-21.1"
+      - "/usr/local/bin/llvm-ar-21.1"
+      - "/usr/sbin/llvm-ar-21.1"
+      - "/sbin/llvm-ar-21.1"
+      - "/bin/llvm-ar-21.1"
+      - "/usr/games/llvm-ar-21.1"
+      - "/usr/local/games/llvm-ar-21.1"
+      - "/snap/bin/llvm-ar-21.1"
+      - "/home/pearlsrvcs/.dotnet/tools/llvm-ar-21.1"
+      - "/home/pearlsrvcs/.lmstudio/bin/llvm-ar-21.1"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/platform-tools/llvm-ar-21.1"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/build_tools/llvm-ar-21.1"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/llvm-ar-21.1"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/bin/llvm-ar-21.1"
+      - "/usr/lib/llvm-21/bin/llvm-ar-21"
+    found: "/usr/bin/llvm-ar-21"
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -1619,20 +1404,15 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
   -
     kind: "find-v1"
     backtrace:
-      - "/usr/share/cmake-4.2/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/usr/share/cmake-4.2/Modules/Compiler/Clang-FindBinUtils.cmake:38 (find_program)"
       - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
       - "CMakeLists.txt:2 (project)"
     mode: "program"
     variable: "CMAKE_CXX_COMPILER_RANLIB"
-    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    description: "Generate index for LLVM archive"
     settings:
       SearchFramework: "NEVER"
       SearchAppBundle: "NEVER"
@@ -1642,15 +1422,16 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "gcc-ranlib-15.2"
-      - "gcc-ranlib-15"
-      - "gcc-ranlib15"
-      - "gcc-ranlib"
+      - "llvm-ranlib-21.1"
+      - "llvm-ranlib-21"
+      - "llvm-ranlib21"
+      - "llvm-ranlib"
     candidate_directories:
+      - "/usr/lib/llvm-21/bin/"
       - "/usr/bin/"
+      - "/home/pearlsrvcs/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
       - "/home/pearlsrvcs/GNUstep/Tools/"
       - "/usr/NextSpace/bin/"
@@ -1672,36 +1453,35 @@ events:
       - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/"
       - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/bin/"
     searched_directories:
-      - "/usr/bin/gcc-ranlib-15.2"
-      - "/home/linuxbrew/.linuxbrew/bin/gcc-ranlib-15.2"
-      - "/home/linuxbrew/.linuxbrew/sbin/gcc-ranlib-15.2"
-      - "/home/pearlsrvcs/.local/bin/gcc-ranlib-15.2"
-      - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/gcc-ranlib-15.2"
-      - "/home/pearlsrvcs/GNUstep/Tools/gcc-ranlib-15.2"
-      - "/usr/NextSpace/bin/gcc-ranlib-15.2"
-      - "/Library/bin/gcc-ranlib-15.2"
-      - "/usr/NextSpace/sbin/gcc-ranlib-15.2"
-      - "/Library/sbin/gcc-ranlib-15.2"
-      - "/usr/local/sbin/gcc-ranlib-15.2"
-      - "/usr/local/bin/gcc-ranlib-15.2"
-      - "/usr/sbin/gcc-ranlib-15.2"
-      - "/sbin/gcc-ranlib-15.2"
-      - "/bin/gcc-ranlib-15.2"
-      - "/usr/games/gcc-ranlib-15.2"
-      - "/usr/local/games/gcc-ranlib-15.2"
-      - "/snap/bin/gcc-ranlib-15.2"
-      - "/home/pearlsrvcs/.dotnet/tools/gcc-ranlib-15.2"
-      - "/home/pearlsrvcs/.lmstudio/bin/gcc-ranlib-15.2"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/platform-tools/gcc-ranlib-15.2"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/build_tools/gcc-ranlib-15.2"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/gcc-ranlib-15.2"
-      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/bin/gcc-ranlib-15.2"
-    found: "/usr/bin/gcc-ranlib-15"
+      - "/usr/lib/llvm-21/bin/llvm-ranlib-21.1"
+      - "/usr/bin/llvm-ranlib-21.1"
+      - "/home/pearlsrvcs/.local/bin/llvm-ranlib-21.1"
+      - "/home/linuxbrew/.linuxbrew/bin/llvm-ranlib-21.1"
+      - "/home/linuxbrew/.linuxbrew/sbin/llvm-ranlib-21.1"
+      - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/llvm-ranlib-21.1"
+      - "/home/pearlsrvcs/GNUstep/Tools/llvm-ranlib-21.1"
+      - "/usr/NextSpace/bin/llvm-ranlib-21.1"
+      - "/Library/bin/llvm-ranlib-21.1"
+      - "/usr/NextSpace/sbin/llvm-ranlib-21.1"
+      - "/Library/sbin/llvm-ranlib-21.1"
+      - "/usr/local/sbin/llvm-ranlib-21.1"
+      - "/usr/local/bin/llvm-ranlib-21.1"
+      - "/usr/sbin/llvm-ranlib-21.1"
+      - "/sbin/llvm-ranlib-21.1"
+      - "/bin/llvm-ranlib-21.1"
+      - "/usr/games/llvm-ranlib-21.1"
+      - "/usr/local/games/llvm-ranlib-21.1"
+      - "/snap/bin/llvm-ranlib-21.1"
+      - "/home/pearlsrvcs/.dotnet/tools/llvm-ranlib-21.1"
+      - "/home/pearlsrvcs/.lmstudio/bin/llvm-ranlib-21.1"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/platform-tools/llvm-ranlib-21.1"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/build_tools/llvm-ranlib-21.1"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/llvm-ranlib-21.1"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/bin/llvm-ranlib-21.1"
+      - "/usr/lib/llvm-21/bin/llvm-ranlib-21"
+    found: "/usr/bin/llvm-ranlib-21"
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -1740,11 +1520,122 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.2/Modules/Compiler/Clang-FindBinUtils.cmake:50 (find_program)"
+      - "/usr/share/cmake-4.2/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS"
+    description: "`clang-scan-deps` dependency scanner"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "clang-scan-deps-21.1"
+      - "clang-scan-deps-21"
+      - "clang-scan-deps21"
+      - "clang-scan-deps"
+    candidate_directories:
+      - "/usr/lib/llvm-21/bin/"
+      - "/usr/bin/"
+      - "/home/pearlsrvcs/.local/bin/"
+      - "/home/linuxbrew/.linuxbrew/bin/"
+      - "/home/linuxbrew/.linuxbrew/sbin/"
+      - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
+      - "/home/pearlsrvcs/GNUstep/Tools/"
+      - "/usr/NextSpace/bin/"
+      - "/Library/bin/"
+      - "/usr/NextSpace/sbin/"
+      - "/Library/sbin/"
+      - "/usr/local/sbin/"
+      - "/usr/local/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/bin/"
+      - "/usr/games/"
+      - "/usr/local/games/"
+      - "/snap/bin/"
+      - "/home/pearlsrvcs/.dotnet/tools/"
+      - "/home/pearlsrvcs/.lmstudio/bin/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/platform-tools/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/build_tools/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/bin/"
+    searched_directories:
+      - "/usr/lib/llvm-21/bin/clang-scan-deps-21.1"
+      - "/usr/bin/clang-scan-deps-21.1"
+      - "/home/pearlsrvcs/.local/bin/clang-scan-deps-21.1"
+      - "/home/linuxbrew/.linuxbrew/bin/clang-scan-deps-21.1"
+      - "/home/linuxbrew/.linuxbrew/sbin/clang-scan-deps-21.1"
+      - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/clang-scan-deps-21.1"
+      - "/home/pearlsrvcs/GNUstep/Tools/clang-scan-deps-21.1"
+      - "/usr/NextSpace/bin/clang-scan-deps-21.1"
+      - "/Library/bin/clang-scan-deps-21.1"
+      - "/usr/NextSpace/sbin/clang-scan-deps-21.1"
+      - "/Library/sbin/clang-scan-deps-21.1"
+      - "/usr/local/sbin/clang-scan-deps-21.1"
+      - "/usr/local/bin/clang-scan-deps-21.1"
+      - "/usr/sbin/clang-scan-deps-21.1"
+      - "/sbin/clang-scan-deps-21.1"
+      - "/bin/clang-scan-deps-21.1"
+      - "/usr/games/clang-scan-deps-21.1"
+      - "/usr/local/games/clang-scan-deps-21.1"
+      - "/snap/bin/clang-scan-deps-21.1"
+      - "/home/pearlsrvcs/.dotnet/tools/clang-scan-deps-21.1"
+      - "/home/pearlsrvcs/.lmstudio/bin/clang-scan-deps-21.1"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/platform-tools/clang-scan-deps-21.1"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/build_tools/clang-scan-deps-21.1"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/clang-scan-deps-21.1"
+      - "/home/pearlsrvcs/C++/build/ANDROID_HOME/tools/bin/clang-scan-deps-21.1"
+      - "/usr/lib/llvm-21/bin/clang-scan-deps-21"
+    found: "/usr/bin/clang-scan-deps-21"
+    search_context:
+      ENV{PATH}:
+        - "/home/pearlsrvcs/.local/bin"
+        - "/home/linuxbrew/.linuxbrew/bin"
+        - "/home/linuxbrew/.linuxbrew/sbin"
+        - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin"
+        - "/home/pearlsrvcs/.local/bin"
+        - "/home/pearlsrvcs/GNUstep/Tools"
+        - "/usr/NextSpace/bin"
+        - "/Library/bin"
+        - "/usr/NextSpace/sbin"
+        - "/Library/sbin"
+        - "/home/pearlsrvcs/.local/bin"
+        - "/usr/NextSpace/bin"
+        - "/Library/bin"
+        - "/usr/NextSpace/sbin"
+        - "/Library/sbin"
+        - "/home/pearlsrvcs/.local/bin"
+        - "/usr/NextSpace/bin"
+        - "/Library/bin"
+        - "/usr/NextSpace/sbin"
+        - "/Library/sbin"
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/sbin"
+        - "/usr/bin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/games"
+        - "/usr/local/games"
+        - "/snap/bin"
+        - "/home/pearlsrvcs/.dotnet/tools"
+        - "/home/pearlsrvcs/.lmstudio/bin"
+        - "/home/pearlsrvcs/.lmstudio/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
         - "ANDROID_HOME/platform-tools"
         - "ANDROID_HOME/build_tools"
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
+        - "/home/pearlsrvcs/.lmstudio/bin"
   -
     kind: "try_compile-v1"
     backtrace:
@@ -1754,9 +1645,10 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-sUMymd"
-      binary: "/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-sUMymd"
+      source: "/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-KtzWAg"
+      binary: "/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-KtzWAg"
     cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-21"
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
       CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
@@ -1765,72 +1657,50 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-sUMymd'
+        Change Dir: '/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-KtzWAg'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_423cc/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_423cc.dir/build.make CMakeFiles/cmTC_423cc.dir/build
-        gmake[1]: Entering directory '/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-sUMymd'
-        Building CXX object CMakeFiles/cmTC_423cc.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_423cc.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp
-        Using built-in specs.
-        COLLECT_GCC=/usr/bin/c++
-        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
-        OFFLOAD_TARGET_DEFAULT=1
-        Target: x86_64-linux-gnu
-        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 15.2.0-16ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-15/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust,cobol,algol68 --prefix=/usr --with-gcc-major-version-only --program-suffix=-15 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-15-j35TAX/gcc-15-15.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-15-j35TAX/gcc-15-15.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a4724/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a4724.dir/build.make CMakeFiles/cmTC_a4724.dir/build
+        gmake[1]: Entering directory '/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-KtzWAg'
+        Building CXX object CMakeFiles/cmTC_a4724.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/clang++   -v -MD -MT CMakeFiles/cmTC_a4724.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_a4724.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_a4724.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp
+        Ubuntu clang version 21.1.8 (6ubuntu1)
+        Target: x86_64-pc-linux-gnu
         Thread model: posix
-        Supported LTO compression algorithms: zlib zstd
-        gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_423cc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_423cc.dir/'
-         /usr/libexec/gcc/x86_64-linux-gnu/15/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_423cc.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/ccPwJj4L.s
-        GNU C++17 (Ubuntu 15.2.0-16ubuntu1) version 15.2.0 (x86_64-linux-gnu)
-        	compiled by GNU C version 15.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
-        
-        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/15"
-        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
-        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/15/include-fixed/x86_64-linux-gnu"
-        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/15/include-fixed"
+        InstalledDir: /usr/lib/llvm-21/bin
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/15
+        Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/15
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         (in-process)
+         "/usr/lib/llvm-21/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-KtzWAg -v -fcoverage-compilation-dir=/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-KtzWAg -resource-dir /usr/lib/llvm-21/lib/clang/21 -dependency-file CMakeFiles/cmTC_a4724.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_a4724.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/x86_64-linux-gnu/c++/15 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/backward -internal-isystem /usr/lib/llvm-21/lib/clang/21/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/15/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_a4724.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 21.1.8 based upon LLVM 21.1.8 default target x86_64-pc-linux-gnu
         ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/15/../../../../x86_64-linux-gnu/include"
+        ignoring nonexistent directory "/include"
         #include "..." search starts here:
         #include <...> search starts here:
-         /usr/include/c++/15
-         /usr/include/x86_64-linux-gnu/c++/15
-         /usr/include/c++/15/backward
-         /usr/lib/gcc/x86_64-linux-gnu/15/include
+         /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15
+         /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/x86_64-linux-gnu/c++/15
+         /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/backward
+         /usr/lib/llvm-21/lib/clang/21/include
          /usr/local/include
          /usr/include/x86_64-linux-gnu
          /usr/include
         End of search list.
-        Compiler executable checksum: b661a74662ad7cf413c4193391ab5290
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_423cc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_423cc.dir/'
-         /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_423cc.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccPwJj4L.s
-        GNU assembler version 2.46 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.46
-        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/
-        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_423cc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_423cc.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_423cc
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_423cc.dir/link.txt --verbose=1
-        Using built-in specs.
-        COLLECT_GCC=/usr/bin/c++
-        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper
-        OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
-        OFFLOAD_TARGET_DEFAULT=1
-        Target: x86_64-linux-gnu
-        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 15.2.0-16ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-15/README.Bugs --enable-languages=c,ada,c++,go,d,fortran,objc,obj-c++,m2,rust,cobol,algol68 --prefix=/usr --with-gcc-major-version-only --program-suffix=-15 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-15-j35TAX/gcc-15-15.2.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-15-j35TAX/gcc-15-15.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+        Linking CXX executable cmTC_a4724
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a4724.dir/link.txt --verbose=1
+        Ubuntu clang version 21.1.8 (6ubuntu1)
+        Target: x86_64-pc-linux-gnu
         Thread model: posix
-        Supported LTO compression algorithms: zlib zstd
-        gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) 
-        COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/
-        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_423cc' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_423cc.'
-         /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/cco4Qbig.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_423cc /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_423cc.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
-        collect2 version 15.2.0
-        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/cco4Qbig.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_423cc /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_423cc.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o
+        InstalledDir: /usr/lib/llvm-21/bin
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/15
+        Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/15
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_a4724 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib64 -L/lib -L/usr/lib -v CMakeFiles/cmTC_a4724.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /lib/x86_64-linux-gnu/crtn.o
         GNU ld (GNU Binutils for Ubuntu) 2.46
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_423cc' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_423cc.'
-        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_423cc.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_423cc
-        gmake[1]: Leaving directory '/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-sUMymd'
+        /usr/bin/clang++  -v -Wl,-v CMakeFiles/cmTC_a4724.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_a4724
+        gmake[1]: Leaving directory '/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-KtzWAg'
         
       exitCode: 0
   -
@@ -1843,22 +1713,22 @@ events:
       Parsed CXX implicit include dir info: rv=done
         found start of include info
         found start of implicit include info
-          add: [/usr/include/c++/15]
-          add: [/usr/include/x86_64-linux-gnu/c++/15]
-          add: [/usr/include/c++/15/backward]
-          add: [/usr/lib/gcc/x86_64-linux-gnu/15/include]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/x86_64-linux-gnu/c++/15]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/backward]
+          add: [/usr/lib/llvm-21/lib/clang/21/include]
           add: [/usr/local/include]
           add: [/usr/include/x86_64-linux-gnu]
           add: [/usr/include]
         end of search list found
-        collapse include dir [/usr/include/c++/15] ==> [/usr/include/c++/15]
-        collapse include dir [/usr/include/x86_64-linux-gnu/c++/15] ==> [/usr/include/x86_64-linux-gnu/c++/15]
-        collapse include dir [/usr/include/c++/15/backward] ==> [/usr/include/c++/15/backward]
-        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/15/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/15/include]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15] ==> [/usr/include/c++/15]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/x86_64-linux-gnu/c++/15] ==> [/usr/include/x86_64-linux-gnu/c++/15]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/backward] ==> [/usr/include/c++/15/backward]
+        collapse include dir [/usr/lib/llvm-21/lib/clang/21/include] ==> [/usr/lib/llvm-21/lib/clang/21/include]
         collapse include dir [/usr/local/include] ==> [/usr/local/include]
         collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
         collapse include dir [/usr/include] ==> [/usr/include]
-        implicit include dirs: [/usr/include/c++/15;/usr/include/x86_64-linux-gnu/c++/15;/usr/include/c++/15/backward;/usr/lib/gcc/x86_64-linux-gnu/15/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+        implicit include dirs: [/usr/include/c++/15;/usr/include/x86_64-linux-gnu/c++/15;/usr/include/c++/15/backward;/usr/lib/llvm-21/lib/clang/21/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
       
       
   -
@@ -1871,104 +1741,76 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-sUMymd']
+        ignore line: [Change Dir: '/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-KtzWAg']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_423cc/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_423cc.dir/build.make CMakeFiles/cmTC_423cc.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-sUMymd']
-        ignore line: [Building CXX object CMakeFiles/cmTC_423cc.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_423cc.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp]
-        ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=/usr/bin/c++]
-        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
-        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-        ignore line: [Target: x86_64-linux-gnu]
-        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 15.2.0-16ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-15/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust cobol algol68 --prefix=/usr --with-gcc-major-version-only --program-suffix=-15 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-15-j35TAX/gcc-15-15.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-15-j35TAX/gcc-15-15.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a4724/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_a4724.dir/build.make CMakeFiles/cmTC_a4724.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-KtzWAg']
+        ignore line: [Building CXX object CMakeFiles/cmTC_a4724.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/clang++   -v -MD -MT CMakeFiles/cmTC_a4724.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_a4724.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_a4724.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Ubuntu clang version 21.1.8 (6ubuntu1)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
         ignore line: [Thread model: posix]
-        ignore line: [Supported LTO compression algorithms: zlib zstd]
-        ignore line: [gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_423cc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_423cc.dir/']
-        ignore line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_423cc.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -fzero-init-padding-bits=all -Wbidi-chars=any -o /tmp/ccPwJj4L.s]
-        ignore line: [GNU C++17 (Ubuntu 15.2.0-16ubuntu1) version 15.2.0 (x86_64-linux-gnu)]
-        ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
-        ignore line: []
-        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/15"]
-        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
-        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/15/include-fixed/x86_64-linux-gnu"]
-        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/15/include-fixed"]
+        ignore line: [InstalledDir: /usr/lib/llvm-21/bin]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/15]
+        ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/15]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-21/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-KtzWAg -v -fcoverage-compilation-dir=/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-KtzWAg -resource-dir /usr/lib/llvm-21/lib/clang/21 -dependency-file CMakeFiles/cmTC_a4724.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_a4724.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/x86_64-linux-gnu/c++/15 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/backward -internal-isystem /usr/lib/llvm-21/lib/clang/21/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/15/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_a4724.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-4.2/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 21.1.8 based upon LLVM 21.1.8 default target x86_64-pc-linux-gnu]
         ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/15/../../../../x86_64-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
         ignore line: [#include "..." search starts here:]
         ignore line: [#include <...> search starts here:]
-        ignore line: [ /usr/include/c++/15]
-        ignore line: [ /usr/include/x86_64-linux-gnu/c++/15]
-        ignore line: [ /usr/include/c++/15/backward]
-        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/15/include]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/x86_64-linux-gnu/c++/15]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/backward]
+        ignore line: [ /usr/lib/llvm-21/lib/clang/21/include]
         ignore line: [ /usr/local/include]
         ignore line: [ /usr/include/x86_64-linux-gnu]
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
-        ignore line: [Compiler executable checksum: b661a74662ad7cf413c4193391ab5290]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_423cc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_423cc.dir/']
-        ignore line: [ /usr/bin/x86_64-linux-gnu-as -v --64 -o CMakeFiles/cmTC_423cc.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccPwJj4L.s]
-        ignore line: [GNU assembler version 2.46 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.46]
-        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/]
-        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_423cc.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_423cc.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_423cc]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_423cc.dir/link.txt --verbose=1]
-        ignore line: [Using built-in specs.]
-        ignore line: [COLLECT_GCC=/usr/bin/c++]
-        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper]
-        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
-        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-        ignore line: [Target: x86_64-linux-gnu]
-        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 15.2.0-16ubuntu1' --with-bugurl=file:///usr/share/doc/gcc-15/README.Bugs --enable-languages=c ada c++ go d fortran objc obj-c++ m2 rust cobol algol68 --prefix=/usr --with-gcc-major-version-only --program-suffix=-15 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/libexec --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-libstdcxx-backtrace --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-15-j35TAX/gcc-15-15.2.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-15-j35TAX/gcc-15-15.2.0/debian/tmp-gcn/usr --enable-offload-defaulted --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+        ignore line: [Linking CXX executable cmTC_a4724]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a4724.dir/link.txt --verbose=1]
+        ignore line: [Ubuntu clang version 21.1.8 (6ubuntu1)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
         ignore line: [Thread model: posix]
-        ignore line: [Supported LTO compression algorithms: zlib zstd]
-        ignore line: [gcc version 15.2.0 (Ubuntu 15.2.0-16ubuntu1) ]
-        ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/15/:/usr/libexec/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/]
-        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/15/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/15/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_423cc' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_423cc.']
-        link line: [ /usr/libexec/gcc/x86_64-linux-gnu/15/collect2 -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/cco4Qbig.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_423cc /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_423cc.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
-          arg [/usr/libexec/gcc/x86_64-linux-gnu/15/collect2] ==> ignore
-          arg [-plugin] ==> ignore
-          arg [/usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so] ==> ignore
-          arg [-plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/cco4Qbig.res] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lc] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+        ignore line: [InstalledDir: /usr/lib/llvm-21/bin]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/15]
+        ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/15]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_a4724 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib64 -L/lib -L/usr/lib -v CMakeFiles/cmTC_a4724.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
           arg [--build-id] ==> ignore
           arg [--eh-frame-hdr] ==> ignore
           arg [-m] ==> ignore
           arg [elf_x86_64] ==> ignore
-          arg [--hash-style=gnu] ==> ignore
-          arg [--as-needed] ==> ignore
+          arg [-pie] ==> ignore
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-          arg [-pie] ==> ignore
-          arg [-znow] ==> ignore
-          arg [-zrelro] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_423cc] ==> ignore
-          arg [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o]
-          arg [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o]
+          arg [cmTC_a4724] ==> ignore
+          arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o]
           arg [-L/usr/lib/gcc/x86_64-linux-gnu/15] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/15]
-          arg [-L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu]
-          arg [-L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib64]
           arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
-          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
           arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
-          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-          arg [-L/usr/lib/gcc/x86_64-linux-gnu/15/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/15/../../..]
+          arg [-L/usr/lib64] ==> dir [/usr/lib64]
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_423cc.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_a4724.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -1977,26 +1819,19 @@ events:
           arg [-lgcc_s] ==> lib [gcc_s]
           arg [-lgcc] ==> lib [gcc]
           arg [/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o]
-          arg [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
-        ignore line: [collect2 version 15.2.0]
-        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-linux-gnu/15/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-linux-gnu/15/lto-wrapper -plugin-opt=-fresolution=/tmp/cco4Qbig.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_423cc /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/15 -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/15/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_423cc.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
         linker tool for 'CXX': /usr/bin/ld
-        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
-        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
-        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
         collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/15] ==> [/usr/lib/gcc/x86_64-linux-gnu/15]
-        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/15/../../../../lib64] ==> [/usr/lib64]
         collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
-        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
         collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/15/../../..] ==> [/usr/lib]
+        collapse library dir [/usr/lib64] ==> [/usr/lib64]
         collapse library dir [/lib] ==> [/lib]
         collapse library dir [/usr/lib] ==> [/usr/lib]
         implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
-        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
-        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/15;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/15/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/15;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/lib;/usr/lib]
         implicit fwks: []
       
       
@@ -2026,9 +1861,10 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-KONGLu"
-      binary: "/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-KONGLu"
+      source: "/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-ChgLDx"
+      binary: "/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-ChgLDx"
     cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-21"
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -2037,17 +1873,17 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-KONGLu'
+        Change Dir: '/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-ChgLDx'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_caa4c/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_caa4c.dir/build.make CMakeFiles/cmTC_caa4c.dir/build
-        gmake[1]: Entering directory '/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-KONGLu'
-        Building CXX object CMakeFiles/cmTC_caa4c.dir/src.cxx.o
-        /usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++17 -o CMakeFiles/cmTC_caa4c.dir/src.cxx.o -c /home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-KONGLu/src.cxx
-        Linking CXX executable cmTC_caa4c
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_caa4c.dir/link.txt --verbose=1
-        /usr/bin/c++ CMakeFiles/cmTC_caa4c.dir/src.cxx.o -o cmTC_caa4c
-        gmake[1]: Leaving directory '/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-KONGLu'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ee588/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ee588.dir/build.make CMakeFiles/cmTC_ee588.dir/build
+        gmake[1]: Entering directory '/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-ChgLDx'
+        Building CXX object CMakeFiles/cmTC_ee588.dir/src.cxx.o
+        /usr/bin/clang++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++17 -MD -MT CMakeFiles/cmTC_ee588.dir/src.cxx.o -MF CMakeFiles/cmTC_ee588.dir/src.cxx.o.d -o CMakeFiles/cmTC_ee588.dir/src.cxx.o -c /home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-ChgLDx/src.cxx
+        Linking CXX executable cmTC_ee588
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee588.dir/link.txt --verbose=1
+        /usr/bin/clang++ CMakeFiles/cmTC_ee588.dir/src.cxx.o -o cmTC_ee588
+        gmake[1]: Leaving directory '/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-ChgLDx'
         
       exitCode: 0
   -
@@ -2106,19 +1942,19 @@ events:
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/linuxbrew/.linuxbrew/Qt6CoreToolsConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/linuxbrew/.linuxbrew/qt6coretools-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
         path: "/home/pearlsrvcs/.local/Qt6CoreToolsConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
         path: "/home/pearlsrvcs/.local/qt6coretools-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/linuxbrew/.linuxbrew/Qt6CoreToolsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/linuxbrew/.linuxbrew/qt6coretools-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -2167,9 +2003,6 @@ events:
       version: "6.10.2"
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -2208,11 +2041,6 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -2279,19 +2107,19 @@ events:
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/linuxbrew/.linuxbrew/Qt6GuiToolsConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/linuxbrew/.linuxbrew/qt6guitools-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
         path: "/home/pearlsrvcs/.local/Qt6GuiToolsConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
         path: "/home/pearlsrvcs/.local/qt6guitools-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/linuxbrew/.linuxbrew/Qt6GuiToolsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/linuxbrew/.linuxbrew/qt6guitools-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -2340,9 +2168,6 @@ events:
       version: "6.10.2"
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -2381,11 +2206,6 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -2449,19 +2269,19 @@ events:
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/linuxbrew/.linuxbrew/Qt6WidgetsToolsConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/linuxbrew/.linuxbrew/qt6widgetstools-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
         path: "/home/pearlsrvcs/.local/Qt6WidgetsToolsConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
         path: "/home/pearlsrvcs/.local/qt6widgetstools-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/linuxbrew/.linuxbrew/Qt6WidgetsToolsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/linuxbrew/.linuxbrew/qt6widgetstools-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -2510,9 +2330,6 @@ events:
       version: "6.10.2"
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -2551,11 +2368,6 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -2587,9 +2399,10 @@ events:
     checks:
       - "Performing Test HAVE_STDATOMIC"
     directories:
-      source: "/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-g7iJPS"
-      binary: "/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-g7iJPS"
+      source: "/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-DZ8jgc"
+      binary: "/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-DZ8jgc"
     cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-21"
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
       CMAKE_EXE_LINKER_FLAGS: ""
@@ -2598,17 +2411,17 @@ events:
       variable: "HAVE_STDATOMIC"
       cached: true
       stdout: |
-        Change Dir: '/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-g7iJPS'
+        Change Dir: '/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-DZ8jgc'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2708e/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_2708e.dir/build.make CMakeFiles/cmTC_2708e.dir/build
-        gmake[1]: Entering directory '/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-g7iJPS'
-        Building CXX object CMakeFiles/cmTC_2708e.dir/src.cxx.o
-        /usr/bin/c++ -DHAVE_STDATOMIC  -std=gnu++17 -o CMakeFiles/cmTC_2708e.dir/src.cxx.o -c /home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-g7iJPS/src.cxx
-        Linking CXX executable cmTC_2708e
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2708e.dir/link.txt --verbose=1
-        /usr/bin/c++ CMakeFiles/cmTC_2708e.dir/src.cxx.o -o cmTC_2708e
-        gmake[1]: Leaving directory '/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-g7iJPS'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e123d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e123d.dir/build.make CMakeFiles/cmTC_e123d.dir/build
+        gmake[1]: Entering directory '/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-DZ8jgc'
+        Building CXX object CMakeFiles/cmTC_e123d.dir/src.cxx.o
+        /usr/bin/clang++ -DHAVE_STDATOMIC  -std=gnu++17 -MD -MT CMakeFiles/cmTC_e123d.dir/src.cxx.o -MF CMakeFiles/cmTC_e123d.dir/src.cxx.o.d -o CMakeFiles/cmTC_e123d.dir/src.cxx.o -c /home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-DZ8jgc/src.cxx
+        Linking CXX executable cmTC_e123d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e123d.dir/link.txt --verbose=1
+        /usr/bin/clang++ CMakeFiles/cmTC_e123d.dir/src.cxx.o -o cmTC_e123d
+        gmake[1]: Leaving directory '/home/pearlsrvcs/C++/build/CMakeFiles/CMakeScratch/TryCompile-DZ8jgc'
         
       exitCode: 0
   -
@@ -2695,9 +2508,6 @@ events:
       version: "6.10.2"
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -2736,11 +2546,6 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -2782,9 +2587,9 @@ events:
     names:
       - "GL/gl.h"
     candidate_directories:
+      - "/home/pearlsrvcs/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
       - "/home/pearlsrvcs/GNUstep/Tools/"
       - "/usr/NextSpace/bin/"
@@ -2828,9 +2633,9 @@ events:
       - "/usr/openwin/share/include/"
       - "/opt/graphics/OpenGL/include/"
     searched_directories:
+      - "/home/pearlsrvcs/.local/bin/GL/gl.h"
       - "/home/linuxbrew/.linuxbrew/bin/GL/gl.h"
       - "/home/linuxbrew/.linuxbrew/sbin/GL/gl.h"
-      - "/home/pearlsrvcs/.local/bin/GL/gl.h"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/GL/gl.h"
       - "/home/pearlsrvcs/GNUstep/Tools/GL/gl.h"
       - "/usr/NextSpace/bin/GL/gl.h"
@@ -2859,9 +2664,6 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -2900,11 +2702,6 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -2948,9 +2745,9 @@ events:
     names:
       - "GL/glx.h"
     candidate_directories:
+      - "/home/pearlsrvcs/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
       - "/home/pearlsrvcs/GNUstep/Tools/"
       - "/usr/NextSpace/bin/"
@@ -2991,9 +2788,9 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
+      - "/home/pearlsrvcs/.local/bin/GL/glx.h"
       - "/home/linuxbrew/.linuxbrew/bin/GL/glx.h"
       - "/home/linuxbrew/.linuxbrew/sbin/GL/glx.h"
-      - "/home/pearlsrvcs/.local/bin/GL/glx.h"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/GL/glx.h"
       - "/home/pearlsrvcs/GNUstep/Tools/GL/glx.h"
       - "/usr/NextSpace/bin/GL/glx.h"
@@ -3022,9 +2819,6 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -3063,11 +2857,6 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -3111,9 +2900,9 @@ events:
     names:
       - "EGL/egl.h"
     candidate_directories:
+      - "/home/pearlsrvcs/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
       - "/home/pearlsrvcs/GNUstep/Tools/"
       - "/usr/NextSpace/bin/"
@@ -3154,9 +2943,9 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
+      - "/home/pearlsrvcs/.local/bin/EGL/egl.h"
       - "/home/linuxbrew/.linuxbrew/bin/EGL/egl.h"
       - "/home/linuxbrew/.linuxbrew/sbin/EGL/egl.h"
-      - "/home/pearlsrvcs/.local/bin/EGL/egl.h"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/EGL/egl.h"
       - "/home/pearlsrvcs/GNUstep/Tools/EGL/egl.h"
       - "/usr/NextSpace/bin/EGL/egl.h"
@@ -3185,9 +2974,6 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -3226,11 +3012,6 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -3274,9 +3055,9 @@ events:
     names:
       - "GLES2/gl2.h"
     candidate_directories:
+      - "/home/pearlsrvcs/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
       - "/home/pearlsrvcs/GNUstep/Tools/"
       - "/usr/NextSpace/bin/"
@@ -3317,9 +3098,9 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
+      - "/home/pearlsrvcs/.local/bin/GLES2/gl2.h"
       - "/home/linuxbrew/.linuxbrew/bin/GLES2/gl2.h"
       - "/home/linuxbrew/.linuxbrew/sbin/GLES2/gl2.h"
-      - "/home/pearlsrvcs/.local/bin/GLES2/gl2.h"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/GLES2/gl2.h"
       - "/home/pearlsrvcs/GNUstep/Tools/GLES2/gl2.h"
       - "/usr/NextSpace/bin/GLES2/gl2.h"
@@ -3348,9 +3129,6 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -3389,11 +3167,6 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -3437,9 +3210,9 @@ events:
     names:
       - "GLES3/gl3.h"
     candidate_directories:
+      - "/home/pearlsrvcs/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
       - "/home/pearlsrvcs/GNUstep/Tools/"
       - "/usr/NextSpace/bin/"
@@ -3480,9 +3253,9 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
+      - "/home/pearlsrvcs/.local/bin/GLES3/gl3.h"
       - "/home/linuxbrew/.linuxbrew/bin/GLES3/gl3.h"
       - "/home/linuxbrew/.linuxbrew/sbin/GLES3/gl3.h"
-      - "/home/pearlsrvcs/.local/bin/GLES3/gl3.h"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/GLES3/gl3.h"
       - "/home/pearlsrvcs/GNUstep/Tools/GLES3/gl3.h"
       - "/usr/NextSpace/bin/GLES3/gl3.h"
@@ -3511,9 +3284,6 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -3552,11 +3322,6 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -3600,9 +3365,9 @@ events:
     names:
       - "GL/xmesa.h"
     candidate_directories:
+      - "/home/pearlsrvcs/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
       - "/home/pearlsrvcs/GNUstep/Tools/"
       - "/usr/NextSpace/bin/"
@@ -3646,9 +3411,9 @@ events:
       - "/usr/openwin/share/include/"
       - "/opt/graphics/OpenGL/include/"
     searched_directories:
+      - "/home/pearlsrvcs/.local/bin/GL/xmesa.h"
       - "/home/linuxbrew/.linuxbrew/bin/GL/xmesa.h"
       - "/home/linuxbrew/.linuxbrew/sbin/GL/xmesa.h"
-      - "/home/pearlsrvcs/.local/bin/GL/xmesa.h"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/GL/xmesa.h"
       - "/home/pearlsrvcs/GNUstep/Tools/GL/xmesa.h"
       - "/usr/NextSpace/bin/GL/xmesa.h"
@@ -3694,9 +3459,6 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -3735,11 +3497,6 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -3783,9 +3540,9 @@ events:
     names:
       - "GL/glu.h"
     candidate_directories:
+      - "/home/pearlsrvcs/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
       - "/home/pearlsrvcs/GNUstep/Tools/"
       - "/usr/NextSpace/bin/"
@@ -3826,9 +3583,9 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
+      - "/home/pearlsrvcs/.local/bin/GL/glu.h"
       - "/home/linuxbrew/.linuxbrew/bin/GL/glu.h"
       - "/home/linuxbrew/.linuxbrew/sbin/GL/glu.h"
-      - "/home/pearlsrvcs/.local/bin/GL/glu.h"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/GL/glu.h"
       - "/home/pearlsrvcs/GNUstep/Tools/GL/glu.h"
       - "/usr/NextSpace/bin/GL/glu.h"
@@ -3857,9 +3614,6 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -3898,11 +3652,6 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -3946,9 +3695,9 @@ events:
     names:
       - "OpenGL"
     candidate_directories:
+      - "/home/pearlsrvcs/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
       - "/home/pearlsrvcs/GNUstep/Tools/"
       - "/usr/NextSpace/bin/"
@@ -3989,9 +3738,9 @@ events:
       - "/opt/"
       - "/usr/lib/X11/"
     searched_directories:
+      - "/home/pearlsrvcs/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
       - "/home/pearlsrvcs/GNUstep/Tools/"
       - "/usr/NextSpace/bin/"
@@ -4019,9 +3768,6 @@ events:
     found: "/usr/lib/x86_64-linux-gnu/libOpenGL.so"
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -4060,11 +3806,6 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -4108,12 +3849,12 @@ events:
     names:
       - "GLX"
     candidate_directories:
+      - "/home/pearlsrvcs/.local/bin/libglvnd/"
+      - "/home/pearlsrvcs/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/libglvnd/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/libglvnd/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/libglvnd/"
-      - "/home/pearlsrvcs/.local/bin/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/libglvnd/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
       - "/home/pearlsrvcs/GNUstep/Tools/libglvnd/"
@@ -4193,12 +3934,12 @@ events:
       - "/usr/lib/X11/libglvnd/"
       - "/usr/lib/X11/"
     searched_directories:
+      - "/home/pearlsrvcs/.local/bin/libglvnd/"
+      - "/home/pearlsrvcs/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/libglvnd/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/libglvnd/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/libglvnd/"
-      - "/home/pearlsrvcs/.local/bin/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/libglvnd/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
       - "/home/pearlsrvcs/GNUstep/Tools/libglvnd/"
@@ -4251,9 +3992,6 @@ events:
     found: "/usr/lib/x86_64-linux-gnu/libGLX.so"
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -4292,11 +4030,6 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -4340,12 +4073,12 @@ events:
     names:
       - "EGL"
     candidate_directories:
+      - "/home/pearlsrvcs/.local/bin/libglvnd/"
+      - "/home/pearlsrvcs/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/libglvnd/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/libglvnd/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/libglvnd/"
-      - "/home/pearlsrvcs/.local/bin/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/libglvnd/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
       - "/home/pearlsrvcs/GNUstep/Tools/libglvnd/"
@@ -4425,12 +4158,12 @@ events:
       - "/usr/lib/X11/libglvnd/"
       - "/usr/lib/X11/"
     searched_directories:
+      - "/home/pearlsrvcs/.local/bin/libglvnd/"
+      - "/home/pearlsrvcs/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/libglvnd/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/libglvnd/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/libglvnd/"
-      - "/home/pearlsrvcs/.local/bin/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/libglvnd/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
       - "/home/pearlsrvcs/GNUstep/Tools/libglvnd/"
@@ -4483,9 +4216,6 @@ events:
     found: "/usr/lib/x86_64-linux-gnu/libEGL.so"
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -4524,11 +4254,6 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -4572,9 +4297,9 @@ events:
     names:
       - "GLESv2"
     candidate_directories:
+      - "/home/pearlsrvcs/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
       - "/home/pearlsrvcs/GNUstep/Tools/"
       - "/usr/NextSpace/bin/"
@@ -4615,9 +4340,9 @@ events:
       - "/opt/"
       - "/usr/lib/X11/"
     searched_directories:
+      - "/home/pearlsrvcs/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
       - "/home/pearlsrvcs/GNUstep/Tools/"
       - "/usr/NextSpace/bin/"
@@ -4645,9 +4370,6 @@ events:
     found: "/usr/lib/x86_64-linux-gnu/libGLESv2.so"
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -4686,11 +4408,6 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -4735,9 +4452,9 @@ events:
       - "GLESv3"
       - "GLESv2"
     candidate_directories:
+      - "/home/pearlsrvcs/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
       - "/home/pearlsrvcs/GNUstep/Tools/"
       - "/usr/NextSpace/bin/"
@@ -4778,9 +4495,9 @@ events:
       - "/opt/"
       - "/usr/lib/X11/"
     searched_directories:
+      - "/home/pearlsrvcs/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
       - "/home/pearlsrvcs/GNUstep/Tools/"
       - "/usr/NextSpace/bin/"
@@ -4820,9 +4537,9 @@ events:
       - "/opt/lib/"
       - "/opt/"
       - "/usr/lib/X11/"
+      - "/home/pearlsrvcs/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
       - "/home/pearlsrvcs/GNUstep/Tools/"
       - "/usr/NextSpace/bin/"
@@ -4850,9 +4567,6 @@ events:
     found: "/usr/lib/x86_64-linux-gnu/libGLESv2.so"
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -4891,11 +4605,6 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -4940,9 +4649,9 @@ events:
       - "GLU"
       - "MesaGLU"
     candidate_directories:
+      - "/home/pearlsrvcs/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
       - "/home/pearlsrvcs/GNUstep/Tools/"
       - "/usr/NextSpace/bin/"
@@ -4986,9 +4695,9 @@ events:
       - "/usr/openwin/lib/"
       - "/usr/shlib/"
     searched_directories:
+      - "/home/pearlsrvcs/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
       - "/home/pearlsrvcs/GNUstep/Tools/"
       - "/usr/NextSpace/bin/"
@@ -5016,9 +4725,6 @@ events:
     found: "/usr/lib/x86_64-linux-gnu/libGLU.so"
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -5057,11 +4763,6 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -5104,9 +4805,9 @@ events:
       - "vulkan/vulkan.h"
     candidate_directories:
       - "/include/"
+      - "/home/pearlsrvcs/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
       - "/home/pearlsrvcs/GNUstep/Tools/"
       - "/usr/NextSpace/bin/"
@@ -5148,9 +4849,9 @@ events:
       - "/usr/include/X11/"
     searched_directories:
       - "/include/vulkan/vulkan.h"
+      - "/home/pearlsrvcs/.local/bin/vulkan/vulkan.h"
       - "/home/linuxbrew/.linuxbrew/bin/vulkan/vulkan.h"
       - "/home/linuxbrew/.linuxbrew/sbin/vulkan/vulkan.h"
-      - "/home/pearlsrvcs/.local/bin/vulkan/vulkan.h"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/vulkan/vulkan.h"
       - "/home/pearlsrvcs/GNUstep/Tools/vulkan/vulkan.h"
       - "/usr/NextSpace/bin/vulkan/vulkan.h"
@@ -5179,9 +4880,6 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -5220,11 +4918,6 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -5267,9 +4960,9 @@ events:
       - "vulkan"
     candidate_directories:
       - "/lib/"
+      - "/home/pearlsrvcs/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
       - "/home/pearlsrvcs/GNUstep/Tools/"
       - "/usr/NextSpace/bin/"
@@ -5311,9 +5004,9 @@ events:
       - "/usr/lib/X11/"
     searched_directories:
       - "/lib/"
+      - "/home/pearlsrvcs/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
       - "/home/pearlsrvcs/GNUstep/Tools/"
       - "/usr/NextSpace/bin/"
@@ -5341,9 +5034,6 @@ events:
     found: "/usr/lib/x86_64-linux-gnu/libvulkan.so"
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -5382,11 +5072,6 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -5429,9 +5114,9 @@ events:
       - "glslc"
     candidate_directories:
       - "/bin/"
+      - "/home/pearlsrvcs/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
       - "/home/pearlsrvcs/GNUstep/Tools/"
       - "/usr/NextSpace/bin/"
@@ -5471,9 +5156,9 @@ events:
       - "/opt/"
     searched_directories:
       - "/bin/glslc"
+      - "/home/pearlsrvcs/.local/bin/glslc"
       - "/home/linuxbrew/.linuxbrew/bin/glslc"
       - "/home/linuxbrew/.linuxbrew/sbin/glslc"
-      - "/home/pearlsrvcs/.local/bin/glslc"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/glslc"
       - "/home/pearlsrvcs/GNUstep/Tools/glslc"
       - "/usr/NextSpace/bin/glslc"
@@ -5514,9 +5199,6 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -5555,11 +5237,6 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -5600,9 +5277,9 @@ events:
       - "glslangValidator"
     candidate_directories:
       - "/bin/"
+      - "/home/pearlsrvcs/.local/bin/"
       - "/home/linuxbrew/.linuxbrew/bin/"
       - "/home/linuxbrew/.linuxbrew/sbin/"
-      - "/home/pearlsrvcs/.local/bin/"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/"
       - "/home/pearlsrvcs/GNUstep/Tools/"
       - "/usr/NextSpace/bin/"
@@ -5642,9 +5319,9 @@ events:
       - "/opt/"
     searched_directories:
       - "/bin/glslangValidator"
+      - "/home/pearlsrvcs/.local/bin/glslangValidator"
       - "/home/linuxbrew/.linuxbrew/bin/glslangValidator"
       - "/home/linuxbrew/.linuxbrew/sbin/glslangValidator"
-      - "/home/pearlsrvcs/.local/bin/glslangValidator"
       - "/home/pearlsrvcs/.nvm/versions/node/v22.22.2/bin/glslangValidator"
       - "/home/pearlsrvcs/GNUstep/Tools/glslangValidator"
       - "/usr/NextSpace/bin/glslangValidator"
@@ -5685,9 +5362,6 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -5726,11 +5400,6 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -5804,19 +5473,19 @@ events:
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/linuxbrew/.linuxbrew/Qt6DBusToolsConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/linuxbrew/.linuxbrew/qt6dbustools-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
         path: "/home/pearlsrvcs/.local/Qt6DBusToolsConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
         path: "/home/pearlsrvcs/.local/qt6dbustools-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/linuxbrew/.linuxbrew/Qt6DBusToolsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/linuxbrew/.linuxbrew/qt6dbustools-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -5865,9 +5534,6 @@ events:
       version: "6.10.2"
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -5906,11 +5572,6 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -6010,9 +5671,6 @@ events:
       version: "6.10.2"
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -6051,11 +5709,6 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -6150,9 +5803,6 @@ events:
       version: "6.10.2"
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -6191,11 +5841,6 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -6282,9 +5927,6 @@ events:
       version: "6.10.2"
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -6323,11 +5965,6 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -6406,9 +6043,6 @@ events:
       version: "6.10.2"
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -6447,11 +6081,6 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"
@@ -6515,19 +6144,19 @@ events:
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/linuxbrew/.linuxbrew/Qt6Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/linuxbrew/.linuxbrew/qt6-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
         path: "/home/pearlsrvcs/.local/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
         path: "/home/pearlsrvcs/.local/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/linuxbrew/.linuxbrew/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/linuxbrew/.linuxbrew/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
@@ -7048,9 +6677,6 @@ events:
       version: "6.10.2"
     search_context:
       ENV{PATH}:
-        - "/home/linuxbrew/.linuxbrew/bin"
-        - "/home/linuxbrew/.linuxbrew/sbin"
-        - "/home/pearlsrvcs/.local/bin"
         - "/home/pearlsrvcs/.local/bin"
         - "/home/linuxbrew/.linuxbrew/bin"
         - "/home/linuxbrew/.linuxbrew/sbin"
@@ -7089,11 +6715,6 @@ events:
         - "ANDROID_HOME/tools"
         - "ANDROID_HOME/tools/bin"
         - "/home/pearlsrvcs/.lmstudio/bin"
-        - "/home/pearlsrvcs/.lmstudio/bin"
-        - "ANDROID_HOME/platform-tools"
-        - "ANDROID_HOME/build_tools"
-        - "ANDROID_HOME/tools"
-        - "ANDROID_HOME/tools/bin"
       CMAKE_INSTALL_PREFIX: "/usr/local"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "/usr/local"

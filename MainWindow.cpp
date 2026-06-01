@@ -1,4 +1,10 @@
 #include "MainWindow.hpp"
+
+#include "TextAdventureWidget.hpp"
+#include "TriviaWidget.hpp"
+#include "DoodlePadWidget.hpp"
+#include "SolitaireWidget.h"
+
 #include <QVector>
 #include <QTabWidget>
 #include <QCalendarWidget>
@@ -16,9 +22,20 @@
 #include <QJsonDocument>
 #include <QJsonArray>
 #include <QJsonObject>
+#include <QMenuBar>
+#include <QMenu>
+#include <QAction>
+#include <QTextCursor>
+#include <QTextCharFormat>
+#include <QCloseEvent>
+#include <QTabBar>
+#include <QFont>
+#include <QColor>
+
+#include <algorithm>
 #include <stdexcept>
 
-static double evalExpr(const QString& expr); // simple stub
+static double evalExpr(const QString& expr); // forward
 
 // =============================================================
 //  Constructor
@@ -26,10 +43,24 @@ static double evalExpr(const QString& expr); // simple stub
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
 {
-    tabs = new QTabWidget(this);
-    setCentralWidget(tabs);
     setWindowTitle("Personal Manager");
-    setWindowIcon(QIcon(":/icons/pm_icon.png"));
+    setWindowIcon(QIcon(":/resources/icons/pm_icon.png"));
+    resize(720, 640);
+    setMaximumWidth(1100);
+
+    // ---- Central Widget + Layout ----
+    QWidget *central = new QWidget(this);
+    QVBoxLayout *rootLayout = new QVBoxLayout(central);
+
+    // ---- Main Tabs ----
+    tabs = new QTabWidget(this);
+    rootLayout->addWidget(tabs);
+
+    // // ---------------------------------------------------------
+    // // Doodle Pad tab
+    // // ---------------------------------------------------------
+    // doodlePad = new DoodlePadWidget(this);
+    // tabs->addTab(doodlePad, "Doodle Pad");
 
     // ---------------------------------------------------------
     // Calendar tab
@@ -66,16 +97,15 @@ MainWindow::MainWindow(QWidget *parent)
 
         QGridLayout* grid = new QGridLayout;
 
-        QString buttons[6][4] = {
+        QString buttons[5][4] = {
             {"(", ")", "←", ""},
-            {"MC", "MR", "M+", "M-"},
             {"7", "8", "9", "/"},
             {"4", "5", "6", "*"},
             {"1", "2", "3", "-"},
             {"0", ".", "=", "+"}
         };
 
-        for (int r = 0; r < 6; r++) {
+        for (int r = 0; r < 5; r++) {
             for (int c = 0; c < 4; c++) {
                 QString text = buttons[r][c];
                 if (text.isEmpty()) continue;
@@ -87,49 +117,13 @@ MainWindow::MainWindow(QWidget *parent)
 
                 if (text == "=") {
                     connect(btn, &QPushButton::clicked, this, &MainWindow::onCalcEvaluate);
-                }
-                else if (text == "←") {
+                } else if (text == "←") {
                     connect(btn, &QPushButton::clicked, [this]() {
                         QString t = calcInput->text();
                         if (!t.isEmpty())
                             calcInput->setText(t.left(t.length() - 1));
                     });
-                }
-                else if (text == "MC") {
-                    connect(btn, &QPushButton::clicked, [this]() {
-                        this->memoryValue = 0.0;
-                        addHistory("MC (memory cleared)");
-                    });
-                }
-                else if (text == "MR") {
-                    connect(btn, &QPushButton::clicked, [this]() {
-                        addHistory("MR → " + QString::number(this->memoryValue));
-                        calcInput->setText(calcInput->text() + QString::number(this->memoryValue));
-                    });
-                }
-                else if (text == "M+") {
-                    connect(btn, &QPushButton::clicked, [this]() {
-                        try {
-                            double v = evalExpr(calcInput->text());
-                            this->memoryValue += v;
-                            addHistory("M+ (added " + QString::number(v) + ")");
-                        } catch (...) {
-                            calcInput->setText("Error");
-                        }
-                    });
-                }
-                else if (text == "M-") {
-                    connect(btn, &QPushButton::clicked, [this]() {
-                        try {
-                            double v = evalExpr(calcInput->text());
-                            this->memoryValue -= v;
-                            addHistory("M- (subtracted " + QString::number(v) + ")");
-                        } catch (...) {
-                            calcInput->setText("Error");
-                        }
-                    });
-                }
-                else {
+                } else {
                     connect(btn, &QPushButton::clicked, [this, text]() {
                         calcInput->setText(calcInput->text() + text);
                     });
@@ -154,13 +148,13 @@ MainWindow::MainWindow(QWidget *parent)
         taskDate = new QDateEdit(QDate::currentDate(), page);
         taskDate->setCalendarPopup(true);
 
-        QPushButton* addContactBtn = new QPushButton("Add Task", page);
+        QPushButton* addBtn = new QPushButton("Add Task", page);
         QPushButton* rmBtn  = new QPushButton("Remove", page);
 
         QHBoxLayout* inputRow = new QHBoxLayout;
         inputRow->addWidget(taskInput);
         inputRow->addWidget(taskDate);
-        inputRow->addWidget(addContactBtn);
+        inputRow->addWidget(addBtn);
         inputRow->addWidget(rmBtn);
 
         taskList = new QListWidget(page);
@@ -168,7 +162,7 @@ MainWindow::MainWindow(QWidget *parent)
         layout->addLayout(inputRow);
         layout->addWidget(taskList);
 
-        connect(addContactBtn, &QPushButton::clicked, this, &MainWindow::onTaskAdd);
+        connect(addBtn, &QPushButton::clicked, this, &MainWindow::onTaskAdd);
         connect(rmBtn,  &QPushButton::clicked, this, &MainWindow::onTaskRemove);
 
         connect(calendar, &QCalendarWidget::clicked, [this](const QDate& d) {
@@ -193,151 +187,285 @@ MainWindow::MainWindow(QWidget *parent)
         loadTasks();
     }
 
-    // ---- Notepad tab ----
-{
-    QWidget* page = new QWidget;
-    QVBoxLayout* layout = new QVBoxLayout(page);
+    // ---------------------------------------------------------
+    // Address Book tab
+    // ---------------------------------------------------------
+    {
+        QWidget *page = new QWidget;
+        QVBoxLayout *layout = new QVBoxLayout(page);
 
-    // --- Search bar ---
-    QHBoxLayout *searchRow = new QHBoxLayout;
+        contactName = new QLineEdit(page);
+        contactName->setPlaceholderText("Name");
 
-    searchBox = new QLineEdit();
-    searchBox->setPlaceholderText("Search all notes...");
+        contactPhone = new QLineEdit(page);
+        contactPhone->setPlaceholderText("Phone");
 
-    QPushButton *findNextBtn = new QPushButton("Next");
-    QPushButton *findAllBtn = new QPushButton("Find All");
+        contactEmail = new QLineEdit(page);
+        contactEmail->setPlaceholderText("Email");
 
-    searchRow->addWidget(searchBox);
-    searchRow->addWidget(findNextBtn);
-    searchRow->addWidget(findAllBtn);
+        contactAddress = new QLineEdit(page);
+        contactAddress->setPlaceholderText("Address");
 
-    layout->addLayout(searchRow);
+        addContactBtn = new QPushButton("Add Contact", page);
+        QPushButton *rmBtn  = new QPushButton("Remove", page);
 
-    // --- Tab widget ---
-    noteTabs = new QTabWidget(this);
-    noteTabs->setTabsClosable(true);
+        QGridLayout *inputGrid = new QGridLayout;
+        inputGrid->addWidget(contactName,    0, 0);
+        inputGrid->addWidget(contactPhone,   0, 1);
+        inputGrid->addWidget(contactEmail,   1, 0);
+        inputGrid->addWidget(contactAddress, 1, 1);
+        inputGrid->addWidget(addContactBtn,  2, 0);
+        inputGrid->addWidget(rmBtn,          2, 1);
 
-    // Helper to keep "+" tab buttonless
-    auto fixPlusTab = [=]() {
-        int last = noteTabs->count() - 1;
-        noteTabs->tabBar()->setTabButton(last, QTabBar::RightSide, nullptr);
-        noteTabs->tabBar()->setTabButton(last, QTabBar::LeftSide, nullptr);
-    };
+        layout->addLayout(inputGrid);
 
-    // Load saved tabs
-    loadNotes();
+        contactList = new QListWidget(page);
+        layout->addWidget(contactList);
 
-    // If no tabs exist, create the first one
-    if (noteTabs->count() == 0) {
-        QWidget *firstTab = new QWidget();
-        QVBoxLayout *firstLayout = new QVBoxLayout(firstTab);
-        QPlainTextEdit *firstEdit = new QPlainTextEdit();
-        firstLayout->addWidget(firstEdit);
-        firstTab->setLayout(firstLayout);
-        noteTabs->addTab(firstTab, "Note 1");
-    }
+        connect(addContactBtn, &QPushButton::clicked, this, [this]() {
+            QString name = contactName->text().trimmed();
+            QString phone = contactPhone->text().trimmed();
+            QString email = contactEmail->text().trimmed();
+            QString addr = contactAddress->text().trimmed();
 
-    // "+" tab
-    QWidget *plusTab = new QWidget();
-    noteTabs->addTab(plusTab, "+");
-    fixPlusTab();
-
-    // Handle "+" tab creation
-    connect(noteTabs, &QTabWidget::currentChanged, this, [=](int index) {
-        if (noteTabs->tabText(index) == "+") {
-
-            QWidget *newTab = new QWidget();
-            QVBoxLayout *layout = new QVBoxLayout(newTab);
-            QPlainTextEdit *editor = new QPlainTextEdit();
-            layout->addWidget(editor);
-            newTab->setLayout(layout);
-
-            int newIndex = noteTabs->insertTab(
-                noteTabs->count() - 1,
-                newTab,
-                QString("Note %1").arg(noteTabs->count())
-            );
-
-            noteTabs->setCurrentIndex(newIndex);
-            fixPlusTab();
-        }
-    });
-
-    // Handle closing tabs
-    connect(noteTabs, &QTabWidget::tabCloseRequested, this, [=](int index) {
-        if (noteTabs->tabText(index) == "+")
-            return;
-
-        QWidget *tab = noteTabs->widget(index);
-        noteTabs->removeTab(index);
-        delete tab;
-
-        saveNotes();
-        fixPlusTab();
-    });
-
-    // --- Find Next ---
-    connect(findNextBtn, &QPushButton::clicked, this, [=]() mutable {
-        QString query = searchBox->text();
-        if (query.isEmpty()) return;
-
-        int tabCount = noteTabs->count() - 1; // ignore "+"
-
-        for (int i = 0; i < tabCount; i++) {
-            QWidget *tab = noteTabs->widget(searchTabIndex);
-            QPlainTextEdit *editor = tab->findChild<QPlainTextEdit *>();
-
-            QString text = editor->toPlainText();
-
-            int pos = text.indexOf(query, searchPos, Qt::CaseInsensitive);
-
-            if (pos != -1) {
-                noteTabs->setCurrentIndex(searchTabIndex);
-
-                QTextCursor cursor = editor->textCursor();
-                cursor.setPosition(pos);
-                cursor.movePosition(QTextCursor::Right, QTextCursor::KeepAnchor, query.length());
-                editor->setTextCursor(cursor);
-
-                searchPos = pos + query.length();
+            if (name.isEmpty()) {
+                QMessageBox::warning(this, "Error", "Name is required");
                 return;
             }
 
-            searchTabIndex = (searchTabIndex + 1) % tabCount;
-            searchPos = 0;
-        }
-    });
+            if (editingContactIndex == -1) {
+                ContactItem c { name, phone, email, addr };
+                contacts.append(c);
 
-    // --- Find All ---
-    connect(findAllBtn, &QPushButton::clicked, this, [=]() {
-        QString query = searchBox->text();
-        if (query.isEmpty()) return;
+                QString line = QString("%1 — %2 — %3")
+                    .arg(c.name)
+                    .arg(c.phone)
+                    .arg(c.email);
 
-        QString results;
+                contactList->addItem(line);
+            } else {
+                contacts[editingContactIndex].name = name;
+                contacts[editingContactIndex].phone = phone;
+                contacts[editingContactIndex].email = email;
+                contacts[editingContactIndex].address = addr;
 
-        for (int i = 0; i < noteTabs->count() - 1; i++) {
-            QWidget *tab = noteTabs->widget(i);
-            QPlainTextEdit *editor = tab->findChild<QPlainTextEdit *>();
+                QString line = QString("%1 — %2 — %3")
+                    .arg(name)
+                    .arg(phone)
+                    .arg(email);
 
-            QString text = editor->toPlainText();
-            int count = text.count(query, Qt::CaseInsensitive);
+                contactList->item(editingContactIndex)->setText(line);
 
-            if (count > 0) {
-                results += QString("%1: %2 matches\n")
-                    .arg(noteTabs->tabText(i))
-                    .arg(count);
+                editingContactIndex = -1;
+                addContactBtn->setText("Add Contact");
             }
+
+            contactName->clear();
+            contactPhone->clear();
+            contactEmail->clear();
+            contactAddress->clear();
+
+            saveContacts();
+        });
+
+        connect(rmBtn, &QPushButton::clicked, this, [this]() {
+            int row = contactList->currentRow();
+            if (row < 0 || row >= contacts.size()) return;
+
+            contacts.removeAt(row);
+            delete contactList->takeItem(row);
+
+            if (editingContactIndex == row) {
+                editingContactIndex = -1;
+                addContactBtn->setText("Add Contact");
+                contactName->clear();
+                contactPhone->clear();
+                contactEmail->clear();
+                contactAddress->clear();
+            }
+
+            saveContacts();
+        });
+
+        connect(contactList, &QListWidget::itemDoubleClicked, this,
+                [this](QListWidgetItem *item) {
+            int row = contactList->row(item);
+            if (row < 0 || row >= contacts.size()) return;
+
+            editingContactIndex = row;
+
+            contactName->setText(contacts[row].name);
+            contactPhone->setText(contacts[row].phone);
+            contactEmail->setText(contacts[row].email);
+            contactAddress->setText(contacts[row].address);
+
+            addContactBtn->setText("Save Changes");
+        });
+
+        tabs->addTab(page, "Address Book");
+
+        loadContacts();
+    }
+
+    // ---------------------------------------------------------
+    // Notepad tab
+    // ---------------------------------------------------------
+    {
+        QWidget* page = new QWidget;
+        QVBoxLayout* layout = new QVBoxLayout(page);
+
+        QHBoxLayout *searchRow = new QHBoxLayout;
+
+        searchBox = new QLineEdit();
+        searchBox->setPlaceholderText("Search all notes...");
+
+        QPushButton *findNextBtn = new QPushButton("Next");
+        QPushButton *findAllBtn = new QPushButton("Find All");
+
+        searchRow->addWidget(searchBox);
+        searchRow->addWidget(findNextBtn);
+        searchRow->addWidget(findAllBtn);
+
+        layout->addLayout(searchRow);
+
+        noteTabs = new QTabWidget(this);
+        noteTabs->setTabsClosable(true);
+
+        auto fixPlusTab = [this]() {
+            int last = noteTabs->count() - 1;
+            noteTabs->tabBar()->setTabButton(last, QTabBar::RightSide, nullptr);
+            noteTabs->tabBar()->setTabButton(last, QTabBar::LeftSide, nullptr);
+        };
+
+        loadNotes();
+
+        if (noteTabs->count() == 0) {
+            QWidget *firstTab = new QWidget();
+            QVBoxLayout *firstLayout = new QVBoxLayout(firstTab);
+            QPlainTextEdit *firstEdit = new QPlainTextEdit();
+            firstLayout->addWidget(firstEdit);
+            firstTab->setLayout(firstLayout);
+            noteTabs->addTab(firstTab, "Note 1");
         }
 
-        if (results.isEmpty())
-            QMessageBox::information(this, "Search", "No matches found.");
-        else
-            QMessageBox::information(this, "Search Results", results);
-    });
+        QWidget *plusTab = new QWidget();
+        noteTabs->addTab(plusTab, "+");
+        fixPlusTab();
 
-    layout->addWidget(noteTabs);
-    tabs->addTab(page, "Notepad");
-}
+        connect(noteTabs, &QTabWidget::currentChanged, this,
+                [this, fixPlusTab](int index) {
+            if (noteTabs->tabText(index) == "+") {
+                QWidget *newTab = new QWidget();
+                QVBoxLayout *layout = new QVBoxLayout(newTab);
+                QPlainTextEdit *editor = new QPlainTextEdit();
+                layout->addWidget(editor);
+                newTab->setLayout(layout);
+
+                int newIndex = noteTabs->insertTab(
+                    noteTabs->count() - 1,
+                    newTab,
+                    QString("Note %1").arg(noteTabs->count())
+                );
+
+                noteTabs->setCurrentIndex(newIndex);
+                fixPlusTab();
+            }
+        });
+
+        connect(noteTabs, &QTabWidget::tabCloseRequested, this,
+                [this, fixPlusTab](int index) {
+            if (noteTabs->tabText(index) == "+")
+                return;
+
+            QWidget *tab = noteTabs->widget(index);
+            noteTabs->removeTab(index);
+            delete tab;
+
+            saveNotes();
+            fixPlusTab();
+        });
+
+        connect(findNextBtn, &QPushButton::clicked, this, [this]() mutable {
+            QString query = searchBox->text();
+            if (query.isEmpty()) return;
+
+            int tabCount = noteTabs->count() - 1;
+
+            for (int i = 0; i < tabCount; i++) {
+                QWidget *tab = noteTabs->widget(searchTabIndex);
+                QPlainTextEdit *editor = tab->findChild<QPlainTextEdit *>();
+
+                QString text = editor->toPlainText();
+
+                int pos = text.indexOf(query, searchPos, Qt::CaseInsensitive);
+
+                if (pos != -1) {
+                    noteTabs->setCurrentIndex(searchTabIndex);
+
+                    QTextCursor cursor = editor->textCursor();
+                    cursor.setPosition(pos);
+                    cursor.movePosition(QTextCursor::Right,
+                                        QTextCursor::KeepAnchor,
+                                        query.length());
+                    editor->setTextCursor(cursor);
+
+                    searchPos = pos + query.length();
+                    return;
+                }
+
+                searchTabIndex = (searchTabIndex + 1) % tabCount;
+                searchPos = 0;
+            }
+        });
+
+        connect(findAllBtn, &QPushButton::clicked, this, [this]() {
+            QString query = searchBox->text();
+            if (query.isEmpty()) return;
+
+            QString results;
+
+            for (int i = 0; i < noteTabs->count() - 1; i++) {
+                QWidget *tab = noteTabs->widget(i);
+                QPlainTextEdit *editor = tab->findChild<QPlainTextEdit *>();
+
+                QString text = editor->toPlainText();
+                int count = text.count(query, Qt::CaseInsensitive);
+
+                if (count > 0) {
+                    results += QString("%1: %2 matches\n")
+                        .arg(noteTabs->tabText(i))
+                        .arg(count);
+                }
+            }
+
+            if (results.isEmpty())
+                QMessageBox::information(this, "Search", "No matches found.");
+            else
+                QMessageBox::information(this, "Search Results", results);
+        });
+
+        layout->addWidget(noteTabs);
+        tabs->addTab(page, "Notepad");
+    }
+
+    // ---------------------------------------------------------
+    // Games tab (Trivia, Text Adventure, DoodlePad, Solitaire)
+    // ---------------------------------------------------------
+    {
+        QWidget *gamesPage = new QWidget;
+        QVBoxLayout *gamesLayout = new QVBoxLayout(gamesPage);
+
+        gamesTabs = new QTabWidget(gamesPage);
+        gamesLayout->addWidget(gamesTabs);
+        tabs->addTab(gamesPage, "Games");
+
+        gamesTabs->addTab(new TriviaWidget(this), "Trivia");
+        gamesTabs->addTab(new TextAdventureWidget(this), "Text Adventure");
+        gamesTabs->addTab(new DoodlePadWidget(this), "Doodle Pad");
+
+        solitaireWidget = new SolitaireWidget(this);
+        gamesTabs->addTab(solitaireWidget, "Solitaire");
+    }
 
     // ---------------------------------------------------------
     // History tab
@@ -361,133 +489,55 @@ MainWindow::MainWindow(QWidget *parent)
         tabs->addTab(page, "History");
     }
 
-    // ---- Address Book tab ----
-{
-    QWidget *page = new QWidget;
-    QVBoxLayout *layout = new QVBoxLayout(page);
+    // ---------------------------------------------------------
+    // Menu bar (after widgets exist)
+    // ---------------------------------------------------------
+    QMenuBar *bar = menuBar();
 
-    // Input fields
-    contactName = new QLineEdit(page);
-    contactName->setPlaceholderText("Name");
-
-    contactPhone = new QLineEdit(page);
-    contactPhone->setPlaceholderText("Phone");
-
-    contactEmail = new QLineEdit(page);
-    contactEmail->setPlaceholderText("Email");
-
-    contactAddress = new QLineEdit(page);
-    contactAddress->setPlaceholderText("Address");
-
-    addContactBtn = new QPushButton("Add Contact", page);
-    QPushButton *rmBtn  = new QPushButton("Remove", page);
-
-    // Input grid
-    QGridLayout *inputGrid = new QGridLayout;
-    inputGrid->addWidget(contactName,    0, 0);
-    inputGrid->addWidget(contactPhone,   0, 1);
-    inputGrid->addWidget(contactEmail,   1, 0);
-    inputGrid->addWidget(contactAddress, 1, 1);
-    inputGrid->addWidget(addContactBtn,  2, 0);
-    inputGrid->addWidget(rmBtn,          2, 1);
-
-    layout->addLayout(inputGrid);
-
-    // Contact list
-    contactList = new QListWidget(page);
-    layout->addWidget(contactList);
-
-    // Add contact
-    connect(addContactBtn, &QPushButton::clicked, this, [=]() {
-    QString name = contactName->text().trimmed();
-    QString phone = contactPhone->text().trimmed();
-    QString email = contactEmail->text().trimmed();
-    QString addr = contactAddress->text().trimmed();
-
-    if (name.isEmpty()) {
-        QMessageBox::warning(this, "Error", "Name is required");
-        return;
+    // File Menu
+    {
+        QMenu *fileMenu = bar->addMenu("File");
+        fileMenu->addAction("Save", doodlePad, &DoodlePadWidget::saveImage);
+        fileMenu->addAction("Clear", doodlePad, &DoodlePadWidget::clearCanvas);
     }
 
-    if (editingContactIndex == -1) {
-        // --- ADD NEW CONTACT ---
-        ContactItem c { name, phone, email, addr };
-        contacts.append(c);
-
-        QString line = QString("%1 — %2 — %3")
-            .arg(c.name)
-            .arg(c.phone)
-            .arg(c.email);
-
-        contactList->addItem(line);
-    } else {
-        // --- EDIT EXISTING CONTACT ---
-        contacts[editingContactIndex].name = name;
-        contacts[editingContactIndex].phone = phone;
-        contacts[editingContactIndex].email = email;
-        contacts[editingContactIndex].address = addr;
-
-        QString line = QString("%1 — %2 — %3")
-            .arg(name)
-            .arg(phone)
-            .arg(email);
-
-        contactList->item(editingContactIndex)->setText(line);
-
-        editingContactIndex = -1;
-        addContactBtn->setText("Add Contact");
+    // Edit Menu
+    {
+        QMenu *editMenu = bar->addMenu("Edit");
+        editMenu->addAction("Undo", doodlePad, &DoodlePadWidget::undo);
+        editMenu->addAction("Redo", doodlePad, &DoodlePadWidget::redo);
     }
 
-    // Clear fields
-    contactName->clear();
-    contactPhone->clear();
-    contactEmail->clear();
-    contactAddress->clear();
-
-    saveContacts();
-});
-
-    // Remove contact
-    connect(rmBtn, &QPushButton::clicked, this, [=]() {
-    int row = contactList->currentRow();
-    if (row < 0 || row >= contacts.size()) return;
-
-    contacts.removeAt(row);
-    delete contactList->takeItem(row);
-
-    if (editingContactIndex == row) {
-        editingContactIndex = -1;
-        addContactBtn->setText("Add Contact");
-        contactName->clear();
-        contactPhone->clear();
-        contactEmail->clear();
-        contactAddress->clear();
+    // Tools Menu
+    {
+        QMenu *toolsMenu = bar->addMenu("Tools");
+        toolsMenu->addAction("Color", doodlePad, &DoodlePadWidget::chooseColor);
+        toolsMenu->addAction("Eraser", doodlePad, &DoodlePadWidget::useEraser);
+        toolsMenu->addAction("Glow Brush", [this]() { doodlePad->setBrushMode(GlowBrush); });
+        toolsMenu->addAction("Spray Brush", [this]() { doodlePad->setBrushMode(SprayBrush); });
+        toolsMenu->addAction("Smudge Brush", [this]() { doodlePad->setBrushMode(SmudgeBrush); });
     }
 
-    saveContacts();
-});;
+    // Game Menu
+    {
+        QMenu* gameMenu = bar->addMenu("Game");
 
-    tabs->addTab(page, "Address Book");
+        QAction* newGameAction = new QAction("New Game", this);
+        QAction* undoAction    = new QAction("Undo", this);
+        undoAction->setShortcut(QKeySequence("Ctrl+Z"));
 
-    loadContacts();
+        gameMenu->addAction(newGameAction);
+        gameMenu->addAction(undoAction);
+
+        connect(newGameAction, &QAction::triggered,
+                solitaireWidget, &SolitaireWidget::newGame);
+
+        connect(undoAction, &QAction::triggered,
+                solitaireWidget, &SolitaireWidget::undo);
+    }
+
+    setCentralWidget(central);
 }
-connect(contactList, &QListWidget::itemDoubleClicked, this, [=](QListWidgetItem *item) {
-    int row = contactList->row(item);
-    if (row < 0 || row >= contacts.size()) return;
-
-    editingContactIndex = row;
-
-    // Load into input fields
-    contactName->setText(contacts[row].name);
-    contactPhone->setText(contacts[row].phone);
-    contactEmail->setText(contacts[row].email);
-    contactAddress->setText(contacts[row].address);
-
-    // Change button text to indicate editing
-    addContactBtn->setText("Save Changes");
-});
-}
-
 
 // =============================================================
 //  Slots
@@ -547,7 +597,8 @@ void MainWindow::onTaskRemove() {
 // =============================================================
 void MainWindow::loadTasks() {
     tasks.clear();
-    taskList->clear();
+    if (taskList)
+        taskList->clear();
 
     QFile f("tasks.json");
     if (!f.open(QIODevice::ReadOnly)) return;
@@ -563,16 +614,18 @@ void MainWindow::loadTasks() {
 
         tasks.append(t);
 
-        QListWidgetItem* li = new QListWidgetItem(
-            t.text + "  [" + t.due.toString("yyyy-MM-dd") + "]"
-        );
+        if (taskList) {
+            QListWidgetItem* li = new QListWidgetItem(
+                t.text + "  [" + t.due.toString("yyyy-MM-dd") + "]"
+            );
 
-        if (isOverdue(t)) {
-            li->setForeground(Qt::red);
-            li->setFont(QFont("", -1, QFont::Bold));
+            if (isOverdue(t)) {
+                li->setForeground(Qt::red);
+                li->setFont(QFont("", -1, QFont::Bold));
+            }
+
+            taskList->addItem(li);
         }
-
-        taskList->addItem(li);
     }
 
     updateCalendarHighlights();
@@ -598,7 +651,7 @@ void MainWindow::saveTasks() {
 // =============================================================
 static double evalExpr(const QString& expr) {
     std::string s = expr.toStdString();
-    s.erase(remove_if(s.begin(), s.end(), ::isspace), s.end());
+    s.erase(std::remove_if(s.begin(), s.end(), ::isspace), s.end());
 
     auto prec = [](char op) {
         if (op == '+' || op == '-') return 1;
@@ -684,21 +737,12 @@ void MainWindow::addHistory(const QString& line) {
 }
 
 void MainWindow::updateCalendarHighlights() {
+    if (!calendar) return;
+
     QTextCharFormat normal;
     calendar->setWeekdayTextFormat(Qt::Monday, normal);
 
-    QTextCharFormat highlight;
-    highlight.setBackground(QColor("#88c0ff"));
-    highlight.setForeground(Qt::black);
-
-    QTextCharFormat overdueFmt;
-    overdueFmt.setBackground(QColor("#ffcccc"));
-    overdueFmt.setForeground(Qt::red);
-    overdueFmt.setFontWeight(QFont::Bold);
-
-    for (const TaskItem& t : tasks) {
-        // You can add highlight logic here if desired
-    }
+    // You can add per-date formatting here if desired
 }
 
 bool MainWindow::isOverdue(const TaskItem& t) const {
@@ -710,6 +754,8 @@ bool MainWindow::isOverdue(const TaskItem& t) const {
 // =============================================================
 void MainWindow::saveNotes()
 {
+    if (!noteTabs) return;
+
     QJsonArray tabsArray;
 
     for (int i = 0; i < noteTabs->count() - 1; ++i) {
@@ -736,6 +782,8 @@ void MainWindow::saveNotes()
 
 void MainWindow::loadNotes()
 {
+    if (!noteTabs) return;
+
     QFile file("notes.json");
     if (!file.open(QIODevice::ReadOnly))
         return;
@@ -760,6 +808,9 @@ void MainWindow::loadNotes()
     }
 }
 
+// =============================================================
+//  Contacts JSON
+// =============================================================
 void MainWindow::saveContacts() {
     QJsonArray arr;
 
@@ -780,7 +831,8 @@ void MainWindow::saveContacts() {
 
 void MainWindow::loadContacts() {
     contacts.clear();
-    contactList->clear();
+    if (contactList)
+        contactList->clear();
 
     QFile f("contacts.json");
     if (!f.open(QIODevice::ReadOnly)) return;
@@ -799,15 +851,16 @@ void MainWindow::loadContacts() {
 
         contacts.append(c);
 
-        QString line = QString("%1 — %2 — %3")
-            .arg(c.name)
-            .arg(c.phone)
-            .arg(c.email);
+        if (contactList) {
+            QString line = QString("%1 — %2 — %3")
+                .arg(c.name)
+                .arg(c.phone)
+                .arg(c.email);
 
-        contactList->addItem(line);
+            contactList->addItem(line);
+        }
     }
 }
-
 
 // =============================================================
 //  Close event
@@ -815,5 +868,7 @@ void MainWindow::loadContacts() {
 void MainWindow::closeEvent(QCloseEvent *event)
 {
     saveNotes();
+    saveTasks();
+    saveContacts();
     event->accept();
 }

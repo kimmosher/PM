@@ -3,12 +3,18 @@
 
 /home/pearlsrvcs/C++/build/pm_qt_autogen/timestamp
  /home/pearlsrvcs/C++/CMakeLists.txt
+ /home/pearlsrvcs/C++/Card.h
  /home/pearlsrvcs/C++/DoodlePadWidget.cpp
  /home/pearlsrvcs/C++/DoodlePadWidget.hpp
  /home/pearlsrvcs/C++/MainWindow.cpp
  /home/pearlsrvcs/C++/MainWindow.hpp
  /home/pearlsrvcs/C++/MinimapWidget.cpp
  /home/pearlsrvcs/C++/MinimapWidget.hpp
+ /home/pearlsrvcs/C++/Pile.h
+ /home/pearlsrvcs/C++/SolitaireGame.cpp
+ /home/pearlsrvcs/C++/SolitaireGame.h
+ /home/pearlsrvcs/C++/SolitaireWidget.cpp
+ /home/pearlsrvcs/C++/SolitaireWidget.h
  /home/pearlsrvcs/C++/TextAdventureWidget.cpp
  /home/pearlsrvcs/C++/TextAdventureWidget.hpp
  /home/pearlsrvcs/C++/TriviaWidget.cpp
@@ -19,6 +25,7 @@
  /home/pearlsrvcs/C++/build/CMakeFiles/4.2.3/CMakeSystem.cmake
  /home/pearlsrvcs/C++/build/pm_qt_autogen/moc_predefs.h
  /home/pearlsrvcs/C++/main.cpp
+ /home/pearlsrvcs/C++/resources.qrc
  /usr/bin/cmake
  /usr/include/alloca.h
  /usr/include/asm-generic/bitsperlong.h
@@ -50,6 +57,7 @@
  /usr/include/c++/15/bits/cpp_type_traits.h
  /usr/include/c++/15/bits/cxxabi_forced.h
  /usr/include/c++/15/bits/cxxabi_init_exception.h
+ /usr/include/c++/15/bits/deque.tcc
  /usr/include/c++/15/bits/enable_special_members.h
  /usr/include/c++/15/bits/erase_if.h
  /usr/include/c++/15/bits/exception.h
@@ -92,6 +100,7 @@
  /usr/include/c++/15/bits/stl_algobase.h
  /usr/include/c++/15/bits/stl_bvector.h
  /usr/include/c++/15/bits/stl_construct.h
+ /usr/include/c++/15/bits/stl_deque.h
  /usr/include/c++/15/bits/stl_function.h
  /usr/include/c++/15/bits/stl_heap.h
  /usr/include/c++/15/bits/stl_iterator.h
@@ -106,6 +115,7 @@
  /usr/include/c++/15/bits/stl_raw_storage_iter.h
  /usr/include/c++/15/bits/stl_relops.h
  /usr/include/c++/15/bits/stl_set.h
+ /usr/include/c++/15/bits/stl_stack.h
  /usr/include/c++/15/bits/stl_tempbuf.h
  /usr/include/c++/15/bits/stl_tree.h
  /usr/include/c++/15/bits/stl_uninitialized.h
@@ -142,6 +152,7 @@
  /usr/include/c++/15/cwchar
  /usr/include/c++/15/debug/assertions.h
  /usr/include/c++/15/debug/debug.h
+ /usr/include/c++/15/deque
  /usr/include/c++/15/exception
  /usr/include/c++/15/ext/aligned_buffer.h
  /usr/include/c++/15/ext/alloc_traits.h
@@ -167,6 +178,7 @@
  /usr/include/c++/15/random
  /usr/include/c++/15/ratio
  /usr/include/c++/15/set
+ /usr/include/c++/15/stack
  /usr/include/c++/15/stdexcept
  /usr/include/c++/15/streambuf
  /usr/include/c++/15/string
@@ -314,6 +326,7 @@
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QStack
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QUrl
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVector
@@ -454,6 +467,7 @@
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtenvironmentvariables.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtformat_impl.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimezone.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtnoop.h
@@ -474,6 +488,7 @@
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QColor
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPixmap
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qabstracttextdocumentlayout.h
@@ -591,9 +606,18 @@
  /usr/include/x86_64-linux-gnu/sys/select.h
  /usr/include/x86_64-linux-gnu/sys/single_threaded.h
  /usr/include/x86_64-linux-gnu/sys/types.h
- /usr/lib/gcc/x86_64-linux-gnu/15/include/stdarg.h
- /usr/lib/gcc/x86_64-linux-gnu/15/include/stdbool.h
- /usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h
+ /usr/lib/llvm-21/lib/clang/21/include/__stdarg___gnuc_va_list.h
+ /usr/lib/llvm-21/lib/clang/21/include/__stddef_header_macro.h
+ /usr/lib/llvm-21/lib/clang/21/include/__stddef_max_align_t.h
+ /usr/lib/llvm-21/lib/clang/21/include/__stddef_null.h
+ /usr/lib/llvm-21/lib/clang/21/include/__stddef_nullptr_t.h
+ /usr/lib/llvm-21/lib/clang/21/include/__stddef_offsetof.h
+ /usr/lib/llvm-21/lib/clang/21/include/__stddef_ptrdiff_t.h
+ /usr/lib/llvm-21/lib/clang/21/include/__stddef_size_t.h
+ /usr/lib/llvm-21/lib/clang/21/include/__stddef_wchar_t.h
+ /usr/lib/llvm-21/lib/clang/21/include/stdarg.h
+ /usr/lib/llvm-21/lib/clang/21/include/stdbool.h
+ /usr/lib/llvm-21/lib/clang/21/include/stddef.h
  /usr/lib/x86_64-linux-gnu/cmake/Qt6/FindWrapAtomic.cmake
  /usr/lib/x86_64-linux-gnu/cmake/Qt6/FindWrapOpenGL.cmake
  /usr/lib/x86_64-linux-gnu/cmake/Qt6/FindWrapVulkanHeaders.cmake
@@ -645,7 +669,6 @@
  /usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfigExtras.cmake
  /usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfigVersion.cmake
  /usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake
- /usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfigureFileTemplate.in
  /usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreDependencies.cmake
  /usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreMacros.cmake
  /usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreTargets-none.cmake
@@ -732,7 +755,8 @@
  /usr/share/cmake-4.2/Modules/CheckIncludeFileCXX.cmake
  /usr/share/cmake-4.2/Modules/CheckLibraryExists.cmake
  /usr/share/cmake-4.2/Modules/Compiler/CMakeCommonCompilerMacros.cmake
- /usr/share/cmake-4.2/Modules/Compiler/GNU-CXX.cmake
+ /usr/share/cmake-4.2/Modules/Compiler/Clang-CXX.cmake
+ /usr/share/cmake-4.2/Modules/Compiler/Clang.cmake
  /usr/share/cmake-4.2/Modules/Compiler/GNU.cmake
  /usr/share/cmake-4.2/Modules/FindOpenGL.cmake
  /usr/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake
@@ -751,6 +775,7 @@
  /usr/share/cmake-4.2/Modules/Platform/Linker/GNU.cmake
  /usr/share/cmake-4.2/Modules/Platform/Linker/Linux-GNU-CXX.cmake
  /usr/share/cmake-4.2/Modules/Platform/Linker/Linux-GNU.cmake
+ /usr/share/cmake-4.2/Modules/Platform/Linux-Clang-CXX.cmake
  /usr/share/cmake-4.2/Modules/Platform/Linux-GNU-CXX.cmake
  /usr/share/cmake-4.2/Modules/Platform/Linux-GNU.cmake
  /usr/share/cmake-4.2/Modules/Platform/Linux-Initialize.cmake

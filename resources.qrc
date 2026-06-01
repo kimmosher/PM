@@ -1,5 +1,84 @@
 <RCC>
     <qresource prefix="/">
-        <file>icons/pm_icon.png</file>
+        <file>resources/icons/pm_icon.png</file>
+        <file>resources/icons/cabin.png</file>
+        <file>resources/icons/forest.png</file>
+        <file>resources/icons/mountain.png</file>
+        <file>resources/icons/cave.png</file>
+        <file>resources/icons/ruins.png</file>
+        <file>resources/icons/village.png</file>
+        <file>resources/icons/bridge.png</file>
+        <file>resources/icons/lake.png</file>
+        <file>resources/icons/path1.png</file>
+        <file>resources/icons/gate.png</file>
+        <file>resources/icons/trail.png</file>
+        <file>resources/icons/river.png</file>
+        <file>resources/icons/clearing.png</file>
+        <file>resources/icons/deepruins.png</file>
+
+
+        <!-- Back of card -->
+        <file>resources/cards/back.png</file>
+
+        <!-- Clubs -->
+        <file>resources/cards/AC.png</file>
+        <file>resources/cards/2C.png</file>
+        <file>resources/cards/3C.png</file>
+        <file>resources/cards/4C.png</file>
+        <file>resources/cards/5C.png</file>
+        <file>resources/cards/6C.png</file>
+        <file>resources/cards/7C.png</file>
+        <file>resources/cards/8C.png</file>
+        <file>resources/cards/9C.png</file>
+        <file>resources/cards/10C.png</file>
+        <file>resources/cards/JC.png</file>
+        <file>resources/cards/QC.png</file>
+        <file>resources/cards/KC.png</file>
+
+        <!-- Diamonds -->
+        <file>resources/cards/AD.png</file>
+        <file>resources/cards/2D.png</file>
+        <file>resources/cards/3D.png</file>
+        <file>resources/cards/4D.png</file>
+        <file>resources/cards/5D.png</file>
+        <file>resources/cards/6D.png</file>
+        <file>resources/cards/7D.png</file>
+        <file>resources/cards/8D.png</file>
+        <file>resources/cards/9D.png</file>
+        <file>resources/cards/10D.png</file>
+        <file>resources/cards/JD.png</file>
+        <file>resources/cards/QD.png</file>
+        <file>resources/cards/KD.png</file>
+
+        <!-- Hearts -->
+        <file>resources/cards/AH.png</file>
+        <file>resources/cards/2H.png</file>
+        <file>resources/cards/3H.png</file>
+        <file>resources/cards/4H.png</file>
+        <file>resources/cards/5H.png</file>
+        <file>resources/cards/6H.png</file>
+        <file>resources/cards/7H.png</file>
+        <file>resources/cards/8H.png</file>
+        <file>resources/cards/9H.png</file>
+        <file>resources/cards/10H.png</file>
+        <file>resources/cards/JH.png</file>
+        <file>resources/cards/QH.png</file>
+        <file>resources/cards/KH.png</file>
+
+        <!-- Spades -->
+        <file>resources/cards/AS.png</file>
+        <file>resources/cards/2S.png</file>
+        <file>resources/cards/3S.png</file>
+        <file>resources/cards/4S.png</file>
+        <file>resources/cards/5S.png</file>
+        <file>resources/cards/6S.png</file>
+        <file>resources/cards/7S.png</file>
+        <file>resources/cards/8S.png</file>
+        <file>resources/cards/9S.png</file>
+        <file>resources/cards/10S.png</file>
+        <file>resources/cards/JS.png</file>
+        <file>resources/cards/QS.png</file>
+        <file>resources/cards/KS.png</file>
     </qresource>
 </RCC>
+

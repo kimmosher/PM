@@ -2,6 +2,7 @@
 #include "EWIEGA46WW/moc_DoodlePadWidget.cpp"
 #include "EWIEGA46WW/moc_MainWindow.cpp"
 #include "EWIEGA46WW/moc_MinimapWidget.cpp"
+#include "EWIEGA46WW/moc_SolitaireWidget.cpp"
 #include "EWIEGA46WW/moc_TextAdventureWidget.cpp"
 #include "EWIEGA46WW/moc_TriviaWidget.cpp"
 #include "EWIEGA46WW/moc_TutorialDialog.cpp"

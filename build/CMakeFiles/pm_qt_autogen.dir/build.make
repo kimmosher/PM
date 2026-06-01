@@ -72,7 +72,7 @@ pm_qt_autogen/timestamp: /usr/lib/qt6/libexec/moc
 pm_qt_autogen/timestamp: /usr/lib/qt6/libexec/uic
 pm_qt_autogen/timestamp: CMakeFiles/pm_qt_autogen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/pearlsrvcs/C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target pm_qt"
-	/usr/bin/cmake -E cmake_autogen /home/pearlsrvcs/C++/build/CMakeFiles/pm_qt_autogen.dir/AutogenInfo.json ""
+	/usr/bin/cmake -E cmake_autogen /home/pearlsrvcs/C++/build/CMakeFiles/pm_qt_autogen.dir/AutogenInfo.json Debug
 	/usr/bin/cmake -E touch /home/pearlsrvcs/C++/build/pm_qt_autogen/timestamp
 
 CMakeFiles/pm_qt_autogen.dir/codegen:

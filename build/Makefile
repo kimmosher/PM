@@ -130,19 +130,6 @@ pm_qt/fast:
 .PHONY : pm_qt/fast
 
 #=============================================================================
-# Target rules for targets named pm_qt_other_files
-
-# Build rule for target.
-pm_qt_other_files: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pm_qt_other_files
-.PHONY : pm_qt_other_files
-
-# fast build rule for target.
-pm_qt_other_files/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt_other_files.dir/build.make CMakeFiles/pm_qt_other_files.dir/build
-.PHONY : pm_qt_other_files/fast
-
-#=============================================================================
 # Target rules for targets named pm_qt_autogen_timestamp_deps
 
 # Build rule for target.
@@ -240,6 +227,54 @@ MinimapWidget.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/MinimapWidget.cpp.s
 .PHONY : MinimapWidget.cpp.s
 
+SolitaireGame.o: SolitaireGame.cpp.o
+.PHONY : SolitaireGame.o
+
+# target to build an object file
+SolitaireGame.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/SolitaireGame.cpp.o
+.PHONY : SolitaireGame.cpp.o
+
+SolitaireGame.i: SolitaireGame.cpp.i
+.PHONY : SolitaireGame.i
+
+# target to preprocess a source file
+SolitaireGame.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/SolitaireGame.cpp.i
+.PHONY : SolitaireGame.cpp.i
+
+SolitaireGame.s: SolitaireGame.cpp.s
+.PHONY : SolitaireGame.s
+
+# target to generate assembly for a file
+SolitaireGame.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/SolitaireGame.cpp.s
+.PHONY : SolitaireGame.cpp.s
+
+SolitaireWidget.o: SolitaireWidget.cpp.o
+.PHONY : SolitaireWidget.o
+
+# target to build an object file
+SolitaireWidget.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/SolitaireWidget.cpp.o
+.PHONY : SolitaireWidget.cpp.o
+
+SolitaireWidget.i: SolitaireWidget.cpp.i
+.PHONY : SolitaireWidget.i
+
+# target to preprocess a source file
+SolitaireWidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/SolitaireWidget.cpp.i
+.PHONY : SolitaireWidget.cpp.i
+
+SolitaireWidget.s: SolitaireWidget.cpp.s
+.PHONY : SolitaireWidget.s
+
+# target to generate assembly for a file
+SolitaireWidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/SolitaireWidget.cpp.s
+.PHONY : SolitaireWidget.cpp.s
+
 TextAdventureWidget.o: TextAdventureWidget.cpp.o
 .PHONY : TextAdventureWidget.o
 
@@ -312,30 +347,6 @@ TutorialDialog.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/TutorialDialog.cpp.s
 .PHONY : TutorialDialog.cpp.s
 
-build/.qt/rcc/qrc_resources.o: build/.qt/rcc/qrc_resources.cpp.o
-.PHONY : build/.qt/rcc/qrc_resources.o
-
-# target to build an object file
-build/.qt/rcc/qrc_resources.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/build/.qt/rcc/qrc_resources.cpp.o
-.PHONY : build/.qt/rcc/qrc_resources.cpp.o
-
-build/.qt/rcc/qrc_resources.i: build/.qt/rcc/qrc_resources.cpp.i
-.PHONY : build/.qt/rcc/qrc_resources.i
-
-# target to preprocess a source file
-build/.qt/rcc/qrc_resources.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/build/.qt/rcc/qrc_resources.cpp.i
-.PHONY : build/.qt/rcc/qrc_resources.cpp.i
-
-build/.qt/rcc/qrc_resources.s: build/.qt/rcc/qrc_resources.cpp.s
-.PHONY : build/.qt/rcc/qrc_resources.s
-
-# target to generate assembly for a file
-build/.qt/rcc/qrc_resources.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/build/.qt/rcc/qrc_resources.cpp.s
-.PHONY : build/.qt/rcc/qrc_resources.cpp.s
-
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -359,6 +370,30 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+pm_qt_autogen/EWIEGA46WW/qrc_resources.o: pm_qt_autogen/EWIEGA46WW/qrc_resources.cpp.o
+.PHONY : pm_qt_autogen/EWIEGA46WW/qrc_resources.o
+
+# target to build an object file
+pm_qt_autogen/EWIEGA46WW/qrc_resources.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/pm_qt_autogen/EWIEGA46WW/qrc_resources.cpp.o
+.PHONY : pm_qt_autogen/EWIEGA46WW/qrc_resources.cpp.o
+
+pm_qt_autogen/EWIEGA46WW/qrc_resources.i: pm_qt_autogen/EWIEGA46WW/qrc_resources.cpp.i
+.PHONY : pm_qt_autogen/EWIEGA46WW/qrc_resources.i
+
+# target to preprocess a source file
+pm_qt_autogen/EWIEGA46WW/qrc_resources.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/pm_qt_autogen/EWIEGA46WW/qrc_resources.cpp.i
+.PHONY : pm_qt_autogen/EWIEGA46WW/qrc_resources.cpp.i
+
+pm_qt_autogen/EWIEGA46WW/qrc_resources.s: pm_qt_autogen/EWIEGA46WW/qrc_resources.cpp.s
+.PHONY : pm_qt_autogen/EWIEGA46WW/qrc_resources.s
+
+# target to generate assembly for a file
+pm_qt_autogen/EWIEGA46WW/qrc_resources.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/pm_qt_autogen/EWIEGA46WW/qrc_resources.cpp.s
+.PHONY : pm_qt_autogen/EWIEGA46WW/qrc_resources.cpp.s
 
 pm_qt_autogen/mocs_compilation.o: pm_qt_autogen/mocs_compilation.cpp.o
 .PHONY : pm_qt_autogen/mocs_compilation.o
@@ -394,7 +429,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... pm_qt_autogen"
 	@echo "... pm_qt_autogen_timestamp_deps"
-	@echo "... pm_qt_other_files"
 	@echo "... pm_qt"
 	@echo "... DoodlePadWidget.o"
 	@echo "... DoodlePadWidget.i"
@@ -405,6 +439,12 @@ help:
 	@echo "... MinimapWidget.o"
 	@echo "... MinimapWidget.i"
 	@echo "... MinimapWidget.s"
+	@echo "... SolitaireGame.o"
+	@echo "... SolitaireGame.i"
+	@echo "... SolitaireGame.s"
+	@echo "... SolitaireWidget.o"
+	@echo "... SolitaireWidget.i"
+	@echo "... SolitaireWidget.s"
 	@echo "... TextAdventureWidget.o"
 	@echo "... TextAdventureWidget.i"
 	@echo "... TextAdventureWidget.s"
@@ -414,12 +454,12 @@ help:
 	@echo "... TutorialDialog.o"
 	@echo "... TutorialDialog.i"
 	@echo "... TutorialDialog.s"
-	@echo "... build/.qt/rcc/qrc_resources.o"
-	@echo "... build/.qt/rcc/qrc_resources.i"
-	@echo "... build/.qt/rcc/qrc_resources.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... pm_qt_autogen/EWIEGA46WW/qrc_resources.o"
+	@echo "... pm_qt_autogen/EWIEGA46WW/qrc_resources.i"
+	@echo "... pm_qt_autogen/EWIEGA46WW/qrc_resources.s"
 	@echo "... pm_qt_autogen/mocs_compilation.o"
 	@echo "... pm_qt_autogen/mocs_compilation.i"
 	@echo "... pm_qt_autogen/mocs_compilation.s"
