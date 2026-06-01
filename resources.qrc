@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/">
+        <file>resources/splash.png</file>
         <file>resources/icons/pm_icon.png</file>
         <file>resources/icons/cabin.png</file>
         <file>resources/icons/forest.png</file>

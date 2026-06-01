@@ -9,6 +9,7 @@
 	"INCLUDE_DIR" : "/home/pearlsrvcs/C++/build/pm_qt_autogen/include",
 	"INPUTS" : 
 	[
+		"/home/pearlsrvcs/C++/resources/splash.png",
 		"/home/pearlsrvcs/C++/resources/cards/9D.png",
 		"/home/pearlsrvcs/C++/resources/cards/9C.png",
 		"/home/pearlsrvcs/C++/resources/cards/3H.png",

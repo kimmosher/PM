@@ -78,6 +78,7 @@ pm_qt_autogen/timestamp: CMakeFiles/pm_qt.dir/compiler_depend.ts
 
 pm_qt_autogen/EWIEGA46WW/qrc_resources.cpp: /home/pearlsrvcs/C++/resources.qrc
 pm_qt_autogen/EWIEGA46WW/qrc_resources.cpp: CMakeFiles/pm_qt_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json
+pm_qt_autogen/EWIEGA46WW/qrc_resources.cpp: /home/pearlsrvcs/C++/resources/splash.png
 pm_qt_autogen/EWIEGA46WW/qrc_resources.cpp: /home/pearlsrvcs/C++/resources/cards/9D.png
 pm_qt_autogen/EWIEGA46WW/qrc_resources.cpp: /home/pearlsrvcs/C++/resources/cards/9C.png
 pm_qt_autogen/EWIEGA46WW/qrc_resources.cpp: /home/pearlsrvcs/C++/resources/cards/3H.png

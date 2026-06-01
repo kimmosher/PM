@@ -453,9 +453,8 @@ CMakeFiles/pm_qt.dir/main.cpp.o: /home/pearlsrvcs/C++/main.cpp \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qalloc.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication_platform.h \
-  /home/pearlsrvcs/C++/MainWindow.hpp \
-  /home/pearlsrvcs/C++/DoodlePadWidget.hpp \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QSplashScreen \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsplashscreen.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qkeysequence.h \
@@ -468,6 +467,11 @@ CMakeFiles/pm_qt.dir/main.cpp.o: /home/pearlsrvcs/C++/main.cpp \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontinfo.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontvariableaxis.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
+  /home/pearlsrvcs/C++/MainWindow.hpp \
+  /home/pearlsrvcs/C++/DoodlePadWidget.hpp \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/QPixmap \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QPoint \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QStack \
@@ -497,8 +501,6 @@ CMakeFiles/pm_qt.dir/main.cpp.o: /home/pearlsrvcs/C++/main.cpp \
   /home/pearlsrvcs/C++/SolitaireWidget.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QVector \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvector.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
   /home/pearlsrvcs/C++/SolitaireGame.h /home/pearlsrvcs/C++/Pile.h \
   /home/pearlsrvcs/C++/Card.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
