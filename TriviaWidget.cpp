@@ -104,7 +104,7 @@ void TriviaWidget::showNextQuestion() {
 
     const TriviaQuestion &q = questions[currentIndex];
 
-    questionLabel->setText(q.question);
+    questionLabel->setText(decodeHtml(q.question));
 
     QStringList answers;
     answers << q.correct << q.incorrect;
@@ -158,3 +158,11 @@ void TriviaWidget::setAnswersEnabled(bool enabled) {
             answerButtons[i]->setStyleSheet("");
     }
 }
+
+QString TriviaWidget::decodeHtml(const QString &html)
+{
+    QTextDocument doc;
+    doc.setHtml(html);
+    return doc.toPlainText();
+}
+

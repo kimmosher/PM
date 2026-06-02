@@ -4,7 +4,7 @@
 #include "TriviaWidget.hpp"
 #include "DoodlePadWidget.hpp"
 #include "SolitaireWidget.h"
-
+#include "MoneyManagerWidget.hpp"
 #include <QVector>
 #include <QTabWidget>
 #include <QCalendarWidget>
@@ -45,7 +45,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     setWindowTitle("Personal Manager");
     setWindowIcon(QIcon(":/resources/icons/pm_icon.png"));
-    resize(720, 640);
+    resize(880, 640);
     setMaximumWidth(1100);
 
     // ---- Central Widget + Layout ----
@@ -134,6 +134,13 @@ MainWindow::MainWindow(QWidget *parent)
         layout->addLayout(grid);
         tabs->addTab(page, "Calculator");
     }
+
+// Money Manager Tab
+  {
+    MoneyManagerWidget *money = new MoneyManagerWidget(this);
+    tabs->addTab(money, "Money Manager");
+}
+
 
     // ---------------------------------------------------------
     // Tasks tab
@@ -485,8 +492,8 @@ MainWindow::MainWindow(QWidget *parent)
             history->clear();
         });
 
-        layout->addWidget(history);
-        tabs->addTab(page, "History");
+        // layout->addWidget(history);
+        // tabs->addTab(page, "History");
     }
 
     // ---------------------------------------------------------

@@ -7,7 +7,7 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
 find_package(Qt6 REQUIRED COMPONENTS Widgets Network)
-
+find_package(Qt6 COMPONENTS Charts REQUIRED)
 add_executable(pm_qt
     main.cpp
     MainWindow.hpp
@@ -26,9 +26,14 @@ add_executable(pm_qt
     SolitaireWidget.cpp
     SolitaireGame.h
     SolitaireGame.cpp
+    MoneyManagerWidget.cpp
+    MoneyManagerWidget.hpp
     Card.h
     Pile.h
     resources.qrc
 )
 
-target_link_libraries(pm_qt PRIVATE Qt6::Widgets Qt6::Network)
+target_link_libraries(pm_qt PRIVATE 
+    Qt6::Charts
+    Qt6::Widgets 
+    Qt6::Network)

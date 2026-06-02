@@ -43,6 +43,7 @@ private:
     void showNextQuestion();
     void updateScoreLabel();
     void setAnswersEnabled(bool enabled);
+    QString decodeHtml(const QString &html);
 };
 
 #endif // TRIVIAWIDGET_HPP
