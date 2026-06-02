@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/pearlsrvcs/C++/WebApp/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

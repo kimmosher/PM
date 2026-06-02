@@ -1,0 +1,38 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;        /* remove old spacing */
+  margin: 0;         /* remove old spacing */
+  width: 100%;
+}
+
+.title {
+  color: #FFD36E;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.tile-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  justify-items: center;
+}
+
+.tile {
+  background: #0D0366;
+  padding: 16px;
+  border-radius: 12px;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #FFD36E;
+  font-size: 14px;
+  box-shadow: 0 0 10px #4DA3FF55;
+}

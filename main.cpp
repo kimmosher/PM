@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
     MainWindow w;
 
     // --- After 3 seconds, hide splash and show main window ---
-    QTimer::singleShot(3000, [&]() {
+    QTimer::singleShot(4000, [&]() {
         splash.close();
         w.show();
     });

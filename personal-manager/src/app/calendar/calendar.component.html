@@ -1,0 +1,22 @@
+<div class="calendar-container ls-glow">
+  <div class="header">
+    <button (click)="prevMonth()">&lt;</button>
+    <h2>{{ current | date:'MMMM yyyy' }}</h2>
+    <button (click)="nextMonth()">&gt;</button>
+  </div>
+
+  <div class="week-labels">
+    <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+  </div>
+
+  <div class="weeks">
+    <div class="week" *ngFor="let week of weeks">
+      <div class="day"
+           *ngFor="let day of week"
+           [class.empty]="!day"
+           [class.task-day]="day?.hasTask">
+        <span *ngIf="day">{{ day.date.getDate() }}</span>
+      </div>
+    </div>
+  </div>
+</div>

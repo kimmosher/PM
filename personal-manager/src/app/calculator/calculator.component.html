@@ -1,0 +1,36 @@
+<div class="calc-wrapper">
+
+  <div class="calc-container ls-glow">
+   <div class="calc-display">
+      {{ display }}
+    </div>
+
+    <div class="calc-grid">
+
+      <button (click)="press('7')">7</button>
+      <button (click)="press('8')">8</button>
+      <button (click)="press('9')">9</button>
+      <button class="op" (click)="press('/')">÷</button>
+
+      <button (click)="press('4')">4</button>
+      <button (click)="press('5')">5</button>
+      <button (click)="press('6')">6</button>
+      <button class="op" (click)="press('*')">×</button>
+
+      <button (click)="press('1')">1</button>
+      <button (click)="press('2')">2</button>
+      <button (click)="press('3')">3</button>
+      <button class="op" (click)="press('-')">−</button>
+
+      <button (click)="press('0')">0</button>
+      <button (click)="press('.')">.</button>
+      <button class="eq" (click)="calculate()">=</button>
+      <button class="op" (click)="press('+')">+</button>
+
+      <button class="clear" (click)="clear()">C</button>
+
+    </div>
+
+  </div>
+
+</div>

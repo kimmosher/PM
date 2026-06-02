@@ -1,0 +1,50 @@
+.calendar-container {
+  background: #0D0366;
+  padding: 20x;
+  border-radius: 12px;
+  width: 340px;
+  color: #FFD36E;
+  box-shadow: 0 0 12px #4DA3FF55;
+  margin: 200px auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.header button {
+  background: #4DA3FF;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  color: #0D0366;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.week-labels, .week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.day {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.day.empty {
+  opacity: 0.2;
+}
+
+.task-day {
+  background: #FFD36E;
+  color: #0D0366;
+  box-shadow: 0 0 10px #FFD36E;
+  font-weight: bold;
+  border-radius: 50%;
+}

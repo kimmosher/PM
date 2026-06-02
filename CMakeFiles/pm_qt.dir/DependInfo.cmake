@@ -1,0 +1,36 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  )
+
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "" "pm_qt_autogen/timestamp" "custom" "pm_qt_autogen/deps"
+  "/home/pearlsrvcs/C++/DoodlePadWidget.cpp" "CMakeFiles/pm_qt.dir/DoodlePadWidget.cpp.o" "gcc" "CMakeFiles/pm_qt.dir/DoodlePadWidget.cpp.o.d"
+  "/home/pearlsrvcs/C++/MainWindow.cpp" "CMakeFiles/pm_qt.dir/MainWindow.cpp.o" "gcc" "CMakeFiles/pm_qt.dir/MainWindow.cpp.o.d"
+  "/home/pearlsrvcs/C++/MinimapWidget.cpp" "CMakeFiles/pm_qt.dir/MinimapWidget.cpp.o" "gcc" "CMakeFiles/pm_qt.dir/MinimapWidget.cpp.o.d"
+  "/home/pearlsrvcs/C++/MoneyManagerWidget.cpp" "CMakeFiles/pm_qt.dir/MoneyManagerWidget.cpp.o" "gcc" "CMakeFiles/pm_qt.dir/MoneyManagerWidget.cpp.o.d"
+  "/home/pearlsrvcs/C++/SolitaireGame.cpp" "CMakeFiles/pm_qt.dir/SolitaireGame.cpp.o" "gcc" "CMakeFiles/pm_qt.dir/SolitaireGame.cpp.o.d"
+  "/home/pearlsrvcs/C++/SolitaireWidget.cpp" "CMakeFiles/pm_qt.dir/SolitaireWidget.cpp.o" "gcc" "CMakeFiles/pm_qt.dir/SolitaireWidget.cpp.o.d"
+  "/home/pearlsrvcs/C++/TextAdventureWidget.cpp" "CMakeFiles/pm_qt.dir/TextAdventureWidget.cpp.o" "gcc" "CMakeFiles/pm_qt.dir/TextAdventureWidget.cpp.o.d"
+  "/home/pearlsrvcs/C++/TriviaWidget.cpp" "CMakeFiles/pm_qt.dir/TriviaWidget.cpp.o" "gcc" "CMakeFiles/pm_qt.dir/TriviaWidget.cpp.o.d"
+  "/home/pearlsrvcs/C++/TutorialDialog.cpp" "CMakeFiles/pm_qt.dir/TutorialDialog.cpp.o" "gcc" "CMakeFiles/pm_qt.dir/TutorialDialog.cpp.o.d"
+  "/home/pearlsrvcs/C++/main.cpp" "CMakeFiles/pm_qt.dir/main.cpp.o" "gcc" "CMakeFiles/pm_qt.dir/main.cpp.o.d"
+  "/home/pearlsrvcs/C++/WebApp/pm_qt_autogen/EWIEGA46WW/qrc_resources.cpp" "CMakeFiles/pm_qt.dir/pm_qt_autogen/EWIEGA46WW/qrc_resources.cpp.o" "gcc" "CMakeFiles/pm_qt.dir/pm_qt_autogen/EWIEGA46WW/qrc_resources.cpp.o.d"
+  "/home/pearlsrvcs/C++/WebApp/pm_qt_autogen/mocs_compilation.cpp" "CMakeFiles/pm_qt.dir/pm_qt_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/pm_qt.dir/pm_qt_autogen/mocs_compilation.cpp.o.d"
+  "" "pm_qt" "gcc" "CMakeFiles/pm_qt.dir/link.d"
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+  )
+
+# Targets to which this target links which contain Fortran sources.
+set(CMAKE_Fortran_TARGET_FORWARD_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")

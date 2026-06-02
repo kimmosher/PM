@@ -1,0 +1,71 @@
+<header class="ls-header">
+  <h1>Lucky Solutions</h1>
+
+  <!-- Always-visible menu bar -->
+  <nav class="top-menu">
+    <a href="/calendar" class="menu-item">
+      <img [ngSrc]="CalPath" width="64" height="64" />
+      <span>Calendar</span>
+    </a>
+
+    <a href="/tasks" class="menu-item">
+      <img [ngSrc]="TaskPath" width="64" height="64" />
+      <span>Tasks</span>
+    </a>
+
+    <a href="/notes" class="menu-item">
+      <img [ngSrc]="NotePath" width="64" height="64" />
+      <span>Notes</span>
+    </a>
+
+    <a href="/checkbook" class="menu-item">
+      <img [ngSrc]="ChkPath" width="64" height="64" />
+      <span>Checkbook</span>
+    </a>
+
+    <a href="/calculator" class="menu-item">
+      <img [ngSrc]="CalcPath" width="64" height="64" />
+      <span>Calculator</span>
+    </a>
+
+    <a href="/contacts" class="menu-item">
+      <img [ngSrc]="ContPath" width="64" height="64" />
+      <span>Contacts</span>
+    </a>
+  </nav> 
+</header>
+<main class=""ls-main>
+  <router-outlet></router-outlet>
+</main>
+<footer class="ls-footer">
+  <a href="/calendar" class="footer-item">
+    <img [ngSrc]="CalPath" width="32" height="32" />
+    <span>Calendar</span>
+  </a>
+
+  <a href="/tasks" class="footer-item">
+    <img [ngSrc]="TaskPath" width="32" height="32" />
+    <span>Tasks</span>
+  </a>
+
+  <a href="/notes" class="footer-item">
+    <img [ngSrc]="NotePath" width="32" height="32" />
+    <span>Notes</span>
+  </a>
+
+  <a href="/checkbook" class="footer-item">
+    <img [ngSrc]="ChkPath" width="32" height="32" />
+    <span>Checkbook</span>
+  </a>
+
+  <a href="/calculator" class="footer-item">
+      <img [ngSrc]="CalcPath" width="32" height="32" />
+      <span>Calculator</span>
+    </a>
+
+  <a href="/contacts" class="footer-item">
+    <img [ngSrc]="ContPath" width="32" height="32" />
+    <span>Contacts</span>
+  </a>
+</footer>
+    

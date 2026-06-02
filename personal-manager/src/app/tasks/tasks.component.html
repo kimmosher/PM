@@ -1,0 +1,34 @@
+
+<div class="tasks-container ls-glow">
+
+    <h2 class="tasks-title">Tasks</h2>
+
+    <div class="task-input">
+        <input [(ngModel)]="newTask" placeholder="Add a new task..." />
+        <div class="task-input">
+            <div class="calendar-container ls-glow">
+  <h2 class="calendar-title">Calendar</h2>
+
+  
+</div>
+
+            <input type="date" [(ngModel)]="newDate" />
+
+            <button (click)="addTask()">Add</button>
+        </div>        
+    </div>
+
+    <div class="task-list">
+        <<div class="task-item" *ngFor="let task of tasks; let i = index">
+            <input type="checkbox" [(ngModel)]="task.done" (change)="toggleTask(task)" />
+
+            <div class="task-text">
+                <span [class.done]="task.done">{{ task.text }}</span>
+                <small *ngIf="task.due">Due: {{ task.due }}</small>
+            </div>
+
+            <button class="delete-btn" (click)="deleteTask(i)">✕</button>
+    </div>
+</div>
+
+</div>
