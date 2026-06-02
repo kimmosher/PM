@@ -209,7 +209,7 @@ void MoneyManagerWidget::loadExpenses()
 
         table->setItem(row, 0, new QTableWidgetItem(e.date.toString("yyyy-MM-dd")));
         
-        table->setItem(row, 2, new QTableWidgetItem(e.category));
+        table->setItem(row, 1, new QTableWidgetItem(e.category));
         table->setSortingEnabled(true);
         QString amountText = QString("$%1").arg(e.amount, 0, 'f', 2);
         if (e.isIncome)
@@ -217,7 +217,7 @@ void MoneyManagerWidget::loadExpenses()
         else
             amountText = "-" + amountText;
 
-        table->setItem(row, 1, new QTableWidgetItem(amountText));
+        table->setItem(row, 2, new QTableWidgetItem(amountText));
         table->setItem(row, 3, new QTableWidgetItem(e.description));
         colorRow(row, e.isIncome);
     }

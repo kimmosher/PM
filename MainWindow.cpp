@@ -743,17 +743,34 @@ void MainWindow::addHistory(const QString& line) {
     history->appendPlainText(line);
 }
 
-void MainWindow::updateCalendarHighlights() {
-    if (!calendar) return;
+// void MainWindow::updateCalendarHighlights() {
+//     if (!calendar) return;
 
-    QTextCharFormat normal;
-    calendar->setWeekdayTextFormat(Qt::Monday, normal);
+//     QTextCharFormat normal;
+//     calendar->setWeekdayTextFormat(Qt::Monday, normal);
 
-    // You can add per-date formatting here if desired
-}
+//     // You can add per-date formatting here if desired
+// }
 
 bool MainWindow::isOverdue(const TaskItem& t) const {
     return t.due < QDate::currentDate();
+}
+
+void MainWindow::updateCalendarHighlights()
+{
+    // Clear all previous highlights
+    calendar->setDateTextFormat(QDate(), QTextCharFormat());
+
+    QTextCharFormat highlight;
+    highlight.setBackground(QColor("#ffcc66")); // warm gold
+    highlight.setForeground(Qt::black);
+    highlight.setFontWeight(QFont::Bold);
+
+    for (const TaskItem &t : tasks)
+    {
+        if (t.due.isValid())
+            calendar->setDateTextFormat(t.due, highlight);
+    }
 }
 
 // =============================================================
