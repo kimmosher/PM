@@ -9,6 +9,8 @@ pm_qt_autogen/timestamp: /home/pearlsrvcs/C++/CMakeLists.txt \
   /home/pearlsrvcs/C++/MainWindow.hpp \
   /home/pearlsrvcs/C++/MinimapWidget.cpp \
   /home/pearlsrvcs/C++/MinimapWidget.hpp \
+  /home/pearlsrvcs/C++/MoneyManagerWidget.cpp \
+  /home/pearlsrvcs/C++/MoneyManagerWidget.hpp \
   /home/pearlsrvcs/C++/Pile.h \
   /home/pearlsrvcs/C++/SolitaireGame.cpp \
   /home/pearlsrvcs/C++/SolitaireGame.h \
@@ -309,6 +311,7 @@ pm_qt_autogen/timestamp: /home/pearlsrvcs/C++/CMakeLists.txt \
   /usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDate \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QFlags \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QJsonArray \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
@@ -663,6 +666,14 @@ pm_qt_autogen/timestamp: /home/pearlsrvcs/C++/CMakeLists.txt \
   /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicToolHelpers.cmake \
   /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicWalkLibsHelpers.cmake \
   /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicWindowsHelpers.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6Charts/Qt6ChartsAdditionalTargetInfo.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6Charts/Qt6ChartsConfig.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6Charts/Qt6ChartsConfigVersion.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6Charts/Qt6ChartsConfigVersionImpl.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6Charts/Qt6ChartsDependencies.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6Charts/Qt6ChartsTargets-none.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6Charts/Qt6ChartsTargets.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6Charts/Qt6ChartsVersionlessAliasTargets.cmake \
   /usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake \
   /usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfig.cmake \
   /usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfigExtras.cmake \
@@ -722,6 +733,22 @@ pm_qt_autogen/timestamp: /home/pearlsrvcs/C++/CMakeLists.txt \
   /usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkTargets-none.cmake \
   /usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkTargets.cmake \
   /usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkVersionlessAliasTargets.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLAdditionalTargetInfo.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLConfig.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLConfigVersion.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLConfigVersionImpl.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLDependencies.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLTargets-none.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLTargets.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLVersionlessAliasTargets.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsAdditionalTargetInfo.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsConfig.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsConfigVersion.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsConfigVersionImpl.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsDependencies.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsTargets-none.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsTargets.cmake \
+  /usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsVersionlessAliasTargets.cmake \
   /usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake \
   /usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake \
   /usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake \
@@ -794,8 +821,6 @@ pm_qt_autogen/timestamp: /home/pearlsrvcs/C++/CMakeLists.txt \
 
 /usr/share/cmake-4.2/Modules/Internal/CheckCompilerFlag.cmake:
 
-/usr/share/cmake-4.2/Modules/Internal/CMakeCommonLinkerInformation.cmake:
-
 /usr/share/cmake-4.2/Modules/GNUInstallDirs.cmake:
 
 /usr/share/cmake-4.2/Modules/FindVulkan.cmake:
@@ -807,8 +832,6 @@ pm_qt_autogen/timestamp: /home/pearlsrvcs/C++/CMakeLists.txt \
 /usr/share/cmake-4.2/Modules/FindOpenGL.cmake:
 
 /usr/share/cmake-4.2/Modules/Compiler/Clang-CXX.cmake:
-
-/usr/share/cmake-4.2/Modules/Compiler/CMakeCommonCompilerMacros.cmake:
 
 /usr/share/cmake-4.2/Modules/CheckLibraryExists.cmake:
 
@@ -839,6 +862,26 @@ pm_qt_autogen/timestamp: /home/pearlsrvcs/C++/CMakeLists.txt \
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsVersionlessAliasTargets.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsTargets.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsTargets-none.cmake:
+
+/usr/share/cmake-4.2/Modules/Internal/CMakeCommonLinkerInformation.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsConfigVersion.cmake:
+
+/usr/share/cmake-4.2/Modules/Compiler/CMakeCommonCompilerMacros.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsAdditionalTargetInfo.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLTargets-none.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLDependencies.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLConfig.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkTargets-none.cmake:
 
@@ -897,6 +940,16 @@ pm_qt_autogen/timestamp: /home/pearlsrvcs/C++/CMakeLists.txt \
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreConfigVersion.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Charts/Qt6ChartsVersionlessAliasTargets.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Charts/Qt6ChartsTargets-none.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Charts/Qt6ChartsDependencies.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Charts/Qt6ChartsConfig.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Charts/Qt6ChartsAdditionalTargetInfo.cmake:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomPythonHelpers.cmake:
 
@@ -1068,6 +1121,8 @@ pm_qt_autogen/timestamp: /home/pearlsrvcs/C++/CMakeLists.txt \
 
 /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qsslerror.h:
 
+/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLConfigVersionImpl.cmake:
+
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qsslconfiguration.h:
@@ -1078,11 +1133,7 @@ pm_qt_autogen/timestamp: /home/pearlsrvcs/C++/CMakeLists.txt \
 
 /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qnetworkaccessmanager.h:
 
-/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
-
-/usr/include/c++/15/tr1/poly_hermite.tcc:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qpaintdevice.h:
+/usr/include/x86_64-linux-gnu/qt6/QtNetwork/qabstractsocket.h:
 
 /usr/share/cmake-4.2/Modules/CheckCXXSourceCompiles.cmake:
 
@@ -1095,6 +1146,8 @@ pm_qt_autogen/timestamp: /home/pearlsrvcs/C++/CMakeLists.txt \
 /usr/include/x86_64-linux-gnu/bits/stdint-least.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkVersionlessAliasTargets.cmake:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Charts/Qt6ChartsConfigVersion.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qconstructormacros.h:
 
@@ -1124,6 +1177,8 @@ pm_qt_autogen/timestamp: /home/pearlsrvcs/C++/CMakeLists.txt \
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Charts/Qt6ChartsTargets.cmake:
+
 /usr/include/linux/stddef.h:
 
 /usr/include/c++/15/list:
@@ -1135,10 +1190,6 @@ pm_qt_autogen/timestamp: /home/pearlsrvcs/C++/CMakeLists.txt \
 /usr/share/cmake-4.2/Modules/CMakeCXXInformation.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtNetwork/qtnetworkexports.h:
-
-/usr/include/features.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6GuiTools/Qt6GuiToolsTargets-none.cmake:
 
@@ -1171,6 +1222,14 @@ pm_qt_autogen/timestamp: /home/pearlsrvcs/C++/CMakeLists.txt \
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qgenericatomic.h:
 
 /usr/include/c++/15/tr1/riemann_zeta.tcc:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6Charts/Qt6ChartsConfigVersionImpl.cmake:
+
+/home/pearlsrvcs/C++/MoneyManagerWidget.hpp:
+
+/usr/include/x86_64-linux-gnu/qt6/QtNetwork/qhostaddress.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
 /usr/include/stdint.h:
 
@@ -1300,10 +1359,6 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /usr/include/c++/15/bits/utility.h:
 
-/usr/include/c++/15/initializer_list:
-
-/home/pearlsrvcs/C++/TriviaWidget.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/include/x86_64-linux-gnu/c++/15/bits/cpu_defines.h:
@@ -1312,13 +1367,11 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /usr/include/c++/15/ext/type_traits.h:
 
-/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtNetwork/qhostaddress.h:
-
 /usr/include/c++/15/ext/concurrence.h:
 
 /usr/include/c++/15/ext/atomicity.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QDate:
 
 /usr/include/c++/15/bits/enable_special_members.h:
 
@@ -1388,35 +1441,7 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /usr/include/c++/15/bits/deque.tcc:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qtypeinfo.h:
-
-/usr/include/c++/15/bits/charconv.h:
-
-/usr/include/c++/15/tr1/poly_laguerre.tcc:
-
-/usr/include/c++/15/tr1/ell_integral.tcc:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/asm-generic/posix_types.h:
-
-/usr/include/c++/15/bits/allocator.h:
-
-/usr/include/c++/15/bit:
-
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant:
-
-/home/pearlsrvcs/C++/main.cpp:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qpolygon.h:
-
 /usr/include/alloca.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtNetwork/qabstractsocket.h:
 
 /usr/include/x86_64-linux-gnu/bits/local_lim.h:
 
@@ -1454,15 +1479,23 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtversion.h:
 
-/usr/include/c++/15/stack:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qobject_impl.h:
 
-/usr/include/c++/15/bits/random.h:
+/usr/include/c++/15/bits/specfun.h:
 
-/usr/include/c++/15/bits/basic_string.tcc:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicGitHelpers.cmake:
 
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLineEdit:
+/usr/include/c++/15/bits/uses_allocator_args.h:
 
-/usr/include/c++/15/bits/streambuf.tcc:
+/usr/include/c++/15/bits/chrono.h:
+
+/home/pearlsrvcs/C++/MinimapWidget.cpp:
+
+/usr/include/c++/15/bits/locale_classes.tcc:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h:
 
 /usr/include/c++/15/iterator:
 
@@ -1472,7 +1505,9 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /usr/include/c++/15/bits/hashtable.h:
 
-/usr/include/c++/15/bits/stringfwd.h:
+/usr/include/x86_64-linux-gnu/qt6/QtNetwork/qtnetworkexports.h:
+
+/usr/include/features.h:
 
 /usr/include/c++/15/bits/ios_base.h:
 
@@ -1492,15 +1527,13 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /usr/include/c++/15/bits/stl_multimap.h:
 
-/usr/include/wchar.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
-
 /usr/include/c++/15/bits/align.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkConfigVersion.cmake:
 
 /usr/include/c++/15/type_traits:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLConfigVersion.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h:
 
@@ -1514,23 +1547,37 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qkeysequence.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qobject_impl.h:
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qtypeinfo.h:
 
-/usr/include/c++/15/bits/specfun.h:
+/usr/include/c++/15/bits/charconv.h:
 
-/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicGitHelpers.cmake:
+/usr/include/c++/15/tr1/poly_laguerre.tcc:
 
-/usr/include/c++/15/bits/uses_allocator_args.h:
+/usr/include/c++/15/tr1/ell_integral.tcc:
 
-/usr/include/c++/15/bits/chrono.h:
+/usr/include/stdc-predef.h:
 
-/home/pearlsrvcs/C++/MinimapWidget.cpp:
+/usr/include/asm-generic/posix_types.h:
 
-/usr/include/c++/15/bits/locale_classes.tcc:
+/usr/include/c++/15/bits/allocator.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h:
+/usr/include/c++/15/bit:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h:
+/usr/lib/x86_64-linux-gnu/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qinputmethod.h:
+
+/home/pearlsrvcs/C++/MoneyManagerWidget.cpp:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qstringfwd.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qtconfigmacros.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsConfigVersionImpl.cmake:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Core/Qt6CoreTargets-none.cmake:
 
@@ -1564,11 +1611,9 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qstringview.h:
+/home/pearlsrvcs/C++/TriviaWidget.hpp:
 
-/home/pearlsrvcs/C++/Card.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qvectornd.h:
+/usr/include/c++/15/initializer_list:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Network/Qt6NetworkConfig.cmake:
 
@@ -1577,6 +1622,30 @@ CMakeFiles/4.2.3/CMakeSystem.cmake:
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/qstringview.h:
+
+/home/pearlsrvcs/C++/Card.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qvectornd.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant:
+
+/home/pearlsrvcs/C++/main.cpp:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qpolygon.h:
+
+/usr/include/c++/15/stack:
+
+/usr/include/c++/15/bits/random.h:
+
+/usr/include/c++/15/bits/basic_string.tcc:
+
+/usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLineEdit:
+
+/usr/include/c++/15/bits/streambuf.tcc:
+
+/usr/include/c++/15/bits/stringfwd.h:
 
 /usr/lib/x86_64-linux-gnu/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake:
 
@@ -1700,13 +1769,19 @@ pm_qt_autogen/moc_predefs.h:
 
 /usr/include/c++/15/bits/uses_allocator.h:
 
+/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLAdditionalTargetInfo.cmake:
+
 /usr/include/c++/15/bits/new_allocator.h:
 
 /usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qinputmethod.h:
-
 /usr/include/c++/15/bits/node_handle.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtNetwork/QSslPreSharedKeyAuthenticator:
+
+/usr/include/c++/15/debug/debug.h:
+
+/usr/include/x86_64-linux-gnu/bits/errno.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h:
 
@@ -1836,6 +1911,12 @@ pm_qt_autogen/moc_predefs.h:
 
 /usr/include/c++/15/bits/stl_set.h:
 
+/usr/include/c++/15/tr1/poly_hermite.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
+
+/usr/include/x86_64-linux-gnu/qt6/QtGui/qpaintdevice.h:
+
 /usr/share/cmake-4.2/Modules/Compiler/Clang.cmake:
 
 /usr/include/c++/15/bits/stl_stack.h:
@@ -1843,6 +1924,10 @@ pm_qt_autogen/moc_predefs.h:
 /usr/include/c++/15/cassert:
 
 /usr/include/c++/15/bits/string_view.tcc:
+
+/usr/include/wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/c++/15/ext/aligned_buffer.h:
 
@@ -1930,6 +2015,8 @@ pm_qt_autogen/moc_predefs.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
+/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsConfig.cmake:
+
 /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlineedit.h:
 
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
@@ -1995,6 +2082,8 @@ pm_qt_autogen/moc_predefs.h:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcomparehelpers.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayview.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLTargets.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/QSharedDataPointer:
 
@@ -2085,6 +2174,8 @@ pm_qt_autogen/moc_predefs.h:
 /usr/include/c++/15/iosfwd:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qcompilerdetection.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsDependencies.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer_impl.h:
 
@@ -2218,12 +2309,6 @@ pm_qt_autogen/moc_predefs.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringconverter_base.h:
 
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qstringfwd.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtCore/qtconfigmacros.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h:
-
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringmatcher.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringtokenizer.h:
@@ -2253,6 +2338,8 @@ pm_qt_autogen/moc_predefs.h:
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h:
 
 /usr/include/x86_64-linux-gnu/qt6/QtCore/qtresource.h:
+
+/usr/lib/x86_64-linux-gnu/cmake/Qt6OpenGL/Qt6OpenGLVersionlessAliasTargets.cmake:
 
 /usr/include/c++/15/exception:
 
@@ -2319,12 +2406,6 @@ pm_qt_autogen/moc_predefs.h:
 /usr/share/cmake-4.2/Modules/FindPackageMessage.cmake:
 
 /usr/include/x86_64-linux-gnu/qt6/QtGui/qtgui-config.h:
-
-/usr/include/c++/15/debug/debug.h:
-
-/usr/include/x86_64-linux-gnu/bits/errno.h:
-
-/usr/include/x86_64-linux-gnu/qt6/QtNetwork/QSslPreSharedKeyAuthenticator:
 
 /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qssl.h:
 

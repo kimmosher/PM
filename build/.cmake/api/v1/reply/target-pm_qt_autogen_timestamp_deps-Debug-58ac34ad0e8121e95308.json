@@ -26,11 +26,11 @@
 	[
 		{
 			"backtrace" : 0,
-			"id" : "Qt6::uic::@6890427a1f51a3e7e1df"
+			"id" : "Qt6::moc::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 0,
-			"id" : "Qt6::moc::@6890427a1f51a3e7e1df"
+			"id" : "Qt6::uic::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 0,
@@ -39,6 +39,10 @@
 		{
 			"backtrace" : 0,
 			"id" : "Qt6::Network::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "Qt6::Charts::@6890427a1f51a3e7e1df"
 		}
 	],
 	"paths" : 

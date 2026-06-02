@@ -602,6 +602,8 @@ CMakeFiles/pm_qt.dir/MainWindow.cpp.o: \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonparseerror.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QRandomGenerator \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qrandom.h \
+  /home/pearlsrvcs/C++/MoneyManagerWidget.hpp \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDate \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGridLayout \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QFile \

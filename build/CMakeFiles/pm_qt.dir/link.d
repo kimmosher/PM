@@ -12,9 +12,13 @@ pm_qt: \
   CMakeFiles/pm_qt.dir/DoodlePadWidget.cpp.o \
   CMakeFiles/pm_qt.dir/SolitaireWidget.cpp.o \
   CMakeFiles/pm_qt.dir/SolitaireGame.cpp.o \
+  CMakeFiles/pm_qt.dir/MoneyManagerWidget.cpp.o \
   CMakeFiles/pm_qt.dir/pm_qt_autogen/EWIEGA46WW/qrc_resources.cpp.o \
-  /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.10.2 \
+  /usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.10.2 \
   /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.10.2 \
+  /usr/lib/x86_64-linux-gnu/libQt6OpenGLWidgets.so.6.10.2 \
+  /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.10.2 \
+  /usr/lib/x86_64-linux-gnu/libQt6OpenGL.so.6.10.2 \
   /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.10.2 \
   /usr/lib/x86_64-linux-gnu/libGLX.so \
   /usr/lib/x86_64-linux-gnu/libOpenGL.so \
@@ -145,11 +149,19 @@ CMakeFiles/pm_qt.dir/SolitaireWidget.cpp.o:
 
 CMakeFiles/pm_qt.dir/SolitaireGame.cpp.o:
 
+CMakeFiles/pm_qt.dir/MoneyManagerWidget.cpp.o:
+
 CMakeFiles/pm_qt.dir/pm_qt_autogen/EWIEGA46WW/qrc_resources.cpp.o:
+
+/usr/lib/x86_64-linux-gnu/libQt6Charts.so.6.10.2:
+
+/usr/lib/x86_64-linux-gnu/libQt6Network.so.6.10.2:
+
+/usr/lib/x86_64-linux-gnu/libQt6OpenGLWidgets.so.6.10.2:
 
 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.10.2:
 
-/usr/lib/x86_64-linux-gnu/libQt6Network.so.6.10.2:
+/usr/lib/x86_64-linux-gnu/libQt6OpenGL.so.6.10.2:
 
 /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.10.2:
 

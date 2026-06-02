@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/pearlsrvcs/C++/DoodlePadWidget.cpp" "CMakeFiles/pm_qt.dir/DoodlePadWidget.cpp.o" "gcc" "CMakeFiles/pm_qt.dir/DoodlePadWidget.cpp.o.d"
   "/home/pearlsrvcs/C++/MainWindow.cpp" "CMakeFiles/pm_qt.dir/MainWindow.cpp.o" "gcc" "CMakeFiles/pm_qt.dir/MainWindow.cpp.o.d"
   "/home/pearlsrvcs/C++/MinimapWidget.cpp" "CMakeFiles/pm_qt.dir/MinimapWidget.cpp.o" "gcc" "CMakeFiles/pm_qt.dir/MinimapWidget.cpp.o.d"
+  "/home/pearlsrvcs/C++/MoneyManagerWidget.cpp" "CMakeFiles/pm_qt.dir/MoneyManagerWidget.cpp.o" "gcc" "CMakeFiles/pm_qt.dir/MoneyManagerWidget.cpp.o.d"
   "/home/pearlsrvcs/C++/SolitaireGame.cpp" "CMakeFiles/pm_qt.dir/SolitaireGame.cpp.o" "gcc" "CMakeFiles/pm_qt.dir/SolitaireGame.cpp.o.d"
   "/home/pearlsrvcs/C++/SolitaireWidget.cpp" "CMakeFiles/pm_qt.dir/SolitaireWidget.cpp.o" "gcc" "CMakeFiles/pm_qt.dir/SolitaireWidget.cpp.o.d"
   "/home/pearlsrvcs/C++/TextAdventureWidget.cpp" "CMakeFiles/pm_qt.dir/TextAdventureWidget.cpp.o" "gcc" "CMakeFiles/pm_qt.dir/TextAdventureWidget.cpp.o.d"

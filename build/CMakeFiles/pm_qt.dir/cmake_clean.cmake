@@ -9,6 +9,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/pm_qt.dir/MainWindow.cpp.o.d"
   "CMakeFiles/pm_qt.dir/MinimapWidget.cpp.o"
   "CMakeFiles/pm_qt.dir/MinimapWidget.cpp.o.d"
+  "CMakeFiles/pm_qt.dir/MoneyManagerWidget.cpp.o"
+  "CMakeFiles/pm_qt.dir/MoneyManagerWidget.cpp.o.d"
   "CMakeFiles/pm_qt.dir/SolitaireGame.cpp.o"
   "CMakeFiles/pm_qt.dir/SolitaireGame.cpp.o.d"
   "CMakeFiles/pm_qt.dir/SolitaireWidget.cpp.o"

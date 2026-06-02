@@ -1,7 +1,6 @@
-CMakeFiles/pm_qt.dir/pm_qt_autogen/mocs_compilation.cpp.o: \
-  /home/pearlsrvcs/C++/build/pm_qt_autogen/mocs_compilation.cpp \
-  /home/pearlsrvcs/C++/build/pm_qt_autogen/EWIEGA46WW/moc_DoodlePadWidget.cpp \
-  /home/pearlsrvcs/C++/build/pm_qt_autogen/EWIEGA46WW/../../../DoodlePadWidget.hpp \
+CMakeFiles/pm_qt.dir/MoneyManagerWidget.cpp.o: \
+  /home/pearlsrvcs/C++/MoneyManagerWidget.cpp \
+  /home/pearlsrvcs/C++/MoneyManagerWidget.hpp \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -455,86 +454,146 @@ CMakeFiles/pm_qt.dir/pm_qt_autogen/mocs_compilation.cpp.o: \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPixmap \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QPoint \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QStack \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstack.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QListWidget \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistwidget.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlistview.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemview.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qitemselectionmodel.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemdelegate.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyleoption.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qvalidator.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qregularexpression.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyle.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabbar.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QComboBox \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcombobox.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/QColor \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmochelpers.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmocconstants.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/q20algorithm.h \
-  /home/pearlsrvcs/C++/build/pm_qt_autogen/EWIEGA46WW/moc_MainWindow.cpp \
-  /home/pearlsrvcs/C++/build/pm_qt_autogen/EWIEGA46WW/../../../MainWindow.hpp \
-  /home/pearlsrvcs/C++/build/pm_qt_autogen/EWIEGA46WW/../../../SolitaireWidget.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QVector \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qvector.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstracteventdispatcher.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdeadlinetimer.h \
-  /home/pearlsrvcs/C++/build/pm_qt_autogen/EWIEGA46WW/../../../SolitaireGame.h \
-  /home/pearlsrvcs/C++/build/pm_qt_autogen/EWIEGA46WW/../../../Pile.h \
-  /home/pearlsrvcs/C++/build/pm_qt_autogen/EWIEGA46WW/../../../Card.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
-  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/stack \
-  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/deque \
-  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/bits/stl_deque.h \
-  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/bits/deque.tcc \
-  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/bits/stl_stack.h \
-  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/random \
-  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/bits/random.h \
-  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/x86_64-linux-gnu/c++/15/bits/opt_random.h \
-  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/bits/random.tcc \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDateEdit \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdatetimeedit.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimezone.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDate \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTabWidget \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCalendarWidget \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcalendarwidget.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLineEdit \
   /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlineedit.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPlainTextEdit \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qplaintextedit.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtextedit.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qabstracttextdocumentlayout.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextlayout.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDoubleSpinBox \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qspinbox.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractspinbox.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qvalidator.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qregularexpression.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDateEdit \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdatetimeedit.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimezone.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QComboBox \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcombobox.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemdelegate.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyleoption.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qslider.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstyle.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabbar.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qrubberband.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QCheckBox \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qcheckbox.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTableWidget \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtablewidget.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtableview.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractitemview.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qitemselectionmodel.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHeaderView \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qheaderview.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QFile \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfile.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfiledevice.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/filesystem \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/bits/fs_fwd.h \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/bits/fs_path.h \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/locale \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/bits/locale_facets.h \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/cwctype \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/x86_64-linux-gnu/c++/15/bits/ctype_base.h \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/x86_64-linux-gnu/c++/15/bits/ctype_inline.h \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/bits/locale_facets.tcc \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/bits/locale_facets_nonio.h \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/x86_64-linux-gnu/c++/15/bits/time_members.h \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/x86_64-linux-gnu/c++/15/bits/messages_members.h \
+  /usr/include/libintl.h \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/bits/codecvt.h \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/bits/locale_facets_nonio.tcc \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/bits/locale_conv.h \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/iomanip \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/bits/quoted_string.h \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/sstream \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/istream \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/ios \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/bits/basic_ios.h \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/bits/basic_ios.tcc \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/ostream \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/bits/ostream.h \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/bits/ostream.tcc \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/bits/istream.tcc \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/bits/sstream.tcc \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/codecvt \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/bits/fs_dir.h \
+  /usr/lib/gcc/x86_64-linux-gnu/15/../../../../include/c++/15/bits/fs_ops.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QJsonDocument \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsondocument.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonparseerror.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QJsonArray \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonarray.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonvalue.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcborvalue.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcborcommon.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/quuid.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QJsonObject \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonobject.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMessageBox \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmessagebox.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialogbuttonbox.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpicture.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCharts/QBarSeries \
+  /usr/include/x86_64-linux-gnu/qt6/QtCharts/qbarseries.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCharts/QAbstractBarSeries \
+  /usr/include/x86_64-linux-gnu/qt6/QtCharts/qabstractbarseries.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCharts/QAbstractSeries \
+  /usr/include/x86_64-linux-gnu/qt6/QtCharts/qabstractseries.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCharts/QChartGlobal \
+  /usr/include/x86_64-linux-gnu/qt6/QtCharts/qchartglobal.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCharts/qtcharts-config.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCharts/qtchartsexports.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCharts/QAbstractAxis \
+  /usr/include/x86_64-linux-gnu/qt6/QtCharts/qabstractaxis.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPen \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QFont \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList \
+  /usr/include/x86_64-linux-gnu/qt6/QtCharts/QBarSet \
+  /usr/include/x86_64-linux-gnu/qt6/QtCharts/qbarset.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCharts/QChart \
+  /usr/include/x86_64-linux-gnu/qt6/QtCharts/qchart.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCharts/QLegend \
+  /usr/include/x86_64-linux-gnu/qt6/QtCharts/qlegend.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsWidget \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicswidget.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicslayoutitem.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qevent.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstracteventdispatcher.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdeadlinetimer.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qeventpoint.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qvector2d.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qvectornd.h \
@@ -542,7 +601,6 @@ CMakeFiles/pm_qt.dir/pm_qt_autogen/mocs_compilation.cpp.o: \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputdevice.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen.h \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF \
@@ -554,69 +612,19 @@ CMakeFiles/pm_qt.dir/pm_qt_autogen/mocs_compilation.cpp.o: \
   /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputmethod.h \
   /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication_platform.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qglyphrun.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qrawfont.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontdatabase.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
-  /home/pearlsrvcs/C++/build/pm_qt_autogen/EWIEGA46WW/moc_MinimapWidget.cpp \
-  /home/pearlsrvcs/C++/build/pm_qt_autogen/EWIEGA46WW/../../../MinimapWidget.hpp \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMap \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSet \
-  /home/pearlsrvcs/C++/build/pm_qt_autogen/EWIEGA46WW/moc_MoneyManagerWidget.cpp \
-  /home/pearlsrvcs/C++/build/pm_qt_autogen/EWIEGA46WW/../../../MoneyManagerWidget.hpp \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QDate \
-  /home/pearlsrvcs/C++/build/pm_qt_autogen/EWIEGA46WW/moc_SolitaireWidget.cpp \
-  /home/pearlsrvcs/C++/build/pm_qt_autogen/EWIEGA46WW/moc_TextAdventureWidget.cpp \
-  /home/pearlsrvcs/C++/build/pm_qt_autogen/EWIEGA46WW/../../../TextAdventureWidget.hpp \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTextEdit \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h \
-  /home/pearlsrvcs/C++/build/pm_qt_autogen/EWIEGA46WW/moc_TriviaWidget.cpp \
-  /home/pearlsrvcs/C++/build/pm_qt_autogen/EWIEGA46WW/../../../TriviaWidget.hpp \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList \
-  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/QNetworkAccessManager \
-  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qnetworkaccessmanager.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qtnetworkglobal.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qtnetwork-config.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qtnetworkexports.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qnetworkrequest.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qhttpheaders.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetaobject.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QSharedDataPointer \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QUrl \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/q26numeric.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/QSslConfiguration \
-  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qsslconfiguration.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qsslsocket.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qtcpsocket.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qabstractsocket.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qhostaddress.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qsslerror.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qsslcertificate.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcryptographichash.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qssl.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QFlags \
-  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/QSslPreSharedKeyAuthenticator \
-  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qsslpresharedkeyauthenticator.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMetaType \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QJsonArray \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonarray.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonvalue.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcborvalue.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcborcommon.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/quuid.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsondocument.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qjsonparseerror.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/QRandomGenerator \
-  /usr/include/x86_64-linux-gnu/qt6/QtCore/qrandom.h \
-  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/QSslError \
-  /home/pearlsrvcs/C++/build/pm_qt_autogen/EWIEGA46WW/moc_TutorialDialog.cpp \
-  /home/pearlsrvcs/C++/build/pm_qt_autogen/EWIEGA46WW/../../../TutorialDialog.hpp \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QDialog \
-  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsitem.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainterpath.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QBrush \
+  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMargins \
+  /usr/include/x86_64-linux-gnu/qt6/QtCharts/QBarCategoryAxis \
+  /usr/include/x86_64-linux-gnu/qt6/QtCharts/qbarcategoryaxis.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCharts/QValueAxis \
+  /usr/include/x86_64-linux-gnu/qt6/QtCharts/qvalueaxis.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPainter \
+  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtCharts/QChartView \
+  /usr/include/x86_64-linux-gnu/qt6/QtCharts/qchartview.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsView \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsview.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qscrollarea.h \
+  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h

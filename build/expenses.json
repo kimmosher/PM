@@ -1,0 +1,23 @@
+[
+    {
+        "amount": 2365,
+        "category": "Other",
+        "date": "2026-06-03",
+        "description": "Social Security",
+        "isIncome": true
+    },
+    {
+        "amount": 821,
+        "category": "Other",
+        "date": "2026-06-03",
+        "description": "Socical Security",
+        "isIncome": true
+    },
+    {
+        "amount": 133,
+        "category": "Transport",
+        "date": "2026-06-03",
+        "description": "Direct Auto",
+        "isIncome": false
+    }
+]

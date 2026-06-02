@@ -55,6 +55,13 @@
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "Qt6::Charts::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt6__Charts-Debug-16bdf781152a2100f018.json",
+					"name" : "Qt6::Charts",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "Qt6::Core::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-Qt6__Core-Debug-441963f06afb9cf505d7.json",
 					"name" : "Qt6::Core",
@@ -93,6 +100,20 @@
 					"id" : "Qt6::Network::@6890427a1f51a3e7e1df",
 					"jsonFile" : "target-Qt6__Network-Debug-81b1777b1fe63de2ffdf.json",
 					"name" : "Qt6::Network",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt6::OpenGL::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt6__OpenGL-Debug-3470eef5653d59b14bcf.json",
+					"name" : "Qt6::OpenGL",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Qt6::OpenGLWidgets::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Qt6__OpenGLWidgets-Debug-6743104b2c2cea0aff48.json",
+					"name" : "Qt6::OpenGLWidgets",
 					"projectIndex" : 0
 				},
 				{
@@ -465,7 +486,10 @@
 						53,
 						54,
 						55,
-						56
+						56,
+						57,
+						58,
+						59
 					],
 					"build" : ".",
 					"jsonFile" : "directory-.-Debug-9ad1a58d4644cf6543fa.json",
@@ -545,7 +569,10 @@
 						53,
 						54,
 						55,
-						56
+						56,
+						57,
+						58,
+						59
 					],
 					"directoryIndexes" : 
 					[
@@ -565,21 +592,21 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "pm_qt::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-pm_qt-Debug-b0b3b08a2981aab30644.json",
+					"jsonFile" : "target-pm_qt-Debug-3c5b3375e435aa54cafd.json",
 					"name" : "pm_qt",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "pm_qt_autogen::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-pm_qt_autogen-Debug-99df4b607028f7f52e76.json",
+					"jsonFile" : "target-pm_qt_autogen-Debug-5600bf3357d0fb6281c5.json",
 					"name" : "pm_qt_autogen",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "pm_qt_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-pm_qt_autogen_timestamp_deps-Debug-3c0e84be04f51ef971ff.json",
+					"jsonFile" : "target-pm_qt_autogen_timestamp_deps-Debug-58ac34ad0e8121e95308.json",
 					"name" : "pm_qt_autogen_timestamp_deps",
 					"projectIndex" : 0
 				}

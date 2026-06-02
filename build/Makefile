@@ -227,6 +227,30 @@ MinimapWidget.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/MinimapWidget.cpp.s
 .PHONY : MinimapWidget.cpp.s
 
+MoneyManagerWidget.o: MoneyManagerWidget.cpp.o
+.PHONY : MoneyManagerWidget.o
+
+# target to build an object file
+MoneyManagerWidget.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/MoneyManagerWidget.cpp.o
+.PHONY : MoneyManagerWidget.cpp.o
+
+MoneyManagerWidget.i: MoneyManagerWidget.cpp.i
+.PHONY : MoneyManagerWidget.i
+
+# target to preprocess a source file
+MoneyManagerWidget.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/MoneyManagerWidget.cpp.i
+.PHONY : MoneyManagerWidget.cpp.i
+
+MoneyManagerWidget.s: MoneyManagerWidget.cpp.s
+.PHONY : MoneyManagerWidget.s
+
+# target to generate assembly for a file
+MoneyManagerWidget.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pm_qt.dir/build.make CMakeFiles/pm_qt.dir/MoneyManagerWidget.cpp.s
+.PHONY : MoneyManagerWidget.cpp.s
+
 SolitaireGame.o: SolitaireGame.cpp.o
 .PHONY : SolitaireGame.o
 
@@ -439,6 +463,9 @@ help:
 	@echo "... MinimapWidget.o"
 	@echo "... MinimapWidget.i"
 	@echo "... MinimapWidget.s"
+	@echo "... MoneyManagerWidget.o"
+	@echo "... MoneyManagerWidget.i"
+	@echo "... MoneyManagerWidget.s"
 	@echo "... SolitaireGame.o"
 	@echo "... SolitaireGame.i"
 	@echo "... SolitaireGame.s"
