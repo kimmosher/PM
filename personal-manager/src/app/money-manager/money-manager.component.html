@@ -1,0 +1,50 @@
+<div class="money-container ls-glow">
+
+    <h2>Money Manager</h2>
+
+    <div class="entry-form">
+        <input type="number" [(ngModel)]="newAmount" placeholder="Amount">
+
+        <select [(ngModel)]="newCategory">
+            <option value="" disabled selected>Select Category</option>
+            <option *ngFor="let c of categories" [value]="c">
+                {{ c }}
+            </option>
+        </select>
+
+        <input type="date" [(ngModel)]="newDate">
+
+        <input type="text" [(ngModel)]="newNote" placeholder="Description">
+
+        <label>
+            <input type="checkbox" [(ngModel)]="newIncome">
+            Income?
+        </label>
+
+        <button (click)="addEntry()">Add Entry</button>
+    </div>
+
+    <div class="summary">
+        <p>Total Income: <b>{{ totalIncome | currency }}</b></p>
+        <p>Total Expenses: <b>{{ totalExpenses | currency }}</b></p>
+        <p>Balance: <b>{{ balance | currency }}</b></p>
+    </div>
+
+    <div class="entries">
+        <div class="entry" *ngFor="let e of entries; let i = index">
+            <div>
+                <b>{{ e.amount | currency }}</b>
+                <span [style.color]="e.income ? '#4DFF7A' : '#FF4D4D'">
+                    ({{ e.income ? 'Income' : 'Expense' }})
+                </span>
+            </div>
+
+            <div>{{ e.category }}</div>
+            <div>{{ e.date }}</div>
+            <div class="note">{{ e.note }}</div>
+
+            <button class="delete" (click)="deleteEntry(i)">X</button>
+        </div>
+    </div>
+
+</div>

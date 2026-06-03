@@ -1,1 +1,42 @@
-<p>contacts works!</p>
+<div class="address-book">
+
+  <h2>Address Book</h2>
+
+  <button class="add-btn" (click)="addContact()">+ Add Contact</button>
+
+  <!-- Edit/Add Form -->
+  <div class="edit-panel" *ngIf="editing">
+    <h3>{{ editing.id ? 'Edit Contact' : 'New Contact' }}</h3>
+
+    <label>Name</label>
+    <input type="text" [(ngModel)]="editing.name">
+
+    <label>Phone</label>
+    <input type="text" [(ngModel)]="editing.phone">
+
+    <label>Email</label>
+    <input type="email" [(ngModel)]="editing.email">
+
+    <div class="buttons">
+      <button class="save" (click)="saveEdit()">Save</button>
+      <button class="cancel" (click)="cancelEdit()">Cancel</button>
+    </div>
+  </div>
+
+  <!-- Contact List -->
+  <ul class="contact-list">
+    <li *ngFor="let c of contacts">
+      <div class="info">
+        <strong>{{ c.name }}</strong>
+        <span>{{ c.phone }}</span>
+        <span>{{ c.email }}</span>
+      </div>
+
+      <div class="actions">
+        <button (click)="editContact(c)">Edit</button>
+        <button class="delete" (click)="deleteContact(c.id)">Delete</button>
+      </div>
+    </li>
+  </ul>
+
+</div>

@@ -44,7 +44,7 @@ MoneyManagerWidget::MoneyManagerWidget(QWidget *parent)
     dateInput->setCalendarPopup(true);
 
     categoryInput = new QComboBox(this);
-    categoryInput->addItems({"Food", "Bills", "Transport", "Entertainment", "Shopping", "Other"});
+    categoryInput->addItems({"Food", "Bills", "Transport", "Entertainment", "Shopping", "Medical", "Other"});
 
     incomeCheck = new QCheckBox("Income", this);   // NEW
 

@@ -1,0 +1,32 @@
+<div class="board">
+  <button class="add-btn" (click)="addNote()">+ Add note</button>
+
+  <div class="note" *ngFor="let n of notes; trackBy: trackById" [style.left.px]="n.x" [style.top.px]="n.y"
+    [style.width.px]="n.width" [style.height.px]="n.height" [style.background]="n.color">
+
+    <div style="width:200px; height: 32px" (pointerdown)="log('DOWN', $event)" (pointermove)="log('MOVE', $event)"
+      (pointerup)="log('UP', $event)">
+
+    </div>
+
+
+    <!-- Move handle -->
+    <div class="move-handle" (pointerdown)="startDrag(n, $event)">
+      ☰
+    </div>
+
+    <!-- Text -->
+    <textarea [(ngModel)]="n.text" (pointerdown)="$event.stopPropagation()" (input)="saveNotes()"></textarea>
+
+    <!-- Delete -->
+    <button class="delete-btn" (pointerdown)="$event.stopPropagation()" (click)="deleteNote(n.id)">
+      ✕
+    </button>
+
+    <!-- Color -->
+    <input type="color" class="color-picker" [value]="n.color" (pointerdown)="$event.stopPropagation()"
+      (input)="changeColor(n, $event)" />
+
+    <!-- Resize -->
+    <div class="resize-handle" (pointerdown)="startResize(n, $event)"></div>
+</div>

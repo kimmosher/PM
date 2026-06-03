@@ -1,0 +1,73 @@
+.money-container {
+  background: #0D0366;
+  padding: 20px;
+  border-radius: 12px;
+  width: 380px;
+  color: #FFD36E;
+  box-shadow: 0 0 12px #4DA3FF55;
+  margin:256px auto;
+}
+
+.entry-form input {
+  width: 100%;
+  margin-bottom: 8px;
+  margin-right: -0px;
+  padding: 6px;
+  border-radius: 6px;
+  border: none;
+}
+
+.entry-form button {
+  width: 100%;
+  padding: 8px;
+  background: #4DA3FF;
+  border: none;
+  border-radius: 6px;
+  color: #0D0366;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.entries {
+  margin-top: 20px;
+}
+
+.entry {
+  background: #1A0A80;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.entry .delete {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: #FF4D4D;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.note {
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+label {
+  display: flex;
+  flex-direction: row;;
+}
+
+select {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 6px;
+  border-radius: 6px;
+  border: none;
+  background: #ffffff;
+  color: #0D0366;
+  font-weight: bold;
+}
