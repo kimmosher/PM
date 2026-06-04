@@ -499,25 +499,27 @@ MainWindow::MainWindow(QWidget *parent)
     // ---------------------------------------------------------
     // Menu bar (after widgets exist)
     // ---------------------------------------------------------
-    QMenuBar *bar = menuBar();
-
+        QMenuBar *bar = menuBar();
+        QMenu *doodlePadMenu = bar->addMenu("DoodlePad");
+        
     // File Menu
     {
-        QMenu *fileMenu = bar->addMenu("File");
+        
+        QMenu *fileMenu = doodlePadMenu->addMenu("File");
         fileMenu->addAction("Save", doodlePad, &DoodlePadWidget::saveImage);
         fileMenu->addAction("Clear", doodlePad, &DoodlePadWidget::clearCanvas);
     }
 
     // Edit Menu
     {
-        QMenu *editMenu = bar->addMenu("Edit");
+        QMenu *editMenu = doodlePadMenu->addMenu("Edit");
         editMenu->addAction("Undo", doodlePad, &DoodlePadWidget::undo);
         editMenu->addAction("Redo", doodlePad, &DoodlePadWidget::redo);
     }
 
     // Tools Menu
     {
-        QMenu *toolsMenu = bar->addMenu("Tools");
+        QMenu *toolsMenu = doodlePadMenu->addMenu("Tools");
         toolsMenu->addAction("Color", doodlePad, &DoodlePadWidget::chooseColor);
         toolsMenu->addAction("Eraser", doodlePad, &DoodlePadWidget::useEraser);
         toolsMenu->addAction("Glow Brush", [this]() { doodlePad->setBrushMode(GlowBrush); });
@@ -527,7 +529,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     // Game Menu
     {
-        QMenu* gameMenu = bar->addMenu("Game");
+        QMenu* gameMenu = bar->addMenu("Solitaire");
 
         QAction* newGameAction = new QAction("New Game", this);
         QAction* undoAction    = new QAction("Undo", this);
